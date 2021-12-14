@@ -23,3 +23,7 @@ David Borgmann, Simon Rettmann
      
 <tr>
     <td> <a href="#Stundevom14.12.2021"> Stunde vom 14.12.2021 </a></td>
+</tr>
+
+## <p> <h2> <a id="Stundevom3.8.2021"> Stunde vom 3.8.2021 </a> </h2>
+In dieser Stunde begann die zweite Projektfindungsphase. Der Abgabetermin wurde auf den 19.4.2022 festgelegt. Um ein Projekt zu finden, wurde erneut eine MindMap erstellt. Nachdem in der letzten 
