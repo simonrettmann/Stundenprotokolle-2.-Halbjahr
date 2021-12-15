@@ -23,7 +23,21 @@ David Borgmann, Simon Rettmann
      
 <tr>
     <td> <a href="#Stundevom14.12.2021"> Stunde vom 14.12.2021 </a></td>
+    <td> <a href="#Stundevom15.12.2021"> Stunde vom 15.12.2021 </a></td>
 </tr>
 
-## <p> <h2> <a id="Stundevom3.8.2021"> Stunde vom 3.8.2021 </a> </h2>
-In dieser Stunde begann die zweite Projektfindungsphase. Der Abgabetermin wurde auf den 19.4.2022 festgelegt. Um ein Projekt zu finden, wurde erneut eine MindMap erstellt. Nachdem in der letzten 
+## <p> <h2> <a id="Stundevom14.12.2021"> Stunde vom 14.12.2021 </a> </h2>
+In dieser Stunde begann die zweite Projektfindungsphase. Der Abgabetermin wurde auf den 19.4.2022 festgelegt. Um ein Projekt zu finden, wurde erneut eine MindMap erstellt. Diskutierte Ideen war die Weiterführung des arduinogesteuerten Gaskochers, da die Gruppe während der letzten Phase von diesem Projekt begeistert war und eine Kamera, die auf einer Schiene befestigt ist und Kamerafahrten, sogar durch eine Objekterfassung gesteuerte Kamerafahrten, aufnehmen kann. 
+<a href="https://youtu.be/h5faZXlyLzY"> Link von YouTube zu einer Videoinspiraton zum Kameraprojekt</a>
+
+<details>
+	<summary>Bild der MindMap</summary>
+<img alt="Bild der MindMap" src="https://user-images.githubusercontent.com/88385654/146187027-ce64e107-2326-4b0b-a0ec-b7d27955739d.jpeg">
+</details>
+
+Nach längerer Diskussion und Ausarbeitung der beiden Ideen mit Herrn Buhl, entschied sich die Gruppe den arduinogesteuerten Gaskocher weiterzuführen. Die vorherrschende Meinung war, dass es noch genug zu verbessern gibt und diese weitere Entwicklung eventuell sogar die Teilnahme an Wettbewerben wie Jugend forscht ermöglicht. 
+	
+## <p> <h2> <a id="Stundevom15.12.2021"> Stunde vom 15.12.2021 </a> </h2>
+	
+
+	
