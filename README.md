@@ -24,7 +24,7 @@ David Borgmann, Simon Rettmann
 
 ## Stundenprotokolle
 <br>
-## <p> <h2> <a id="Stundevom14.12.2021"> Stunde vom 14.12.2021 </a> </h2>
+<p> <h2> <a id="Stundevom14.12.2021"> Stunde vom 14.12.2021 </a> </h2>
 In dieser Stunde begann die zweite Projektfindungsphase. Der Abgabetermin wurde auf den 19.4.2022 festgelegt. Um ein Projekt zu finden, wurde erneut eine MindMap erstellt. Diskutierte Ideen war die Weiterführung des arduinogesteuerten Gaskochers, da die Gruppe während der letzten Phase von diesem Projekt begeistert war und eine Kamera, die auf einer Schiene befestigt ist und Kamerafahrten, sogar durch eine Objekterfassung gesteuerte Kamerafahrten, aufnehmen kann. 
 <a href="https://youtu.be/h5faZXlyLzY"> Link von YouTube zu einer Videoinspiraton zum Kameraprojekt</a>
 
