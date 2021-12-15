@@ -39,3 +39,9 @@ Nach längerer Diskussion und Ausarbeitung der beiden Ideen mit Herrn Buhl, ents
 Von zu Hause begann bereits der Denkprozess, wie die Ideen konkret umgesetzt werden könnten. Primärer Fokus war die Kommunikation einer Website mit dem Arduino. Dazu wurde ein neuer Mikrocontroller bestellt, der WLAN-fähig ist und so von der ganzen Welt gesteuert werden kann. Dazu wurde der ESP8266 bestellt. <a href="https://www.amazon.de/dp/B06Y1ZPNMS/ref=cm_sw_em_r_mt_dp_8W3S15S43VPSKZEXFZCC?_encoding=UTF8&psc=1"> Kauflink zum Produkt von Amazon </a>
 Weiter wurde sich auch mit der Kompatibilität dieses Chips mit verschiedenen Website und Datentypen auseinandergesetzt. 
 Für die Hardware nahm sich die Gruppe vor die nahenden Ferien zu nutzen und die Hardware dort fertigzustellen, damit die Stunden im neuen Jahr für die softwaretechnische Umsetzung genutzt werden können. 
+Für die nächste Zeit setzte sich die Gruppe folgende Ziele:
+<ul>
+	<li>Einarbeitung und anlegen einer sql-Datenbank</li>
+	<li>Suche eines Servers auf der sowohl die Website als auch die Datenbank laufen können </li>
+	<li>Einarbeitung in PHP, sodass eine datenverarbeitende Website erstellt werden kann und diese gewonnen Daten in einer Datenbank gespeichert werden können </li>
+</ul>
