@@ -36,8 +36,6 @@ Nach längerer Diskussion und Ausarbeitung der beiden Ideen mit Herrn Buhl, ents
 	
 ## <p> <h2> <a id="Stundevom15.12.2021"> Stunde vom 15.12.2021 </a> </h2>
 
-Von zu Hause begann bereits der Denkprozess, wie die Ideen konkret umgesetzt werden könnten. Primärer Fokus war die Kommunikation einer Website mit dem Arduino. Dazu wurde ein neuer Mikrocontroller bestellt, der WLAN-fähig ist und so von der ganzen Welt gesteuert werden kann. Dazu wurde der ESP8266 bestellt. <a href="AZDelivery NodeMCU Lolin V3 Module ESP8266 ESP-12F WiFi WiFi Development Board mit CH340 kompatibel mit Arduino inklusive E-Book!
-von AZ-Delivery Vertriebs GmbH
-Erfahren Sie mehr: https://www.amazon.de/dp/B06Y1ZPNMS/ref=cm_sw_em_r_mt_dp_8W3S15S43VPSKZEXFZCC?_encoding=UTF8&psc=1"> Kauflink zum Produkt von Amazon </a>
+Von zu Hause begann bereits der Denkprozess, wie die Ideen konkret umgesetzt werden könnten. Primärer Fokus war die Kommunikation einer Website mit dem Arduino. Dazu wurde ein neuer Mikrocontroller bestellt, der WLAN-fähig ist und so von der ganzen Welt gesteuert werden kann. Dazu wurde der ESP8266 bestellt. <a href="https://www.amazon.de/dp/B06Y1ZPNMS/ref=cm_sw_em_r_mt_dp_8W3S15S43VPSKZEXFZCC?_encoding=UTF8&psc=1"> Kauflink zum Produkt von Amazon </a>
 Weiter wurde sich auch mit der Kompatibilität dieses Chips mit verschiedenen Website und Datentypen auseinandergesetzt. 
 Für die Hardware nahm sich die Gruppe vor die nahenden Ferien zu nutzen und die Hardware dort fertigzustellen, damit die Stunden im neuen Jahr für die softwaretechnische Umsetzung genutzt werden können. 
