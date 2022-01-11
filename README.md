@@ -49,13 +49,18 @@ Für die nächste Zeit setzte sich die Gruppe folgende Ziele:
 <ul>
 	<li>Einarbeitung und anlegen einer sql-Datenbank</li>
 	<li>Suche eines Servers auf der sowohl die Website als auch die Datenbank laufen können </li>
-	<li>Einarbeitung in PHP, sodass eine datenverarbeitende Website erstellt werden kann und diese gewonnen Daten in einer Datenbank gespeichert werden können </li>
+	<li>Einarbeitung in PHP, sodass eine datenverarbeitende Website erstellt werden kann und diese gewonnen Daten in einer Datenbank gespeichert werden können 
+	</li>
 </ul>
 
 ## <p> <h2> <a id="Stundevom21.12.2021"> Stunde vom 21.12.2021 </a> </h2>
 
-
+In dieser Stunde war Simon Rettmann nicht anwesend, da er krank war. Diese Stunde wurde von Herrn Buhl für die Rückgabe der bewerteten Projekte des ersten Halbjahres genutzt. Den Rest der Stunde wurde "secret Hitler" gespielt. An dem Projekt wurde nicht weitergearbeitet. 
 
 ## <p> <h2> <a id="Stundevom22.12.2021"> Stunde vom 22.12.2021 </a> </h2>
 
+Aufgrund der Ferien musste diese Stunde leider ausfallen. 
+
 ## <p> <h2> <a id="Stundevom11.1.2022"> Stunde vom 11.1.2022 </a> </h2>
+Die erste Stunde nach den Ferien wurde von der Gruppe genutzt die Ergebnisse der Einarbeitungsphase zu besprechen. Das bestellte Bauteil kam über die Ferien an und erste Ansteuerungsversuche wurden getätigt. 
+Als erster Schritt wurde die I2C-Kommunikation angegangen. Zwar wurde diese Technologie bereits in der ersten Projektphase verwendet, jedoch verwendeten wir zur I2C-Kommunikation mit dem LC-Display eine simple Libary. In der zweiten Projektphase soll der I2C-Datenbus dazu benutzt werden, Daten zwischen dem Wlan-Netzwerk fähigen NodeMCU-Mikrokontroller (Name des Moduls, in welches das ESP8862 eingearbeitet ist) und dem Arduino auszutauschen. Da wir bisher noch keine geeignete Libary gefunden haben, beschäftigten wir uns zunächst mit der hardwarenahen Programmierung. Das NodeMCU soll dabei die Rolle als Master-Device und der Arduino als Slave-Device übernehmen. Problematisch dabei ist, dass am Ende hauptsächlich Integer- und Floatvariablen übertragen werden sollen. Standartmäßig können aber nur Bytes mit I2C übertragen werden. Es ist also nötig die Daten in Bytes zu trennen, die Bytes zu übertragen und anschließend die Daten beim Empfänger wieder zusammenzusetzen. Die einfache Übertragung von Bytes zwischen den beiden Geräten funktionierte nach kurzem Testen ohne große Probleme. Schwierig gestalltete sich jedoch die Zusammensetzung der Bytes zu den Variablen, sobalt mehrere verschiedene Variablen involviert waren.
