@@ -45,3 +45,11 @@ Für die nächste Zeit setzte sich die Gruppe folgende Ziele:
 	<li>Suche eines Servers auf der sowohl die Website als auch die Datenbank laufen können </li>
 	<li>Einarbeitung in PHP, sodass eine datenverarbeitende Website erstellt werden kann und diese gewonnen Daten in einer Datenbank gespeichert werden können </li>
 </ul>
+
+## <p> <h2> <a id="Stundevom21.12.2021"> Stunde vom 21.12.2021 </a> </h2>
+
+
+
+## <p> <h2> <a id="Stundevom22.12.2021"> Stunde vom 22.12.2021 </a> </h2>
+
+
