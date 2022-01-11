@@ -19,7 +19,13 @@ David Borgmann, Simon Rettmann
 <tr>
     <td> <a href="#Stundevom14.12.2021"> Stunde vom 14.12.2021 </a></td>
     <td> <a href="#Stundevom15.12.2021"> Stunde vom 15.12.2021 </a></td>
+    <td> <a href="#Stundevom21.12.2021"> Stunde vom 21.12.2021 </a></td>
+    <td> <a href="#Stundevom22.12.2021"> Stunde vom 22.12.2021 </a></td>
 </tr>
+<tr> 
+	 <td> <a href="#Stundevom11.1.2022"> Stunde vom 11.1.2022 </a></td>
+</tr>
+	
  </table>
 <br>
 
@@ -52,4 +58,4 @@ Für die nächste Zeit setzte sich die Gruppe folgende Ziele:
 
 ## <p> <h2> <a id="Stundevom22.12.2021"> Stunde vom 22.12.2021 </a> </h2>
 
-
+## <p> <h2> <a id="Stundevom11.1.2022"> Stunde vom 11.1.2022 </a> </h2>
