@@ -100,6 +100,7 @@ Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt.
 	
 </details>
 	
+<details>
 	
 <code>
 css
