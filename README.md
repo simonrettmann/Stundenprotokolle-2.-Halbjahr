@@ -66,3 +66,63 @@ Die erste Stunde nach den Ferien wurde von der Gruppe genutzt die Ergebnisse der
 Als erster Schritt wurde die I2C-Kommunikation angegangen. Zwar wurde diese Technologie bereits in der ersten Projektphase verwendet, jedoch verwendeten wir zur I2C-Kommunikation mit dem LC-Display eine simple Libary. In der zweiten Projektphase soll der I2C-Datenbus dazu benutzt werden, Daten zwischen dem Wlan-Netzwerk fähigen NodeMCU-Mikrokontroller (Name des Moduls, in welches das ESP8862 eingearbeitet ist) und dem Arduino auszutauschen. Da wir bisher noch keine geeignete Libary gefunden haben, beschäftigten wir uns zunächst mit der hardwarenahen Programmierung. Das NodeMCU soll dabei die Rolle als Master-Device und der Arduino als Slave-Device übernehmen. Problematisch dabei ist, dass am Ende hauptsächlich Integer- und Floatvariablen übertragen werden sollen. Standartmäßig können aber nur Bytes mit I2C übertragen werden. Es ist also nötig die Daten in Bytes zu trennen, die Bytes zu übertragen und anschließend die Daten beim Empfänger wieder zusammenzusetzen. Die einfache Übertragung von Bytes zwischen den beiden Geräten funktionierte nach kurzem Testen ohne große Probleme. Schwierig gestalltete sich jedoch die Zusammensetzung der Bytes zu den Variablen, sobalt mehrere verschiedene Variablen involviert waren. <br>
 Nachdem sich die Gruppenmitglieder erfolglos über eine Lösung des Problems beraten hatten, folgete gegen Ende der Stunde eine Recherche über eine geeignete Libary zur Übertragung der gewünschten Variablen.
 
+## <p> <h2> <a id="Stundevom12.1.2022"> Stunde vom 12.1.2022 </a> </h2>
+Diese Unterrichtseinheit wurde von der Gruppe genutzt die Kentnisse zu erweitern, um die Herausforderungen, die dieses neue Projekt mit sich bringt, zu meistern. Vor allem die Website stellt eine große Herausforderung dar, weil nicht nur die html Kentnisse vertieft werden müssen, sondern css und php neu erlernt werden müssen. Essentiell ist es Daten bei der Website eingeben zu können und diese Daten dann auf einem Server oder einer Datenbank zu speichern, sodass der Arduino auf diese zugreifen kann. 
+
+
+## <p> <h2> <a id="Stundevom18.1.2022"> Stunde vom 18.1.2022 </a> </h2>
+Auch in dieser Doppelstunde wurden viele Quellen, wie Videos und Blogs, zu Rate gezogen, um die ehrgeizigen Ziele zu erreichen. Außerdem wurden in dieser Stunde bereits ein wenig programmiert. 
+Für das Programmieren wurde Visual Studio Code benutzt, da dies ein in der Informatikwelt weitverbreitetes, kostenloses Tool ist, dass für die Anwendung der Gruppe viele Möglichkeiten bietet. <a href="https://code.visualstudio.com/"> Link zu Visual Studio Code </a>
+Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt. 
+
+<details>
+	<summary>Programmierter html Code</summary>
+	
+<code>
+	<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+       <h1>arduinogesteuerter Gaskocher</h1>
+       <h2>Steuerzentrale</h2>
+       <p>
+           <input type="text" name="spind" value="">
+       </p>
+    </body>
+</html>
+</code>
+	
+</details>
+	
+	
+<code>
+	#style (
+    width: 960px;
+    margin-right:auto;
+    margin-left:auto;
+)
+
+header (
+    heigth:150px;
+    background:blue;
+)
+
+section (
+    width:650px;
+    height:550px;
+    float:left;
+    background: white;
+)
+</code>
+
+</details>
+
+<details>
+	<Screenshot der Website>
+<img width="1792" alt="Screenshot der Website #1" src="https://user-images.githubusercontent.com/88385654/150021178-dd45bba1-7ea9-4be5-9726-4d546d325a13.png">
+</details>
+
