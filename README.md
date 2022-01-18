@@ -101,6 +101,7 @@ Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt.
 </details>
 	
 <details>
+	<summary>Programmierter css Code</summary>
 	
 <code>
 css
