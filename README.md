@@ -24,6 +24,8 @@ David Borgmann, Simon Rettmann
 </tr>
 <tr> 
 	 <td> <a href="#Stundevom11.1.2022"> Stunde vom 11.1.2022 </a></td>
+	<td> <a href="#Stundevom12.1.2022"> Stunde vom 12.1.2022 </a></td>
+	<td> <a href="#Stundevom18.1.2022"> Stunde vom 18.1.2022 </a></td>
 </tr>
 	
  </table>
@@ -100,6 +102,7 @@ Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt.
 	
 	
 <code>
+css
 	#style (
     width: 960px;
     margin-right:auto;
@@ -121,8 +124,11 @@ section (
 
 </details>
 
+
 <details>
-	<Screenshot der Website>
+	
+	<summary>Screenshot der Website</summary>
 <img width="1792" alt="Screenshot der Website #1" src="https://user-images.githubusercontent.com/88385654/150021178-dd45bba1-7ea9-4be5-9726-4d546d325a13.png">
+	
 </details>
 
