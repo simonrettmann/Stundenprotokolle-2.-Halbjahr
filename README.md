@@ -126,7 +126,6 @@ section (
 
 
 <details>
-	
 	<summary>Screenshot der Website</summary>
 <img width="1792" alt="Screenshot der Website #1" src="https://user-images.githubusercontent.com/88385654/150021178-dd45bba1-7ea9-4be5-9726-4d546d325a13.png">
 	
