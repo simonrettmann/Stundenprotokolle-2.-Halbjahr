@@ -144,8 +144,9 @@ In der letzten Stunde war es noch nocht gelungen, dass die .css und die .html - 
 
 <details>
 	<summary>veränderder css Code</summary>
+	
 ```
-	#style {
+#style {
     width: 960px;
     margin-right: auto;
     margin-left: auto;
@@ -168,5 +169,6 @@ section {
   font-size: 28pt;
   font-family:'Times New Roman', Times, serif;
 }
+	
 ```
 </details>
