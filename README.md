@@ -102,10 +102,9 @@ Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt.
 	
 <details>
 	<summary>Programmierter css Code</summary>
-	
-<code>
+
 ```
-	#style (
+#style (
     width: 960px;
     margin-right:auto;
     margin-left:auto;
@@ -122,8 +121,8 @@ section (
     float:left;
     background: white;
 )
+	
 ```
-</code>
 
 </details>
 
