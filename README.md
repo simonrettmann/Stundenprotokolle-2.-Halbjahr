@@ -83,7 +83,6 @@ Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt.
 <code>
 
 <!DOCTYPE html>
-<html>
     <head>
         <link rel="stylesheet" href="stylesheet.css">
     </head>
@@ -95,9 +94,9 @@ Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt.
            <input type="text" name="spind" value="">
        </p>
     </body>
-</html>
 	
 </code>
+	
 </details>
 	
 <details>
