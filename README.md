@@ -79,8 +79,9 @@ Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt.
 
 <details>
 	<summary>Programmierter html Code</summary>
+	
 <code>
-```
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -97,8 +98,6 @@ Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt.
 </html>
 	
 </code>
-	
-	
 </details>
 	
 <details>
