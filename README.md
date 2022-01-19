@@ -26,6 +26,7 @@ David Borgmann, Simon Rettmann
 	 <td> <a href="#Stundevom11.1.2022"> Stunde vom 11.1.2022 </a></td>
 	<td> <a href="#Stundevom12.1.2022"> Stunde vom 12.1.2022 </a></td>
 	<td> <a href="#Stundevom18.1.2022"> Stunde vom 18.1.2022 </a></td>
+	<td> <a href="#Stundevom19.1.2022"> Stunde vom 19.1.2022 </a></td>
 </tr>
 	
  </table>
@@ -132,3 +133,40 @@ section (
 	
 </details>
 
+## <p> <h2> <a id="Stundevom19.1.2022"> Stunde vom 19.1.2022 </a> </h2>
+
+In der letzten Stunde war es noch nocht gelungen, dass die .css und die .html - Datei zusammen auf der lokalten Website angezeigt wurden. Dieses Problem wurde in dieser Stunde gelöst. Das Problem war ein Bezugsfehler, der durch die Definition einer class gelöst werden konnte. 
+
+<details>
+	<summary>Screenshot der eingefärbten Website</summary>
+<img width="1792" alt="Bild der eingefärbten Website" src="https://user-images.githubusercontent.com/88385654/150134609-f6fd78bd-28a5-4a5c-b55e-4c859d281642.png">
+</details>
+
+<details>
+	<summary>veränderder css Code</summary>
+```
+	#style {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.überschrift {
+    height: 150px;
+    background: blue;
+}
+
+section {
+    width:650px;
+    height:550px;
+    float:left;
+    background: blue;
+}
+
+.text {
+  color: green;
+  font-size: 28pt;
+  font-family:'Times New Roman', Times, serif;
+}
+```
+</details>
