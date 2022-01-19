@@ -143,7 +143,7 @@ In der letzten Stunde war es noch nocht gelungen, dass die .css und die .html - 
 </details>
 
 <details>
-	<summary>veränderder css Code</summary>
+	<summary>veränderter css Code</summary>
 	
 ```
 #style {
