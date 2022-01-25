@@ -28,6 +28,9 @@ David Borgmann, Simon Rettmann
 	<td> <a href="#Stundevom18.1.2022"> Stunde vom 18.1.2022 </a></td>
 	<td> <a href="#Stundevom19.1.2022"> Stunde vom 19.1.2022 </a></td>
 </tr>
+<tr>
+	<td> <a href="#Stundevom25.1.2022"> Stunde vom 25.1.2022 </a></td>
+	<td> <a href="#Stundevom26.1.2022"> Stunde vom 26.1.2022 </a></td>
 	
  </table>
 <br>
@@ -172,3 +175,11 @@ section {
 	
 ```
 </details>
+
+## <p> <h2> <a id="Stundevom25.1.2022"> Stunde vom 25.1.2022 </a> </h2>
+Auch wenn diese Informatikstunde leider ausfallen musste, wurde das Projekt von zu Hause weitergeführt. 
+
+## <p> <h2> <a id="Stundevom26.1.2022"> Stunde vom 26.1.2022 </a> </h2>
+Diese Informatikstunde musste leider ausfallen. 
+
+
