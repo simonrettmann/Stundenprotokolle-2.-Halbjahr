@@ -17,13 +17,13 @@ David Borgmann, Simon Rettmann
 <table align="center">
      
 <tr>
-    <td> <a href="#Stundevom14.12.2021"> Stunde vom 14.12.2021 </a></td>
-    <td> <a href="#Stundevom15.12.2021"> Stunde vom 15.12.2021 </a></td>
-    <td> <a href="#Stundevom21.12.2021"> Stunde vom 21.12.2021 </a></td>
-    <td> <a href="#Stundevom22.12.2021"> Stunde vom 22.12.2021 </a></td>
+	<td> <a href="#Stundevom14.12.2021"> Stunde vom 14.12.2021 </a></td>
+	<td> <a href="#Stundevom15.12.2021"> Stunde vom 15.12.2021 </a></td>
+	<td> <a href="#Stundevom21.12.2021"> Stunde vom 21.12.2021 </a></td>
+	<td> <a href="#Stundevom22.12.2021"> Stunde vom 22.12.2021 </a></td>
 </tr>
 <tr> 
-	 <td> <a href="#Stundevom11.1.2022"> Stunde vom 11.1.2022 </a></td>
+	<td> <a href="#Stundevom11.1.2022"> Stunde vom 11.1.2022 </a></td>
 	<td> <a href="#Stundevom12.1.2022"> Stunde vom 12.1.2022 </a></td>
 	<td> <a href="#Stundevom18.1.2022"> Stunde vom 18.1.2022 </a></td>
 	<td> <a href="#Stundevom19.1.2022"> Stunde vom 19.1.2022 </a></td>
@@ -31,7 +31,10 @@ David Borgmann, Simon Rettmann
 <tr>
 	<td> <a href="#Stundevom25.1.2022"> Stunde vom 25.1.2022 </a></td>
 	<td> <a href="#Stundevom26.1.2022"> Stunde vom 26.1.2022 </a></td>
-	
+	<td> <a href="#Stundevom1.2.2022"> Stunde vom 1.2.2022 </a></td>
+	<td> <a href="#Stundevom2.2.2022"> Stunde vom 2.2.2022 </a></td>
+</tr>
+<tr>
  </table>
 <br>
 
@@ -182,4 +185,86 @@ Auch wenn diese Informatikstunde leider ausfallen musste, wurde das Projekt von 
 ## <p> <h2> <a id="Stundevom26.1.2022"> Stunde vom 26.1.2022 </a> </h2>
 Diese Informatikstunde musste leider ausfallen. 
 
+## <p> <h2> <a id="Stundevom1.2.2022"> Stunde vom 1.2.2022 </a> </h2>
+In dieser Informatikstunde wurde ein erster Prototyp der Website fertiggestellt. Auch wenn diese Seite noch keinen Designpreis verdient hat, ist diese funktional genug, um das Projekt zu unterstützen. Neben kleinen Designveränderungen, wurde in dieser Stunde vor allem das Input-Eingabefeld überarbeitet. In den Code des Feldes wurde bereits ein PHP-Tag eingearbeitet. Außerdem wurde sich informiert welche Möglichkeiten bestehen die Website zu hosten und mit welcher Datenbank diese verknüpft werden kann. Für die Datenbank wurde von Herrn Buhl mysql empfohlen, da diese gratis und sehr funktional ist. Für die Serverunterstützung wurde uns netterweise die Kontaktadresse von Herrn Adiwidjaja gegeben. Ziel für die nächste Stunde ist es diesen Kontakt herzustellen und nach Serverplatz zu fragen. 
+
+<details>
+	<summary>Screenshot der Website</summary>
+<img width="965" alt="Bildschirmfoto 2022-02-01 um 15 58 09" src="https://user-images.githubusercontent.com/88385654/151992627-b0beaf66-96c9-4764-998a-f213155f6ed2.png">
+</details>
+
+<details>
+	<summary>veränderter Code</summary>
+```
+	
+.überschrift {
+    font-size: 48pt;
+    color:black;
+    text-align: center;
+}
+
+.überschrift2 {
+font-size: 30pt;
+color: black;
+}
+
+.square {
+width: 300pt;
+height: 300pt;
+background: white;
+border: 10pt solid;
+border-color: black;
+}
+
+.text {
+  color: black;
+  font-size: 28pt;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.eingabefeld {
+width: 100px;
+border:  2px solid black;
+text-align: center;
+background-color: rgb(185, 185, 185);
+}
+```
+	
+</details>
+
+<details>
+	<summary>html-Code</summary>
+
+<code>
+	<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Arduinogesteuerter Gaskocher</title>
+    </head>
+
+    <body>
+       <h1 class="überschrift">Arduinogesteuerter Gaskocher</h1>
+       <h2 class="überschrift2"> Steuerzentrale</h2>
+
+       
+        <div id="square"></div>
+
+        <p class="text"> 
+                Geben Sie hier die gewünschte Temperatur in °C ein:
+        </p>
+
+        <form action="formular.php" method="post">
+            <input class="eingabefeld" type="number" name="temperatureingabe" value="90" step="1" max="300" min="30">
+            <input type="submit">
+        </form>
+
+    </body>
+</html>
+
+</code>
+
+</details>
+## <p> <h2> <a id="Stundevom2.2.2022"> Stunde vom 2.2.2022 </a> </h2>
 
