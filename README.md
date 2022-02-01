@@ -195,8 +195,8 @@ In dieser Informatikstunde wurde ein erster Prototyp der Website fertiggestellt.
 
 <details>
 	<summary>veränderter Code</summary>
-```
 	
+```	
 .überschrift {
     font-size: 48pt;
     color:black;
@@ -266,5 +266,7 @@ background-color: rgb(185, 185, 185);
 </code>
 
 </details>
+
+
 ## <p> <h2> <a id="Stundevom2.2.2022"> Stunde vom 2.2.2022 </a> </h2>
 
