@@ -270,3 +270,13 @@ background-color: rgb(185, 185, 185);
 
 ## <p> <h2> <a id="Stundevom2.2.2022"> Stunde vom 2.2.2022 </a> </h2>
 
+Wie letzte Stunde besprochen, wurde zu Beginn dieser Stunde die E-Mail an Herrn Adiwidjaja gesendet. 
+
+<details>
+	<summary>Screenshot der Mail</summary>
+	
+<img width="1307" alt="Bild der Mail" src="https://user-images.githubusercontent.com/88385654/152154365-e88ca217-e959-4090-8d68-7b40a5f5f016.png">
+
+</details>
+
+
