@@ -33,7 +33,10 @@ David Borgmann, Simon Rettmann
 	<td> <a href="#Stundevom26.1.2022"> Stunde vom 26.1.2022 </a></td>
 	<td> <a href="#Stundevom1.2.2022"> Stunde vom 1.2.2022 </a></td>
 	<td> <a href="#Stundevom2.2.2022"> Stunde vom 2.2.2022 </a></td>
-</tr>
+	</tr>
+<tr>
+	<td> <a href="#Stundevom8.2.2022"> Stunde vom 8.2.2022</a></td>
+	<td> <a href="#Stundevom9.2.2022"> Stunde vom 9.2.2022</a></td>
 <tr>
  </table>
 <br>
@@ -278,5 +281,13 @@ Wie letzte Stunde besprochen, wurde zu Beginn dieser Stunde die E-Mail an Herrn 
 <img width="1307" alt="Bild der Mail" src="https://user-images.githubusercontent.com/88385654/152154365-e88ca217-e959-4090-8d68-7b40a5f5f016.png">
 
 </details>
+
+## <p> <h2> <a id="Stundevom8.2.2022"> Stunde vom 8.2.2022 </a> </h2>
+
+Netterweise antwortete Herr Adiwidjaja während der restlichen Woche. Dies nahm die Gruppe zum Anlass sich von nun an auch über die Umsetzung des Hostings Gedanken zu machen. Serverkommunikation und die Bereitstellung einer Website über einen Server war nämlich bisher noch Neuland. 
+Neben diesem technischen Problem, wurde sich auch mit dem weiteren Verlauf des Projekts beschäftigt. Herr Buhl sprach erneut ein Thema an, über das die Gruppe sich zu Beginn schon einmal Gedanken gemacht hat. Eine wirkliche Aufwertung für die Website wäre es, wenn es dort neben der einstellbaren Temperatur auch einen 24/7 verfügbaren Livestream geben würde. Einen Livestream zu impletieren wurde als neues Ziel ins Auge genommen und die Gruppe nahm sich fest vor diesen im Endprojekt gerecht zu werden. 
+
+## <p> <h2> <a id="Stundevom9.2.2022"> Stunde vom 9.2.2022 </a> </h2>
+
 
 
