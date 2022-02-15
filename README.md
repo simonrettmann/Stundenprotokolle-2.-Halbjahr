@@ -298,6 +298,8 @@ Neben diesem technischen Problem, wurde sich auch mit dem weiteren Verlauf des P
 
 ## <p> <h2> <a id="Stundevom9.2.2022"> Stunde vom 9.2.2022 </a> </h2>
 
+Die heutige Stunde wurde unter anderm dazu verwendet, intensive Recherche über das Übermitteln von Daten via I2C anzustellen. Gegen Ende der Stunde stieß das Team auf eine vielversprechende Website, welche eine Einführung in die Verwendung von Arrays(Liste von Variablen einer Art) gibt. Weiterführnd kam die Idee auf, die benötigten Integer-Variablen in Bytes zu zerlegen      
+
 ## <p> <h2> <a id="Stundevom15.2.2022"> Stunde vom 15.2.2022 </a> </h2>
 
 ## <p> <h2> <a id="Stundevom16.2.2022"> Stunde vom 16.2.2022 </a> </h2>
