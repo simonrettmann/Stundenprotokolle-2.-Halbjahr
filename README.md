@@ -308,16 +308,27 @@ In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen
 ## <p> <h2> <a id="Stundevom16.2.2022"> Stunde vom 16.2.2022 </a> </h2>
 Auch die Website wurde in den letzten Stunden und von zu Hause weitergebracht. Nachdem der Serverplatz netterweise zur Verfügung gestellt wurde, musste noch ein Programm gefunden werden, sodass auf den Server zugegriffen werden kann. Dafür wurde sich das Programm Cyberduck installiert. <a href="https://cyberduck.io/"> Link zu Cyberduck</a>
 So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <href="https://gaskocher.stormarnschueler.de/"> die Website zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter eingerichtet, der später als aktiver Wertemonitor funktionieren soll.
-Außerdem wurden zwei wichtige Erfolge erreicht, sodass der in der Website eingestellte Wert mit php gesendet und empfangen werden kann. Außerdem wird dieser Wert an die mysql-Datenbank gesendet
+Außerdem wurden zwei wichtige Erfolge erreicht, sodass der in der Website eingestellte Wert mit php gesendet und empfangen werden kann. Außerdem wird dieser Wert an die mysql-Datenbank gesendet und dort in einer Tabelle gespeichert. Dieser recht komplexe php Code wurde oft getestet, damit er nun endgültig funktionstüchtig ist. 
 
 <details>
 	<summary>Screenshot der Website</summary>
-	
+<img width="1081" alt="Screenshot der Website" src="https://user-images.githubusercontent.com/88385654/154269279-363e69ce-eda0-4918-9370-42dc36820f4c.png">
 </details>
 
 <details>
 	<summary>Arbeitsoberfläche von Cyberduck</summary>
 <img width="599" alt="Arbeitsoberfläche von Cyberduck" src="https://user-images.githubusercontent.com/88385654/154267779-0f57b7a8-833f-461e-b317-f6cd337a3db6.png">
 <img width="600" alt="Serveroberfläche" src="https://user-images.githubusercontent.com/88385654/154267763-cc141a75-5ed9-4c62-a60f-069cb80a9375.png">
-	
 </details>
+
+<details>
+	<summary>php Code 1</summary>
+		
+</details>
+
+<details>
+	<summary>php Code 2</summary>
+</details>
+	
+<details>
+	<summary>php code 3</summary>
