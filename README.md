@@ -298,10 +298,26 @@ Neben diesem technischen Problem, wurde sich auch mit dem weiteren Verlauf des P
 
 ## <p> <h2> <a id="Stundevom9.2.2022"> Stunde vom 9.2.2022 </a> </h2>
 
-Die heutige Stunde wurde unter anderm dazu verwendet, intensive Recherche über das Übermitteln von Daten via I2C anzustellen, da die Gruppe keine geeignete Libary für die Anforderungen an die I2C-Kommunikation finden konnte. Gegen Ende der Stunde stieß das Team auf eine vielversprechende Website, welche eine Einführung in die Verwendung von Arrays(Liste von Variablen einer Art) gibt: https://starthardware.org/lektion-15-array/ Weiterführnd kam die Idee auf, die benötigten Integer-Variablen in Bytes zu zerlegen und diese dann als Array zu übermitteln. Integer-Variablen bestehen aus 2 Bytes. Diese Information kann in eine High-Byte und einen Low-Byte zerlegt werden. Die Idee war es nun, alle benötigten Variablen in die einzelnen High- und Low-Bytes zu zerlegen, die Bytes einzelnt zu übermitteln und anschließend die Bytes wieder zu der Integer zusammenzusetzen. Das erzeugen der High und Lowbytes gestalltet sich relativ Simpel: "highByte(x)" erzeugt den Highbyte und "lowByte(x)" den Lowbyte der eingesetzten Integervariable. 
+Die heutige Stunde wurde unter anderm dazu verwendet, intensive Recherche über das Übermitteln von Daten via I2C anzustellen, da die Gruppe keine geeignete Libary für die Anforderungen an die I2C-Kommunikation finden konnte. Gegen Ende der Stunde stieß das Team auf eine vielversprechende Website, welche eine Einführung in die Verwendung von Arrays (Liste von Variablen einer Art) gibt: 
+<a href="https://starthardware.org/lektion-15-array/"> Website über die Verwendung von Arrays </a> <br>
+Weiterführnd kam die Idee auf, die benötigten Integer-Variablen in Bytes zu zerlegen und diese dann als Array zu übermitteln. Integer-Variablen bestehen aus 2 Bytes. Diese Information kann in eine High-Byte und einen Low-Byte zerlegt werden. Die Idee war es nun, alle benötigten Variablen in die einzelnen High- und Low-Bytes zu zerlegen, die Bytes einzeln zu übermitteln und anschließend die Bytes wieder zu der Integer zusammenzusetzen. Das erzeugen der High und Lowbytes gestalltet sich relativ simpel: "highByte(x)" erzeugt den Highbyte und "lowByte(x)" den Lowbyte der eingesetzten Integervariable. 
 
 ## <p> <h2> <a id="Stundevom15.2.2022"> Stunde vom 15.2.2022 </a> </h2>
-In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen. Das in der vorheringen Stunde erlangte Wissen wurde erfolgreich angewendet, sodass ein "Prove of Concept" in der Form eines Programms gelang. Zwei Arduino-UNOs werden mittels drei Jumperkabel mit einander Verbunden. Es wird Ground mit Ground, A4 mit A4 und A5 mit A5 verbunden. A4 und A5 sind die Kommunikationspins. Der eine Arduino dient als Master: Dieser steuert die Kommunikation. Er kann sowohl Daten selbstständig schreiben, als auch Daten vom Slave anfragen. Der andere Arduino arbeitet als Slave: Dieser kann zwar ein eigenen Code ausführen, jedoch nicht selbstständig Daten senden. Es kann nur auf Wertabfragen reagiert- oder vom Master gesendete Daten verarbeitet werden.  
-
+In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen. Das in der vorherigen Stunde erlangte Wissen wurde erfolgreich angewendet, sodass ein "Prove of Concept" in der Form eines Programms gelang.
 
 ## <p> <h2> <a id="Stundevom16.2.2022"> Stunde vom 16.2.2022 </a> </h2>
+Auch die Website wurde in den letzten Stunden und von zu Hause weitergebracht. Nachdem der Serverplatz netterweise zur Verfügung gestellt wurde, musste noch ein Programm gefunden werden, sodass auf den Server zugegriffen werden kann. Dafür wurde sich das Programm Cyberduck installiert. <a href="https://cyberduck.io/"> Link zu Cyberduck</a>
+So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <href="https://gaskocher.stormarnschueler.de/"> die Website zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter eingerichtet, der später als aktiver Wertemonitor funktionieren soll.
+Außerdem wurden zwei wichtige Erfolge erreicht, sodass der in der Website eingestellte Wert mit php gesendet und empfangen werden kann. Außerdem wird dieser Wert an die mysql-Datenbank gesendet
+
+<details>
+	<summary>Screenshot der Website</summary>
+	
+</details>
+
+<details>
+	<summary>Arbeitsoberfläche von Cyberduck</summary>
+<img width="599" alt="Arbeitsoberfläche von Cyberduck" src="https://user-images.githubusercontent.com/88385654/154267779-0f57b7a8-833f-461e-b317-f6cd337a3db6.png">
+<img width="600" alt="Serveroberfläche" src="https://user-images.githubusercontent.com/88385654/154267763-cc141a75-5ed9-4c62-a60f-069cb80a9375.png">
+	
+</details>
