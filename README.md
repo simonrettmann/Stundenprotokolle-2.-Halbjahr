@@ -312,9 +312,9 @@ In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen
 
 ## <p> <h2> <a id="Stundevom16.2.2022"> Stunde vom 16.2.2022 </a> </h2>
 Auch die Website wurde in den letzten Stunden und von zu Hause weitergebracht. Nachdem der Serverplatz netterweise zur Verfügung gestellt wurde, musste noch ein Programm gefunden werden, sodass auf den Server zugegriffen werden kann. Dafür wurde sich das Programm Cyberduck installiert. <a href="https://cyberduck.io/"> Link zu Cyberduck</a>
-So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <href="https://gaskocher.stormarnschueler.de/"> die Website zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter mit fiktiven Werten eingerichtet, der später als aktiver Wertemonitor funktionieren soll.
+So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <href="https://gaskocher.stormarnschueler.de/"> die Website zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter mit fiktiven Werten wurde eingerichtet, die später als aktiver Wertemonitor funktionieren soll.
 Außerdem wurden zwei wichtige Erfolge erreicht, sodass der in der Website eingestellte Wert mit php gesendet und empfangen werden kann. Außerdem wird dieser Wert an die mysql-Datenbank gesendet und dort in einer Tabelle gespeichert. Dieser recht komplexe php Code wurde oft getestet, damit er nun endgültig funktionstüchtig ist. 
-Konkret wurde ein php-Dokument mit dem Namen .config angelegt, dass die Zugangsdaten zu der mysql Datenbank speichert. Außerdem wurde ein zweites php Dokument angelegt, dass die Kommunikation zwischen der Website und der Datenbank regelt. Dafür wird der Wert der Temperatureingabe über Code empfangen und dann mit der insert to funktion in die Datenbank eingepflegt
+Konkret wurde ein php-Dokument mit dem Namen .config angelegt, dass die Zugangsdaten zu der mysql Datenbank speichert. Außerdem wurde ein zweites php Dokument angelegt, dass die Kommunikation zwischen der Website und der Datenbank regelt. Dafür wird der Wert der Temperatureingabe über Code empfangen und dann mit der insert to funktion in die Datenbank eingepflegt. Daher wurde nun folgender Zwischenstand erreicht.
 
 <details>
 	<summary>Screenshot der Website</summary>
@@ -482,6 +482,27 @@ table, th, td, caption {
 </details>
 
 ## <p> <h2> <a id="Stundevom22.2.2022"> Stunde vom 22.2.2022 </a> </h2>
+
+Die Stunde wurde dazu genutzt den letzten GitHub-Eintrag fertigzustellen. Außerdem wurde der bisherige Verlauf des Projekts reflektiert und sich Ziele für die Zukunft gesetzt. So soll sichergestellt werden, dass trotz der momentan hohen Arbeitsbelastung und der nahenden Abiturprüfungen genug Zeit zur Verfügung steht das Projekt zu beenden. 
+
+<details>
+	<summary>bisheriger Stand des Projekts</summary>
+<li> eine Website wurde erstellt, die unter <href="https://gaskocher.stormarnschueler.de/" von überall auf der Welt zu erreich ist. </li>
+<li> diese Website beinhaltet ein Eingabefeld, in dem man eine Temperatur einstellen kann </li>
+<li> diese Temperatur kann an eine Datenbank gesendet werden und in einer dort angelegten Tabelle als integer Variable gespeichert werde </li>
+<li> außerdem existiert dort ein Wertemonitor als Platzhalter
+<li> die hardwaretechnischen Voraussetzungen sind seit der letzten Projektphase unverändert, sodass ein regulierbarer Gaskocher existiert</li>
+<li> die Kommunikation zwischen Arduino und dem Esp funktioniert </li>
 	
+</details>
+
+<details>
+	<summary>noch zu erledigende Arbeitsschritte</summary>
+<li> eine Kommunikation zwischen Esp und Datenbank muss hergestellt werden </li>
+<li> die Tabelle muss als Wertemonitor, die vom Esp an die Datenbank übermittelten Daten live abrufen können </li>
+<li> die Hardware muss durch Verlötung und Platzierung in einem Kasten ansehnlich und sicher verstaut sein </li>
+<li> ein Steuerknopf für den rotary encoder muss gebaut werden, damit auch die manuelle Bedienung angenhem ist </li>
+<li> außerdem muss auf Hardware- und Softwareebene eine automatische Zündung etabliert werden </li> 
+
 
 ## <p> <h2> <a id="Stundevom23.2.2022"> Stunde vom 23.2.2022 </a> </h2>
