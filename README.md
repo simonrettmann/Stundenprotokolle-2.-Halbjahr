@@ -487,7 +487,7 @@ Die Stunde wurde dazu genutzt den letzten GitHub-Eintrag fertigzustellen. Außer
 
 <details>
 	<summary>bisheriger Stand des Projekts</summary>
-<li> eine Website wurde erstellt, die unter <href="https://gaskocher.stormarnschueler.de/"> von überall auf der Welt zu erreich ist. </li>
+<li> eine Website wurde erstellt, die unter <a href="https://gaskocher.stormarnschueler.de/"> https://gaskocher.stormarnschueler.de/ </a> von überall auf der Welt zu erreich ist. </li>
 <li> diese Website beinhaltet ein Eingabefeld, in dem man eine Temperatur einstellen kann </li>
 <li> diese Temperatur kann an eine Datenbank gesendet werden und in einer dort angelegten Tabelle als integer Variable gespeichert werde </li>
 <li> außerdem existiert dort ein Wertemonitor als Platzhalter
