@@ -280,7 +280,7 @@ background-color: rgb(185, 185, 185);
 
 ## <p> <h2> <a id="Stundevom2.2.2022"> Stunde vom 2.2.2022 </a> </h2>
 
-Wie letzte Stunde besprochen, wurde zu Beginn dieser Stunde die E-Mail an Herrn Adiwidjaja gesendet. 
+Wie letzte Stunde besprochen, wurde zu Beginn dieser Stunde die E-Mail an Herrn Adiwidjaja gesendet. Außerdem wurde weiter mit html und css herumgespielt, um diese Programme spielerisch kennen zu lernen. 
 
 <details>
 	<summary>Screenshot der Mail</summary>
