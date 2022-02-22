@@ -487,7 +487,7 @@ Die Stunde wurde dazu genutzt den letzten GitHub-Eintrag fertigzustellen. Außer
 
 <details>
 	<summary>bisheriger Stand des Projekts</summary>
-<li> eine Website wurde erstellt, die unter <href="https://gaskocher.stormarnschueler.de/" von überall auf der Welt zu erreich ist. </li>
+<li> eine Website wurde erstellt, die unter <href="https://gaskocher.stormarnschueler.de/"> von überall auf der Welt zu erreich ist. </li>
 <li> diese Website beinhaltet ein Eingabefeld, in dem man eine Temperatur einstellen kann </li>
 <li> diese Temperatur kann an eine Datenbank gesendet werden und in einer dort angelegten Tabelle als integer Variable gespeichert werde </li>
 <li> außerdem existiert dort ein Wertemonitor als Platzhalter
@@ -504,5 +504,6 @@ Die Stunde wurde dazu genutzt den letzten GitHub-Eintrag fertigzustellen. Außer
 <li> ein Steuerknopf für den rotary encoder muss gebaut werden, damit auch die manuelle Bedienung angenhem ist </li>
 <li> außerdem muss auf Hardware- und Softwareebene eine automatische Zündung etabliert werden </li> 
 
+</details>
 
 ## <p> <h2> <a id="Stundevom23.2.2022"> Stunde vom 23.2.2022 </a> </h2>
