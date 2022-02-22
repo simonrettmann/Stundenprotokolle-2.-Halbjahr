@@ -314,6 +314,7 @@ In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen
 Auch die Website wurde in den letzten Stunden und von zu Hause weitergebracht. Nachdem der Serverplatz netterweise zur Verfügung gestellt wurde, musste noch ein Programm gefunden werden, sodass auf den Server zugegriffen werden kann. Dafür wurde sich das Programm Cyberduck installiert. <a href="https://cyberduck.io/"> Link zu Cyberduck</a>
 So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <href="https://gaskocher.stormarnschueler.de/"> die Website zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter mit fiktiven Werten eingerichtet, der später als aktiver Wertemonitor funktionieren soll.
 Außerdem wurden zwei wichtige Erfolge erreicht, sodass der in der Website eingestellte Wert mit php gesendet und empfangen werden kann. Außerdem wird dieser Wert an die mysql-Datenbank gesendet und dort in einer Tabelle gespeichert. Dieser recht komplexe php Code wurde oft getestet, damit er nun endgültig funktionstüchtig ist. 
+Konkret wurde ein php-Dokument mit dem Namen .config angelegt, dass die Zugangsdaten zu der mysql Datenbank speichert. Außerdem wurde ein zweites php Dokument angelegt, dass die Kommunikation zwischen der Website und der Datenbank regelt. Dafür wird der Wert der Temperatureingabe über Code empfangen und dann mit der insert to funktion in die Datenbank eingepflegt
 
 <details>
 	<summary>Screenshot der Website</summary>
@@ -348,10 +349,136 @@ header("location:index.html")
 
 <details>
 	<summary>php Code 2</summary>
+```
+<?php
+
+$pdo = new PDO('mysql:host=localhost;dbname=sschuelersql4', 'sschuelersql4', 'lycquzesjb');
+
+?>
+```
+	
 </details>
 	
+
 <details>
-	<summary>php code 3</summary>
+	<summary>Codes des Styleshet</summary>
+```
+.überschrift {
+    font-size: 48pt;
+    color:black;
+    text-align: center;
+}
+
+.überschrift2 {
+font-size: 30pt;
+color: black;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.square {
+width: 300pt;
+height: 300pt;
+background: white;
+border: 10pt solid;
+border-color: black;
+}
+
+#bild1 {
+width: 150px;
+height: 200px;
+float: right;
+border: 2px solid black;
+margin-left: 10px;
+margin-top: -100px;
+margin-right: 10px;
+}
+
+#bild2 {
+width: 150px;
+height: 200px;
+float: right;
+border: 2px solid black;
+margin-top: -100px;
+}
+
+.text {
+  color: black;
+  font-size: 23px;
+  font-family:'Times New Roman', Times, serif;
+  margin-left: 2px;
+}
+
+.eingabefeld {
+width: 100px;
+border:  2px solid black;
+text-align: center;
+background-color: rgb(185, 185, 185);
+margin-left: 10px;
+}
+
+table, th, td, caption {
+  border: thin solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+```
+</details>
+
+<details>
+	<summary>Html-Code</summary>
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Arduinogesteuerter Gaskocher</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+       <h1 class="überschrift">Arduinogesteuerter Gaskocher</h1>
+       <h2 class="überschrift2"> Steuerzentrale</h2>
+
+       
+        <div id="square"></div>
+
+        <img id="bild1" src="/IMG_1042.jpg">
+        <img id="bild2" src="/IMG_1966.jpg">
+
+        <p class="text"> 
+                Geben Sie hier die gewünschte Temperatur in °C ein:
+        </p>
+
+
+        <form action="formular.php" method="post">
+            <input class="eingabefeld" type="number" name="temperatureingabe" value="90" step="1" max="300" min="30">
+            <input type="submit">
+        </form>
+
+        <table>
+            <caption>Wertemonitor</caption>
+            <tr>
+                <th>eingestellte Temperatur</th>
+                <th>momentane Temperatur</th>
+                <th>Differenz</th>
+                <th>prozentule Öffnung des Gaskochers</th>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>20</td>
+                <td>10</td>
+                <td>50</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+```
+</details>
 
 ## <p> <h2> <a id="Stundevom22.2.2022"> Stunde vom 22.2.2022 </a> </h2>
 	
