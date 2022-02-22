@@ -356,7 +356,6 @@ $pdo = new PDO('mysql:host=localhost;dbname=sschuelersql4', 'sschuelersql4', 'ly
 
 ?>
 ```
-	
 </details>
 	
 
@@ -424,8 +423,8 @@ table, th, td, caption {
   margin-right: 10px;
   margin-top: 50px;
 }
-
 </code>	
+	
 </details>
 
 <details>
