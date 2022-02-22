@@ -349,17 +349,16 @@ header("location:index.html")
 
 <details>
 	<summary>php Code 2</summary>
+	
 ```
-<?php
+	<?php
 
 $pdo = new PDO('mysql:host=localhost;dbname=sschuelersql4', 'sschuelersql4', 'lycquzesjb');
 
-?>
-	
+?>	
 ```
 	
 </details>
-	
 
 <details>
 	<summary>Codes des Styleshet</summary>
