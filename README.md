@@ -362,7 +362,8 @@ $pdo = new PDO('mysql:host=localhost;dbname=sschuelersql4', 'sschuelersql4', 'ly
 
 <details>
 	<summary>Codes des Styleshet</summary>
-```
+
+<code>
 .überschrift {
     font-size: 48pt;
     color:black;
@@ -424,7 +425,7 @@ table, th, td, caption {
   margin-top: 50px;
 }
 
-```
+</code>	
 </details>
 
 <details>
