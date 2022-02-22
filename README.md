@@ -312,7 +312,7 @@ In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen
 
 ## <p> <h2> <a id="Stundevom16.2.2022"> Stunde vom 16.2.2022 </a> </h2>
 Auch die Website wurde in den letzten Stunden und von zu Hause weitergebracht. Nachdem der Serverplatz netterweise zur Verfügung gestellt wurde, musste noch ein Programm gefunden werden, sodass auf den Server zugegriffen werden kann. Dafür wurde sich das Programm Cyberduck installiert. <a href="https://cyberduck.io/"> Link zu Cyberduck</a>
-So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <href="https://gaskocher.stormarnschueler.de/"> die Website zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter eingerichtet, der später als aktiver Wertemonitor funktionieren soll.
+So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <href="https://gaskocher.stormarnschueler.de/"> die Website zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter mit fiktiven Werten eingerichtet, der später als aktiver Wertemonitor funktionieren soll.
 Außerdem wurden zwei wichtige Erfolge erreicht, sodass der in der Website eingestellte Wert mit php gesendet und empfangen werden kann. Außerdem wird dieser Wert an die mysql-Datenbank gesendet und dort in einer Tabelle gespeichert. Dieser recht komplexe php Code wurde oft getestet, damit er nun endgültig funktionstüchtig ist. 
 
 <details>
@@ -328,6 +328,21 @@ Außerdem wurden zwei wichtige Erfolge erreicht, sodass der in der Website einge
 
 <details>
 	<summary>php Code 1</summary>
+	
+```
+	<?php
+ $eintemperatur = $_POST["temperatureingabe"];
+echo $eintemperatur;
+
+require("config.php");
+
+$statement = $pdo ->prepare("INSERT INTO gaskocher(eintemperatur) values (?)");
+$statement->execute(array($eintemperatur));
+
+header("location:index.html")
+
+?>
+```
 		
 </details>
 
