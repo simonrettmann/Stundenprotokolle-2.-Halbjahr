@@ -507,3 +507,52 @@ Die Stunde wurde dazu genutzt den letzten GitHub-Eintrag fertigzustellen. Außer
 </details>
 
 ## <p> <h2> <a id="Stundevom23.2.2022"> Stunde vom 23.2.2022 </a> </h2>
+
+Nachdem in der letzten Stunde reflektiert wurde und die noch zu erledigenden Schritte definiert wurden, wurde klar, dass jetzt mit Hochdruck an der Kommunikation zwischen dem Esp und der Datenbank gearbeitet werden muss. Dafür wurden mehrere Videos geschaut und viel herumprobiert. Vor allem ein <a href="https://www.youtube.com/watch?v=J9ziYzmiW9I&t"> Video </a> von Uthe Str schien sehr interessant. Das in dem Video gezeigte Beispiel sollte in der nächsten Stunde nachgebaut werden. 
+
+## <p> <h2> <a id="Stundevom23.2.2022"> Stunde vom 23.2.2022 </a> </h2>
+
+Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht den Code zu verstehen. Dafür wurde ein php-Dokument erstellt, um auf die Datenbank zuzugreifen und ein php-Dokument erstellt, um Werte aus der Datenbank zu ziehen. 
+
+<detail>
+	<summary>php Code - Zugriff auf die Datenbank</summary>
+'''
+
+<?php
+	class Database {
+		private static $dbName = 'sschuelersql4' ;
+		private static $dbHost = 'localhost' ;
+		private static $dbUsername = 'sschuelersql4';
+		private static $dbUserPassword = 'lycquzesjb';
+		 
+		private static $cont  = null;
+		 
+		public function __construct() {
+			die('Init function is not allowed');
+		}
+		 
+		public static function connect() {
+		  // One connection through whole application
+		  if ( null == self::$cont ) {     
+        try {
+          self::$cont =  new PDO( "mysql:host=".self::$dbHost.";"."dbname=".self::$dbName, self::$dbUsername, self::$dbUserPassword); 
+        }
+        catch(PDOException $e) {
+          die($e->getMessage()); 
+        }
+		  }
+		  return self::$cont;
+		}
+		 
+		public static function disconnect() {
+			self::$cont = null;
+		}
+	}
+?>
+	
+'''
+	
+</details>
+
+
+## <p> <h2> <a id="Stundevom2.3.2022"> Stunde vom 2.3.2022 </a> </h2>
