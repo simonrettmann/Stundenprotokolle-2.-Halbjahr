@@ -516,10 +516,11 @@ Nachdem in der letzten Stunde reflektiert wurde und die noch zu erledigenden Sch
 
 Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht den Code zu verstehen. Dafür wurde ein php-Dokument erstellt, um auf die Datenbank zuzugreifen und ein php-Dokument erstellt, um Werte aus der Datenbank zu ziehen. 
 
-<detail>
+<details>
 	<summary>php Code - Zugriff auf die Datenbank</summary>
+	
 '''
-
+	
 <?php
 	class Database {
 		private static $dbName = 'sschuelersql4' ;
