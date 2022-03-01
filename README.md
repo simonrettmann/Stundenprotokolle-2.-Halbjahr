@@ -44,7 +44,7 @@ David Borgmann, Simon Rettmann
 	<td> <a href="#Stundevom22.2.2022"> Stunde vom 22.2.2022</a></td>
 	<td> <a href="#Stundevom23.2.2022"> Stunde vom 23.2.2022</a></td>
 	<td> <a href="#Stundevom1.3.2022"> Stunde vom 1.3.2022</a></td>
-	<td> <a href="#Stundevom23.2.2022"> Stunde vom 2.3.2022</a></td>
+	<td> <a href="#Stundevom2.3.2022"> Stunde vom 2.3.2022</a></td>
 </tr>
 
  </table>
@@ -512,7 +512,7 @@ Die Stunde wurde dazu genutzt den letzten GitHub-Eintrag fertigzustellen. Außer
 
 Nachdem in der letzten Stunde reflektiert wurde und die noch zu erledigenden Schritte definiert wurden, wurde klar, dass jetzt mit Hochdruck an der Kommunikation zwischen dem Esp und der Datenbank gearbeitet werden muss. Dafür wurden mehrere Videos geschaut und viel herumprobiert. Vor allem ein <a href="https://www.youtube.com/watch?v=J9ziYzmiW9I&t"> Video </a> von Uthe Str schien sehr interessant. Das in dem Video gezeigte Beispiel sollte in der nächsten Stunde nachgebaut werden. 
 
-## <p> <h2> <a id="Stundevom23.2.2022"> Stunde vom 23.2.2022 </a> </h2>
+## <p> <h2> <a id="Stundevom1.3.2022"> Stunde vom 1.3.2022 </a> </h2>
 
 Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht den Code zu verstehen. Dafür wurde ein php-Dokument erstellt, um auf die Datenbank zuzugreifen und ein php-Dokument erstellt, um Werte aus der Datenbank zu ziehen. 
 
@@ -520,7 +520,7 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 	<summary>php Code - Zugriff auf die Datenbank</summary>
 	
 '''
-	
+<code>	
 <?php
 	class Database {
 		private static $dbName = 'sschuelersql4' ;
@@ -554,7 +554,7 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 ?>
 	
 '''
-	
+</code>	
 </details>
 
 
