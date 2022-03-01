@@ -553,7 +553,7 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 	}
 ?>
 	
-<code>
+</code>
 	
 </details>
 
