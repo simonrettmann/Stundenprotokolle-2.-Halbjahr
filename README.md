@@ -519,8 +519,8 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 <details>
 	<summary>php Code - Zugriff auf die Datenbank</summary>
 	
-'''
-	
+<code>
+
 <?php
 	class Database {
 		private static $dbName = 'sschuelersql4' ;
@@ -553,8 +553,8 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 	}
 ?>
 	
-'''
-
+<code>
+	
 </details>
 
 
