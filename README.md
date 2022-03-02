@@ -46,7 +46,8 @@ David Borgmann, Simon Rettmann
 	<td> <a href="#Stundevom1.3.2022"> Stunde vom 1.3.2022</a></td>
 	<td> <a href="#Stundevom2.3.2022"> Stunde vom 2.3.2022</a></td>
 </tr>
-
+<tr>
+	<td> <a href="#Stundevom8.3.2022">
  </table>
 <br>
 
@@ -559,3 +560,5 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 
 
 ## <p> <h2> <a id="Stundevom2.3.2022"> Stunde vom 2.3.2022 </a> </h2>
+
+In dieser Stelle wurde an der Kommunikation zwischen Website und DAtenbank gearbeitet. Diesmal muss die Kommunikation über php allerdings in die andere Richtung von der Datenbank zur Website erfolgen, wo dann mit php und html eine Tabelle erzeugt wird, die als live Wertemonitor fungiert. 
