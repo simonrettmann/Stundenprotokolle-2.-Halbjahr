@@ -321,9 +321,6 @@ In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen
 
 <details>
 	<summary>Arduino Code</summary>
-```
-	
-```
 
 </details>
 
