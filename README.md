@@ -312,18 +312,27 @@ Neben diesem technischen Problem, wurde sich auch mit dem weiteren Verlauf des P
 
 ## <p> <h2> <a id="Stundevom9.2.2022"> Stunde vom 9.2.2022 </a> </h2>
 
-Die heutige Stunde wurde unter anderm dazu verwendet, intensive Recherche über das Übermitteln von Daten via I2C anzustellen, da die Gruppe keine geeignete Libary für die Anforderungen an die I2C-Kommunikation finden konnte. Gegen Ende der Stunde stieß das Team auf eine vielversprechende Website, welche eine Einführung in die Verwendung von Arrays (Liste von Variablen einer Art) gibt: 
+Die heutige Stunde wurde unter anderem dazu verwendet, intensive Recherche über das Übermitteln von Daten via I2C anzustellen, da die Gruppe keine geeignete Libary für die Anforderungen an die I2C-Kommunikation finden konnte. Gegen Ende der Stunde stieß das Team auf eine vielversprechende Website, die eine Einführung in die Verwendung von Arrays (Liste von Variablen einer Art) gibt: 
 <a href="https://starthardware.org/lektion-15-array/"> Website über die Verwendung von Arrays </a> <br>
 Weiterführnd kam die Idee auf, die benötigten Integer-Variablen in Bytes zu zerlegen und diese dann als Array zu übermitteln. Integer-Variablen bestehen aus 2 Bytes. Diese Information kann in eine High-Byte und einen Low-Byte zerlegt werden. Die Idee war es nun, alle benötigten Variablen in die einzelnen High- und Low-Bytes zu zerlegen, die Bytes einzeln zu übermitteln und anschließend die Bytes wieder zu der Integer zusammenzusetzen. Das erzeugen der High und Lowbytes gestalltet sich relativ simpel: "highByte(x)" erzeugt den Highbyte und "lowByte(x)" den Lowbyte der eingesetzten Integervariable. 
 
 ## <p> <h2> <a id="Stundevom15.2.2022"> Stunde vom 15.2.2022 </a> </h2>
 In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen. Das in der vorherigen Stunde erlangte Wissen wurde erfolgreich angewendet, sodass ein "Prove of Concept" in der Form eines Programms gelang.
 
+<details>
+	<summary>Arduino Code</summary>
+```
+	
+'''
+
+</details>
+
 ## <p> <h2> <a id="Stundevom16.2.2022"> Stunde vom 16.2.2022 </a> </h2>
-Auch die Website wurde in den letzten Stunden und von zu Hause weitergebracht. Nachdem der Serverplatz netterweise zur Verfügung gestellt wurde, musste noch ein Programm gefunden werden, sodass auf den Server zugegriffen werden kann. Dafür wurde sich das Programm Cyberduck installiert. <a href="https://cyberduck.io/"> Link zu Cyberduck</a>
-So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <a href="https://gaskocher.stormarnschueler.de/"> https://gaskocher.stormarnschueler.de/</a> die Website zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter mit fiktiven Werten wurde eingerichtet, die später als aktiver Wertemonitor funktionieren soll.
-Außerdem wurden zwei wichtige Erfolge erreicht, sodass der in der Website eingestellte Wert mit php gesendet und empfangen werden kann. Außerdem wird dieser Wert an die mysql-Datenbank gesendet und dort in einer Tabelle gespeichert. Dieser recht komplexe php Code wurde oft getestet, damit er nun endgültig funktionstüchtig ist. 
-Konkret wurde ein php-Dokument mit dem Namen .config angelegt, dass die Zugangsdaten zu der mysql Datenbank speichert. Außerdem wurde ein zweites php Dokument angelegt, dass die Kommunikation zwischen der Website und der Datenbank regelt. Dafür wird der Wert der Temperatureingabe über Code empfangen und dann mit der insert to funktion in die Datenbank eingepflegt. Daher wurde nun folgender Zwischenstand erreicht.
+Auch die Website wurde in den letzten Stunden und von zu Hause weitergebracht. Nachdem der Serverplatz netterweise zur Verfügung gestellt wurde, musste noch ein Programm gefunden werden, sodass auf den Server zugegriffen werden konnte. Dafür wurde sich das Programm Cyberduck installiert. <a href="https://cyberduck.io/"> Link zu Cyberduck</a>
+So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <a href="https://gaskocher.stormarnschueler.de/"> https://gaskocher.stormarnschueler.de/</a> zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter mit fiktiven Werten wurde eingerichtet, die später als aktiver Wertemonitor funktionieren soll.
+Außerdem wurden zwei wichtige Erfolge erreicht, sodass der in der Website eingestellte Wert über einen php Code gesendet und empfangen werden kann. Außerdem wird dieser Wert an die mysql-Datenbank gesendet und dort in einer Tabelle gespeichert. Dieser recht komplexe php Code wurde oft getestet, damit er nun endgültig funktionstüchtig ist. Schwierig war es auch mit Hilfe der Seite phpMyAdmin auf die Datenbank zuzugreifen und dort eine passende Tabelle zu erstellen, in der die Werte unter der Spalte eintemperatur gespeichert werden.
+Konkret wurde ein php-Dokument mit dem Namen .config angelegt, dass die Zugangsdaten zu der mysql Datenbank speichert. Außerdem wurde ein zweites php Dokument angelegt, dass die Kommunikation zwischen der Website und der Datenbank regelt. Dafür wird der Wert der Temperatureingabe über den Code empfangen und dann mit der insert to funktion in die Datenbank eingepflegt. Diese nun möglichen Funktionen stellen einen großen Meilenstein dar, da nun eine wichtige Funktion des Endproduktes funktioniert. 
+Es ist nun möglich eine Website über das World Wide Web zu öffnen und dort über ein Eingabefeld eine Temperatur zu speichern, die in die passende Spalte der Datenbank eingepflegt wird. 
 
 <details>
 	<summary>Screenshot der Website</summary>
@@ -337,7 +346,7 @@ Konkret wurde ein php-Dokument mit dem Namen .config angelegt, dass die Zugangsd
 </details>
 
 <details>
-	<summary>php Code 1</summary>
+	<summary>php Code: formular.php</summary>
 	
 ```
 	<?php
@@ -357,7 +366,7 @@ header("location:index.html")
 </details>
 
 <details>
-	<summary>php Code 2</summary>
+	<summary>php Code: config.php</summary>
 	
 ```
 	<?php
@@ -370,7 +379,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=sschuelersql4', 'sschuelersql4', 'ly
 </details>
 
 <details>
-	<summary>Codes des Styleshet</summary>
+	<summary>Codes des Stylesheets</summary>
 
 ```
 .überschrift {
