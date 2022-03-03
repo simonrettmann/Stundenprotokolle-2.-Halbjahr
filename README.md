@@ -316,14 +316,144 @@ Die heutige Stunde wurde unter anderem dazu verwendet, intensive Recherche über
 <a href="https://starthardware.org/lektion-15-array/"> Website über die Verwendung von Arrays </a> <br>
 Weiterführnd kam die Idee auf, die benötigten Integer-Variablen in Bytes zu zerlegen und diese dann als Array zu übermitteln. Integer-Variablen bestehen aus 2 Bytes. Diese Information kann in eine High-Byte und einen Low-Byte zerlegt werden. Die Idee war es nun, alle benötigten Variablen in die einzelnen High- und Low-Bytes zu zerlegen, die Bytes einzeln zu übermitteln und anschließend die Bytes wieder zu der Integer zusammenzusetzen. Das erzeugen der High und Lowbytes gestalltet sich relativ simpel: "highByte(x)" erzeugt den Highbyte und "lowByte(x)" den Lowbyte der eingesetzten Integervariable. 
 
-## <p> <h2> <a id="Stundevom15.2.2022"> Stunde vom 15.2.2022 !! </a> </h2>
+## <p> <h2> <a id="Stundevom15.2.2022"> Stunde vom 15.2.2022</a> </h2>
 In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen. Das in der vorherigen Stunde erlangte Wissen wurde erfolgreich angewendet, sodass ein "Prove of Concept" in der Form eines Programms gelang.
 
 <details>
-	<summary>Arduino Code</summary>
+	<summary>Arduino Code - Arduino Uno</summary>
+```
+#include <Wire.h>
+ 
+int TestInteger1 = 3000;
+int TestInteger2 = 9574;
+int TestInteger3;
+int TestInteger4;
+float TestFloat3 = 123.45;
 
+ 
+void setup() {
+Wire.begin(10);   
+Serial.begin(9600);             
+Wire.onRequest(antwortfunktion);
+Wire.onReceive(empfangfunktion);
+ 
+TestInteger3 = TestFloat3 * 100;
+}
+ 
+void loop() 
+{ 
+  delay(1000);
+  
+  Serial.println(TestInteger4);
+}
+void empfangfunktion(){
+
+  byte buf[2];
+  for ( int i = 0; i < 2; i++)
+  {
+    buf[i] = Wire.read();
+  }
+  TestInteger4 = setzeZahlZusammen(buf[1] , buf[0]);
+}
+
+void antwortfunktion(){
+  byte buffer[6];
+ 
+  buffer[0] = lowByte(TestInteger1);
+  buffer[1] = highByte(TestInteger1);
+  buffer[2] = lowByte(TestInteger2);
+  buffer[3] = highByte(TestInteger2);
+  buffer[4] = lowByte(TestInteger3);
+  buffer[5] = highByte(TestInteger3);
+   
+  Wire.write( buffer, 6);
+}
+
+int setzeZahlZusammen(unsigned int high, unsigned int low) {
+ 
+  int kombiniert;
+  kombiniert = high;
+  kombiniert = kombiniert * 256;
+  kombiniert |= low;
+  return kombiniert;
+
+}
+```
 </details>
 
+<details>
+	<summary>Arduino code - Arduino Uno (ESP)</summary>
+	
+```
+#include <Wire.h>
+ 
+int TestInteger1;
+int TestInteger2;
+int TestInteger3;
+int TestInteger4 = 5000;
+
+float TestFloat3;
+ 
+void setup() {
+  Wire.begin();
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+  delay(100);
+  rufeWertAb();
+}
+ 
+void loop() {
+  Serial.println("Variable1:  ");
+  Serial.println(TestInteger1);
+  Serial.println("Variable2:  ");
+  Serial.println(TestInteger2);
+  Serial.println("Variable3:  ");
+  Serial.println(TestFloat3);
+  Serial.println("Variable4:  ");
+  Serial.println(TestInteger4);
+
+ Serial.println("----------------------------");
+  sendeWerte();
+  delay(500);
+}
+void sendeWerte(){
+  byte buffer[2];
+ 
+  buffer[0] = lowByte(TestInteger4);
+  buffer[1] = highByte(TestInteger4);
+  
+  Wire.beginTransmission(10);
+  Wire.write( buffer, 2);
+  Wire.endTransmission();
+}
+void rufeWertAb() {
+ 
+  byte buf[5];
+ 
+  int n = Wire.requestFrom(10, 6);
+  for ( int i = 0; i < n; i++)
+  {
+    buf[i] = Wire.read();
+  }
+  TestInteger1 = setzeZahlZusammen(buf[1] , buf[0]);
+  TestInteger2 = setzeZahlZusammen(buf[3] , buf[2]);
+  TestInteger3 = setzeZahlZusammen(buf[5] , buf[4]);
+  TestFloat3 = (float)TestInteger3 /100 ;
+}
+ 
+int setzeZahlZusammen(unsigned int high, unsigned int low) {
+ 
+  int kombiniert;
+  kombiniert = high;
+  kombiniert = kombiniert * 256;
+  kombiniert |= low;
+  return kombiniert;
+}
+			 
+```
+
+</details>
+	
 ## <p> <h2> <a id="Stundevom16.2.2022"> Stunde vom 16.2.2022 </a> </h2>
 Auch die Website wurde in den letzten Stunden und von zu Hause weitergebracht. Nachdem der Serverplatz netterweise zur Verfügung gestellt wurde, musste noch ein Programm gefunden werden, sodass auf den Server zugegriffen werden konnte. Dafür wurde sich das Programm Cyberduck installiert. <a href="https://cyberduck.io/"> Link zu Cyberduck</a>
 So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <a href="https://gaskocher.stormarnschueler.de/"> https://gaskocher.stormarnschueler.de/</a> zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter mit fiktiven Werten wurde eingerichtet, die später als aktiver Wertemonitor funktionieren soll.
