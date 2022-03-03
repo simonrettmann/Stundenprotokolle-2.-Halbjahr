@@ -321,7 +321,9 @@ In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen
 
 <details>
 	<summary>Arduino Code - Arduino Uno</summary>
-```
+	
+```c
+	
 #include <Wire.h>
  
 int TestInteger1 = 3000;
@@ -378,13 +380,16 @@ int setzeZahlZusammen(unsigned int high, unsigned int low) {
   return kombiniert;
 
 }
+			 
 ```
+			 
 </details>
 
 <details>
 	<summary>Arduino code - Arduino Uno (ESP)</summary>
 	
-```
+```c
+	
 #include <Wire.h>
  
 int TestInteger1;
@@ -451,7 +456,7 @@ int setzeZahlZusammen(unsigned int high, unsigned int low) {
 }
 			 
 ```
-
+			 
 </details>
 	
 ## <p> <h2> <a id="Stundevom16.2.2022"> Stunde vom 16.2.2022 </a> </h2>
