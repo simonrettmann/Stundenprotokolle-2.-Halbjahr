@@ -537,7 +537,7 @@ Nachdem in der letzten Stunde reflektiert wurde und die noch zu erledigenden Sch
 
 ## <p> <h2> <a id="Stundevom1.3.2022"> Stunde vom 1.3.2022 </a> </h2>
 
-Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht den Code zu verstehen. Dafür wurde ein php-Dokument erstellt, um auf die Datenbank zuzugreifen und ein php-Dokument erstellt, um Werte aus der Datenbank zu ziehen. 
+Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht den Code zu verstehen. Dafür wurden mehrere php-Dokumente und html-Dokumente erstellt. Der Test war erfolgreich und der Zugriff von der Website auf die Datenbank gelang. Nach einiger Arbeit von zu Hause, gelang es auch mit dem Arduino auf die Datenbank zuzugreifen und die LED zu steuern. Dieses Beispiel hat in der Tat zum weiteren und dem Verbessern der Programmierkünste beigetragen und kann somit als Erfolg gewertet werden. Aufgabe für die nächsten Stunden ist es dieses neu erlangte Wissen tatsächlich auch für die konkrete Umsetzung des Projekts zu nutzen. 
 
 <details>
 	<summary>php Code - Zugriff auf die Datenbank</summary>
