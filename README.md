@@ -346,6 +346,13 @@ Es ist nun möglich eine Website über das World Wide Web zu öffnen und dort ü
 </details>
 
 <details>
+	<summary>Screenshot der Tabelle in der Datenbank</summary>
+	
+<img src="https://user-images.githubusercontent.com/88385654/156555738-9769f457-9e93-47eb-8b0d-6365ed73d582.png">
+	
+</details>
+
+<details>
 	<summary>php Code: formular.php</summary>
 	
 ```
