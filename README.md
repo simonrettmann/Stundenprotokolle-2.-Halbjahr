@@ -737,6 +737,21 @@ In dieser Stunde wurde an der Kommunikation zwischen Website und Datenbank gearb
 <details>
 	<summary>php Code - Kommunikation zwischen Datenbank und Website</summary>
 
+```
+<?php
+
+$sql = "SELECT gemtemperatur FROM gaskocher";
+?>
+
+
+<?php
+foreach($pdo->query($sql)as $row){
+ $temperatur = $row['gemtemperatur'];
+ echo $temperatur; 
+}?>
+
+```
+
 </details>
 
 <details>
@@ -747,6 +762,6 @@ In dieser Stunde wurde an der Kommunikation zwischen Website und Datenbank gearb
 
 <details> 
 	<summary>Screenshot der Website</summary>	
-<img src="https://user-images.githubusercontent.com/88385654/156562476-e5521f32-3599-4030-a6ac-09fbdb8df8f2.jpeg">
+<img src="https://user-images.githubusercontent.com/88385654/156563339-2e3dbe4b-eb55-4994-90d4-bbab2aa4be43.jpeg">
 	
 </details>
