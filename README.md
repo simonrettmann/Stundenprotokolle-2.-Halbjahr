@@ -541,7 +541,9 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 
 <details>
 	<summary>php Code - Zugriff auf die Datenbank</summary>
+	
 ```
+	
 <?php
 	class Database {
 		private static $dbName = 'sschuelersql4' ;
@@ -582,6 +584,7 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 	<summary>php Code - Kommunikation zwischen der Website und der Datebank</summary>
 	
 ```
+	
 <?php
   include 'database.php';
   
@@ -601,12 +604,14 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 ?>
 	
 ```
+	
 </details>
 
 <details>
 	<summary>html Code - Programm der Website</summary>
 
 ```
+	
 <!DOCTYPE html>
 <html>
   <head>
@@ -685,10 +690,12 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 </html>
 
 ```
+	
 </details>
 
 <details>
 	<summary>php Code - Datenzugriff des Arduinos</summary>
+	
 ```
 <?php
   include 'database.php';
@@ -707,7 +714,9 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
     echo $data['Stat'];
   }
 ?>
+	
 ```
+	
 </details>
 
 ## <p> <h2> <a id="Stundevom2.3.2022"> Stunde vom 2.3.2022 </a> </h2>
