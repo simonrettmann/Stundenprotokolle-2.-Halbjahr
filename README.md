@@ -496,7 +496,7 @@ table, th, td, caption {
 
     </body>
 </html>
-```
+
 </details>
 
 ## <p> <h2> <a id="Stundevom22.2.2022"> Stunde vom 22.2.2022 </a> </h2>
