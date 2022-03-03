@@ -757,11 +757,11 @@ foreach($pdo->query($sql)as $row){
 <details>
 	<summary> Screenshot der Datenbank</summary>
 
-<img src="https://user-images.githubusercontent.com/88385654/156562493-33f6d67e-7899-4b3f-af77-b1641201075e.png">
+<img src="https://user-images.githubusercontent.com/88385654/156563339-2e3dbe4b-eb55-4994-90d4-bbab2aa4be43.jpeg">
 </details>
 
 <details> 
 	<summary>Screenshot der Website</summary>	
-<img src="https://user-images.githubusercontent.com/88385654/156563339-2e3dbe4b-eb55-4994-90d4-bbab2aa4be43.jpeg">
-	
+<img src="https://user-images.githubusercontent.com/88385654/156563663-78fba36d-4468-4c9c-ba30-048edb5c06fb.jpeg">
+
 </details>
