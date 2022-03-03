@@ -541,6 +541,8 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 
 <img src="https://user-images.githubusercontent.com/88385654/156559570-7df79162-2da5-44c5-bc18-5d1365f89a2d.png">
 	
+</details>
+	
 <details>
 	<summary>Screenshot der Datenbanktabelle</summary>
 
@@ -706,6 +708,7 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 	<summary>php Code - Datenzugriff des Arduinos</summary>
 	
 ```
+	
 <?php
   include 'database.php';
   
@@ -723,11 +726,10 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
     echo $data['Stat'];
   }
 ?>
-	
-```
-	
-</details>
 
+```
+</details>
+	
 ## <p> <h2> <a id="Stundevom2.3.2022"> Stunde vom 2.3.2022 </a> </h2>
 
 In dieser Stunde wurde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Ersteinmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Nach einiger Zeit des Debuggings gelang es endlich die Werte anzeigen zu lassen. Da momentan die Kommunikation zwsichen Arduino und Datenbank klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Möglich ist auch, dass die Kommunkation deutlich vereinfacht werden würde, wenn man die Kommunikationswege von Website zu Arduino und Arduino zu Website in unterschieldichen Tabellen und nicht nur in verschiedenen Spalten dargesellt wird. So kommt man nicht in die Verlegenheit verschiedene Werte einer gleichen Id zuordnen zu müssen, was potenziell zu Problememen führt. Ob diese relativ leicht zu erldigende Verädngerung nötig ist, wird sich in den nächsten Stunden zeigen.
