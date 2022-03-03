@@ -534,8 +534,20 @@ Nachdem in der letzten Stunde reflektiert wurde und die noch zu erledigenden Sch
 
 ## <p> <h2> <a id="Stundevom1.3.2022"> Stunde vom 1.3.2022 </a> </h2>
 
-Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht den Code zu verstehen. Dafür wurden mehrere php-Dokumente und html-Dokumente erstellt. Der Test war erfolgreich und der Zugriff von der Website auf die Datenbank gelang. Nach einiger Arbeit von zu Hause, gelang es auch mit dem Arduino auf die Datenbank zuzugreifen und die LED zu steuern. Dieses Beispiel hat in der Tat zum weiteren und dem Verbessern der Programmierkünste beigetragen und kann somit als Erfolg gewertet werden. Aufgabe für die nächsten Stunden ist es dieses neu erlangte Wissen tatsächlich auch für die konkrete Umsetzung des Projekts zu nutzen. 
+Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht den Code zu verstehen. Dafür wurden mehrere php-Dokumente und html-Dokumente erstellt. Um die Funktionalität der Website zu testen, wurden diese Dokumente auf den Sever hochgeladen. Über die bekannte Adresse, konnte so die Website erreicht werden und ein Befehl über das An- und Ausschalten der Led gegeben werden. Dieser Wert wird als Status (stat = "0" -> aus oder stat = "1" -> an) gespeichert. Der Test war erfolgreich und der Zugriff von der Website auf die Datenbank gelang. Nach einiger Arbeit von zu Hause, gelang es auch mit dem Arduino auf die Datenbank zuzugreifen und die LED zu steuern. Dieses Beispiel hat in der Tat zum weiteren und dem Verbessern der Programmierkünste beigetragen und kann somit als Erfolg gewertet werden. Aufgabe für die nächsten Stunden ist es dieses neu erlangte Wissen tatsächlich auch für die konkrete Umsetzung des Projekts zu nutzen. 
 
+<details>
+	<summary>Screenshot der Website</summary>
+
+<img src="https://user-images.githubusercontent.com/88385654/156559570-7df79162-2da5-44c5-bc18-5d1365f89a2d.png">
+	
+<details>
+	<summary>Screenshot der Datenbanktabelle</summary>
+
+<img src="https://user-images.githubusercontent.com/88385654/156559722-109b1cee-2e7e-4a60-8311-3aa72fb5e233.png">
+	
+</details>
+	
 <details>
 	<summary>php Code - Zugriff auf die Datenbank</summary>
 	
@@ -718,4 +730,4 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 
 ## <p> <h2> <a id="Stundevom2.3.2022"> Stunde vom 2.3.2022 </a> </h2>
 
-In dieser Stelle wurde an der Kommunikation zwischen Website und DAtenbank gearbeitet. Diesmal muss die Kommunikation über php allerdings in die andere Richtung von der Datenbank zur Website erfolgen, wo dann mit php und html eine Tabelle erzeugt wird, die als live Wertemonitor fungiert. 
+In dieser Stunde wurde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Ersteinmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Nach einiger Zeit des Debuggings gelang es endlich die Werte anzeigen zu lassen. Da momentan die Kommunikation zwsichen Arduino und Datenbank klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Möglich ist auch, dass die Kommunkation deutlich vereinfachen würde
