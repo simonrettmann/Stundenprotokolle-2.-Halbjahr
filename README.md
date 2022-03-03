@@ -47,7 +47,7 @@ David Borgmann, Simon Rettmann
 	<td> <a href="#Stundevom2.3.2022"> Stunde vom 2.3.2022</a></td>
 </tr>
 <tr>
-	<td> <a href="#Stundevom8.3.2022">
+	<td> <a href="#Stundevom8.3.2022"> Stunde vom 8.3.2022 </a></td>
  </table>
 <br>
 
@@ -66,12 +66,11 @@ Nach längerer Diskussion und Ausarbeitung der beiden Ideen mit Herrn Buhl, ents
 
 Von zu Hause begann bereits der Denkprozess, wie die Ideen konkret umgesetzt werden könnten. Primärer Fokus war die Kommunikation einer Website mit dem Arduino. Dazu wurde ein neuer Mikrocontroller bestellt, der WLAN-fähig ist und so von der ganzen Welt gesteuert werden kann. Dazu wurde der ESP8266 bestellt. <a href="https://www.amazon.de/dp/B06Y1ZPNMS/ref=cm_sw_em_r_mt_dp_8W3S15S43VPSKZEXFZCC?_encoding=UTF8&psc=1"> Kauflink zum Produkt von Amazon </a>
 Weiter wurde sich auch mit der Kompatibilität dieses Chips mit verschiedenen Website und Datentypen auseinandergesetzt. 
-Für die Hardware nahm sich die Gruppe vor die nahenden Ferien zu nutzen und die Hardware dort fertigzustellen, damit die Stunden im neuen Jahr für die softwaretechnische Umsetzung genutzt werden können. 
 Für die nächste Zeit setzte sich die Gruppe folgende Ziele:
 <ul>
 	<li>Einarbeitung und anlegen einer sql-Datenbank</li>
 	<li>Suche eines Servers auf der sowohl die Website als auch die Datenbank laufen können </li>
-	<li>Einarbeitung in PHP, sodass eine datenverarbeitende Website erstellt werden kann und diese gewonnen Daten in einer Datenbank gespeichert werden können 
+	<li>Einarbeitung in PHP, sodass eine datenverarbeitende Website erstellt werden kann und diese dadurch gewonnen Daten in einer Datenbank gespeichert werden können.
 	</li>
 </ul>
 
@@ -84,17 +83,17 @@ In dieser Stunde war Simon Rettmann nicht anwesend, da er krank war. Diese Stund
 Aufgrund der Ferien musste diese Stunde leider ausfallen. 
 
 ## <p> <h2> <a id="Stundevom11.1.2022"> Stunde vom 11.1.2022 </a> </h2>
-Die erste Stunde nach den Ferien wurde von der Gruppe genutzt die Ergebnisse der Einarbeitungsphase zu besprechen. Das bestellte Bauteil kam über die Ferien an und erste Ansteuerungsversuche wurden getätigt. <br>
-Als erster Schritt wurde die I2C-Kommunikation angegangen. Zwar wurde diese Technologie bereits in der ersten Projektphase verwendet, jedoch verwendeten wir zur I2C-Kommunikation mit dem LC-Display eine simple Libary. In der zweiten Projektphase soll der I2C-Datenbus dazu benutzt werden, Daten zwischen dem Wlan-Netzwerk fähigen NodeMCU-Mikrokontroller (Name des Moduls, in welches das ESP8862 eingearbeitet ist) und dem Arduino auszutauschen. Da wir bisher noch keine geeignete Libary gefunden haben, beschäftigten wir uns zunächst mit der hardwarenahen Programmierung. Das NodeMCU soll dabei die Rolle als Master-Device und der Arduino als Slave-Device übernehmen. Problematisch dabei ist, dass am Ende hauptsächlich Integer- und Floatvariablen übertragen werden sollen. Standartmäßig können aber nur Bytes mit I2C übertragen werden. Es ist also nötig die Daten in Bytes zu trennen, die Bytes zu übertragen und anschließend die Daten beim Empfänger wieder zusammenzusetzen. Die einfache Übertragung von Bytes zwischen den beiden Geräten funktionierte nach kurzem Testen ohne große Probleme. Schwierig gestalltete sich jedoch die Zusammensetzung der Bytes zu den Variablen, sobalt mehrere verschiedene Variablen involviert waren. <br>
-Nachdem sich die Gruppenmitglieder erfolglos über eine Lösung des Problems beraten hatten, folgete gegen Ende der Stunde eine Recherche über eine geeignete Libary zur Übertragung der gewünschten Variablen.
+Die erste Stunde nach den Ferien wurde von der Gruppe genutzt, um die Ergebnisse der Einarbeitungsphase zu besprechen. Das bestellte Bauteil kam über die Ferien an und erste Ansteuerungsversuche wurden getätigt. <br>
+Als erster Schritt wurde die I2C-Kommunikation angegangen. Zwar wurde diese Technologie bereits in der ersten Projektphase verwendet, jedoch verwendeten wir zur I2C-Kommunikation mit dem LC-Display eine simple Libary. In der zweiten Projektphase soll der I2C-Datenbus dazu benutzt werden, um Daten zwischen dem wlan/netzwerkfähigen NodeMCU-Mikrokontroller (Name des Moduls, in welches das ESP8862 eingearbeitet ist) und dem Arduino auszutauschen. Da bisher noch keine geeignete Libary gefunden wurde, wurde sich mit der hardwarenahen Programmierung beschäftigt. Das NodeMCU soll dabei die Rolle als Master-Device und der Arduino als Slave-Device übernehmen. Problematisch dabei ist, dass am Ende hauptsächlich Integer- und Floatvariablen übertragen werden sollen. Standartmäßig können aber nur Bytes mit I2C übertragen werden. Es ist also nötig die Daten in Bytes zu trennen, die Bytes zu übertragen und anschließend die Daten beim Empfänger wieder zusammenzusetzen. Die einfache Übertragung von Bytes zwischen den beiden Geräten funktionierte nach kurzem Testen ohne große Probleme. Schwierig gestalltete sich jedoch die Zusammensetzung der Bytes zu den Variablen, sobald mehrere verschiedene Variablen involviert waren. <br>
+Nachdem sich die Gruppenmitglieder erfolglos über eine Lösung des Problems beraten hatten, folgte gegen Ende der Stunde eine Recherche über eine geeignete Libary zur Übertragung der gewünschten Variablen.
 
 ## <p> <h2> <a id="Stundevom12.1.2022"> Stunde vom 12.1.2022 </a> </h2>
-Diese Unterrichtseinheit wurde von der Gruppe genutzt die Kentnisse zu erweitern, um die Herausforderungen, die dieses neue Projekt mit sich bringt, zu meistern. Vor allem die Website stellt eine große Herausforderung dar, weil nicht nur die html Kentnisse vertieft werden müssen, sondern css und php neu erlernt werden müssen. Essentiell ist es Daten bei der Website eingeben zu können und diese Daten dann auf einem Server oder einer Datenbank zu speichern, sodass der Arduino auf diese zugreifen kann. 
+Diese Unterrichtseinheit wurde von der Gruppe genutzt die Kentnisse zu erweitern, um die Herausforderungen, die dieses neue Projekt mit sich bringt, zu meistern. Vor allem die Website stellt eine große Herausforderung dar, weil nicht nur die html Kentnisse vertieft werden müssen, sondern css und php neu erlernt werden müssen. Essenziell ist es Daten bei der Website eingeben zu können und diese Daten dann auf einem Server oder einer Datenbank zu speichern, sodass der Arduino auf diese zugreifen kann. 
 
 
 ## <p> <h2> <a id="Stundevom18.1.2022"> Stunde vom 18.1.2022 </a> </h2>
-Auch in dieser Doppelstunde wurden viele Quellen, wie Videos und Blogs, zu Rate gezogen, um die ehrgeizigen Ziele zu erreichen. Außerdem wurden in dieser Stunde bereits ein wenig programmiert. 
-Für das Programmieren wurde Visual Studio Code benutzt, da dies ein in der Informatikwelt weitverbreitetes, kostenloses Tool ist, dass für die Anwendung der Gruppe viele Möglichkeiten bietet. <a href="https://code.visualstudio.com/"> Link zu Visual Studio Code </a>
+Auch in dieser Doppelstunde wurden viele Quellen, wie Videos und Blogs, zu Rate gezogen, um die ehrgeizigen Ziele zu erreichen. Außerdem wurde in dieser Stunde bereits ein wenig programmiert. 
+Für das Programmieren wurde Visual Studio Code benutzt, da dieses Programm in der Informatikwelt ein weitverbreitetes, kostenloses Tool ist, dass für die Anwendung der Gruppe viele Möglichkeiten bietet. <a href="https://code.visualstudio.com/"> Link zu Visual Studio Code </a>
 Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt. 
 
 <details>
@@ -154,7 +153,7 @@ section (
 
 ## <p> <h2> <a id="Stundevom19.1.2022"> Stunde vom 19.1.2022 </a> </h2>
 
-In der letzten Stunde war es noch nocht gelungen, dass die .css und die .html - Datei zusammen auf der lokalten Website angezeigt wurden. Dieses Problem wurde in dieser Stunde gelöst. Das Problem war ein Bezugsfehler, der durch die Definition einer class gelöst werden konnte. 
+In der letzten Stunde war es noch nocht gelungen, dass die .css und die .html - Datei zusammen auf der lokalen Website angezeigt wurden. Dieses Problem wurde in dieser Stunde gelöst. Das Problem war ein Bezugsfehler, der durch die Definition einer .class gelöst werden konnte. 
 
 <details>
 	<summary>Screenshot der eingefärbten Website</summary>
@@ -199,7 +198,7 @@ Auch wenn diese Informatikstunde leider ausfallen musste, wurde das Projekt von 
 Diese Informatikstunde musste leider ausfallen. 
 
 ## <p> <h2> <a id="Stundevom1.2.2022"> Stunde vom 1.2.2022 </a> </h2>
-In dieser Informatikstunde wurde ein erster Prototyp der Website fertiggestellt. Auch wenn diese Seite noch keinen Designpreis verdient hat, ist diese funktional genug, um das Projekt zu unterstützen. Neben kleinen Designveränderungen, wurde in dieser Stunde vor allem das Input-Eingabefeld überarbeitet. In den Code des Feldes wurde bereits ein PHP-Tag eingearbeitet. Außerdem wurde sich informiert welche Möglichkeiten bestehen die Website zu hosten und mit welcher Datenbank diese verknüpft werden kann. Für die Datenbank wurde von Herrn Buhl mysql empfohlen, da diese gratis und sehr funktional ist. Für die Serverunterstützung wurde uns netterweise die Kontaktadresse von Herrn Adiwidjaja gegeben. Ziel für die nächste Stunde ist es diesen Kontakt herzustellen und nach Serverplatz zu fragen. 
+In dieser Informatikstunde wurde ein erster Prototyp der Website fertiggestellt. Auch wenn diese Seite noch keinen Designpreis verdient hat, ist diese funktional genug, um das Projekt zu unterstützen. Neben kleinen Designveränderungen, wurde in dieser Stunde vor allem das Input-Eingabefeld überarbeitet. In den Code des Feldes wurde bereits ein php-Tag eingearbeitet. Außerdem wurde sich informiert welche Möglichkeiten bestehen die Website zu hosten und mit welcher Datenbank diese verknüpft werden kann. Für die Datenbank wurde von Herrn Buhl mysql empfohlen, da diese gratis und sehr funktional ist. Für die Serverunterstützung wurde uns netterweise die Kontaktadresse von Herrn Adiwidjaja gegeben. Ziel für die nächste Stunde ist es diesen Kontakt herzustellen und nach Serverplatz zu fragen. 
 
 <details>
 	<summary>Screenshot der Website</summary>
@@ -294,13 +293,20 @@ Wie letzte Stunde besprochen, wurde zu Beginn dieser Stunde die E-Mail an Herrn 
 
 ## <p> <h2> <a id="Stundevom8.2.2022"> Stunde vom 8.2.2022 </a> </h2>
 
-Netterweise antwortete Herr Adiwidjaja während der restlichen Woche. Dies nahm die Gruppe zum Anlass sich von nun an auch über die Umsetzung des Hostings Gedanken zu machen. Serverkommunikation und die Bereitstellung einer Website über einen Server war nämlich bisher noch Neuland. 
-Neben diesem technischen Problem, wurde sich auch mit dem weiteren Verlauf des Projekts beschäftigt. Herr Buhl sprach erneut ein Thema an, über das die Gruppe sich zu Beginn schon einmal Gedanken gemacht hat. Eine wirkliche Aufwertung für die Website wäre es, wenn es dort neben der einstellbaren Temperatur auch einen 24/7 verfügbaren Livestream geben würde. Einen Livestream zu impletieren wurde als neues Ziel ins Auge genommen und die Gruppe nahm sich fest vor diesen im Endprojekt gerecht zu werden. 
+Netterweise antwortete Herr Adiwidjaja im Laufe der restlichen Woche. Dies nahm die Gruppe zum Anlass sich von nun an auch über die Umsetzung des Hostings Gedanken zu machen. Serverkommunikation und die Bereitstellung einer Website über einen Server waren nämlich bisher noch Neuland. 
+Neben diesem technischen Problem, wurde sich auch mit dem weiteren Verlauf des Projekts beschäftigt. Herr Buhl sprach erneut ein Thema an, über das die Gruppe sich zu Beginn schon einmal Gedanken gemacht hat. Eine wirkliche Aufwertung für die Website wäre es, wenn es dort neben der einstellbaren Temperatur auch einen 24/7 verfügbaren Livestream geben würde. Ein solcher Livestream wäre ein echtes Highlight, allerdings nicht sehr realisitsch umsetzbar. Problematisch ist hierbei das sehr teure Hardware-Equipment und die großen Datenmengen. Kameras, die einen solchen Livestream unterstützen kosten oft über 100 € und die transportierten Datenmengen wären wahrscheinlich so groß, dass die reibungslose Darstellung der Website nicht sichergestellt ist.
 
 <details>
 	<summary> Screenshot der Antwort von Herrn Adiwidjaja </summary>
 
 <img width="1307" alt="Bild der Anwort" src="https://user-images.githubusercontent.com/88385654/153012378-e82f82cc-3058-432b-8bf2-d39e53378889.jpeg">
+
+</details>
+
+<details>
+	<summary> Screenshot einer potenziellen livestreamfähigen Kamera</summary>
+
+<img src="https://user-images.githubusercontent.com/88385654/156553234-bc9588cc-3069-4d42-9be8-ed6db665ff36.png">
 
 </details>
 
