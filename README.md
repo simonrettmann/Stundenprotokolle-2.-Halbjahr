@@ -512,12 +512,12 @@ Die Stunde wurde dazu genutzt den letzten GitHub-Eintrag fertigzustellen. Außer
 
 <details>
 	<summary>bisheriger Stand des Projekts</summary>
-<li> eine Website wurde erstellt, die unter <a href="https://gaskocher.stormarnschueler.de/"> https://gaskocher.stormarnschueler.de/ </a> von überall auf der Welt zu erreich ist. </li>
+<li>eine Website wurde erstellt, die unter <a href="https://gaskocher.stormarnschueler.de/"> https://gaskocher.stormarnschueler.de/ </a> von überall auf der Welt zu erreich ist. </li>
 <li> diese Website beinhaltet ein Eingabefeld, in dem man eine Temperatur einstellen kann </li>
-<li> diese Temperatur kann an eine Datenbank gesendet werden und in einer dort angelegten Tabelle als integer Variable gespeichert werde </li>
-<li> außerdem existiert dort ein Wertemonitor als Platzhalter
-<li> die hardwaretechnischen Voraussetzungen sind seit der letzten Projektphase unverändert, sodass ein regulierbarer Gaskocher existiert</li>
-<li> die Kommunikation zwischen Arduino und dem Esp funktioniert </li>
+<li> diese Temperaturwerte können an eine Datenbank gesendet werden und in einer dort angelegten Tabelle als integer Variable gespeichert werde </li>
+<li> außerdem existiert dort ein Wertemonitor auf der Website als Platzhalter</li>
+<li>die hardwaretechnischen Voraussetzungen sind seit der letzten Projektphase unverändert, sodass ein regulierbarer Gaskocher existiert</li>
+<li>die Kommunikation zwischen Arduino und dem Esp funktioniert</li>
 	
 </details>
 
@@ -527,13 +527,13 @@ Die Stunde wurde dazu genutzt den letzten GitHub-Eintrag fertigzustellen. Außer
 <li> die Tabelle muss als Wertemonitor, die vom Esp an die Datenbank übermittelten Daten live abrufen können </li>
 <li> die Hardware muss durch Verlötung und Platzierung in einem Kasten ansehnlich und sicher verstaut sein </li>
 <li> ein Steuerknopf für den rotary encoder muss gebaut werden, damit auch die manuelle Bedienung angenhem ist </li>
-<li> außerdem muss auf Hardware- und Softwareebene eine automatische Zündung etabliert werden </li> 
+<li> außerdem muss auf Hardware- und Softwareebene eine automatische Zündung eingerichtet werden </li> 
 
 </details>
 
 ## <p> <h2> <a id="Stundevom23.2.2022"> Stunde vom 23.2.2022 </a> </h2>
 
-Nachdem in der letzten Stunde reflektiert wurde und die noch zu erledigenden Schritte definiert wurden, wurde klar, dass jetzt mit Hochdruck an der Kommunikation zwischen dem Esp und der Datenbank gearbeitet werden muss. Dafür wurden mehrere Videos geschaut und viel herumprobiert. Vor allem ein <a href="https://www.youtube.com/watch?v=J9ziYzmiW9I&t"> Video </a> von Uthe Str schien sehr interessant. Das in dem Video gezeigte Beispiel sollte in der nächsten Stunde nachgebaut werden. 
+Nachdem in der letzten Stunde reflektiert wurde und die noch zu erledigenden Schritte definiert waren, wurde klar, dass jetzt mit Hochdruck an der Kommunikation zwischen dem Esp und der Datenbank gearbeitet werden muss. Dies ist der einzige Punkt, der noch realisiert werden muss, damit das Projekt als Prototyp schon einmal funktionstüchtig ist. Dafür wurden mehrere Videos geschaut und viel herumprobiert. Vor allem ein <a href="https://www.youtube.com/watch?v=J9ziYzmiW9I&t"> Video </a> von Uthe Str schien sehr interessant. Das in dem Video gezeigte Beispiel sollte in der nächsten Stunde nachgebaut werden. 
 
 ## <p> <h2> <a id="Stundevom1.3.2022"> Stunde vom 1.3.2022 </a> </h2>
 
@@ -580,6 +580,114 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 	
 </details>
 
+<details>
+	<summary>php Code - Kommunikation zwischen der Website und der Datebank</summary>
+	
+'''
+<?php
+  include 'database.php';
+  
+  if (!empty($_POST)) {
+    $id=$_POST["ID"];
+    $pdo = Database::connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = 'SELECT * FROM statusled WHERE ID = ?';
+    
+    $q = $pdo->prepare($sql);
+    $q->execute(array($id));
+    $data = $q->fetch(PDO::FETCH_ASSOC);
+    Database::disconnect();
+    
+    echo $data['Stat'];
+  }
+?>
+'''
+	
+</details>
+
+<details>
+	<summary>html Code - Programm der Website</summary>
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+      html {
+          font-family: Arial;
+          display: inline-block;
+          margin: 0px auto;
+          text-align: center;
+      }
+      
+      h1 { font-size: 2.0rem; color:#2980b9;}
+      h2 { font-size: 1.25rem; color:#2980b9;}
+      
+      .buttonON {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px #999;
+      }
+      .buttonON:hover {background-color: #3e8e41}
+      .buttonON:active {
+        background-color: #3e8e41;
+        box-shadow: 0 1px #666;
+        transform: translateY(4px);
+      }
+        
+      .buttonOFF {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #e74c3c;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px #999;
+      }
+      .buttonOFF:hover {background-color: #c0392b}
+      .buttonOFF:active {
+        background-color: #c0392b;
+        box-shadow: 0 1px #666;
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Controlling LED on NodeMCU ESP12E ESP8266 with MySQL Database</h1>
+    
+    <form action="updateDBLED.php" method="post" id="LED_ON" onsubmit="myFunction()">
+      <input type="hidden" name="Stat" value="1"/>    
+    </form>
+    
+    <form action="updateDBLED.php" method="post" id="LED_OFF">
+      <input type="hidden" name="Stat" value="0"/>
+    </form>
+    
+    <button class="buttonON" name= "subject" type="submit" form="LED_ON" value="SubmitLEDON" >LED ON</button>
+    <button class="buttonOFF" name= "subject" type="submit" form="LED_OFF" value="SubmitLEDOFF">LED OFF</button>  
+  </body>
+</html>
+
+```
+</details>
 
 ## <p> <h2> <a id="Stundevom2.3.2022"> Stunde vom 2.3.2022 </a> </h2>
 
