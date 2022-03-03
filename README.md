@@ -316,14 +316,14 @@ Die heutige Stunde wurde unter anderem dazu verwendet, intensive Recherche über
 <a href="https://starthardware.org/lektion-15-array/"> Website über die Verwendung von Arrays </a> <br>
 Weiterführnd kam die Idee auf, die benötigten Integer-Variablen in Bytes zu zerlegen und diese dann als Array zu übermitteln. Integer-Variablen bestehen aus 2 Bytes. Diese Information kann in eine High-Byte und einen Low-Byte zerlegt werden. Die Idee war es nun, alle benötigten Variablen in die einzelnen High- und Low-Bytes zu zerlegen, die Bytes einzeln zu übermitteln und anschließend die Bytes wieder zu der Integer zusammenzusetzen. Das erzeugen der High und Lowbytes gestalltet sich relativ simpel: "highByte(x)" erzeugt den Highbyte und "lowByte(x)" den Lowbyte der eingesetzten Integervariable. 
 
-## <p> <h2> <a id="Stundevom15.2.2022"> Stunde vom 15.2.2022 </a> </h2>
+## <p> <h2> <a id="Stundevom15.2.2022"> Stunde vom 15.2.2022 !! </a> </h2>
 In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen. Das in der vorherigen Stunde erlangte Wissen wurde erfolgreich angewendet, sodass ein "Prove of Concept" in der Form eines Programms gelang.
 
 <details>
 	<summary>Arduino Code</summary>
 ```
 	
-'''
+```
 
 </details>
 
