@@ -48,6 +48,7 @@ David Borgmann, Simon Rettmann
 </tr>
 <tr>
 	<td> <a href="#Stundevom8.3.2022"> Stunde vom 8.3.2022 </a></td>
+	<td> <a href="#Stundevom9.3.2022"> Stunde vom 9.3.2022 </a></td>
  </table>
 <br>
 
@@ -900,3 +901,11 @@ foreach($pdo->query($sql)as $row){
 <img src="https://user-images.githubusercontent.com/88385654/156563663-78fba36d-4468-4c9c-ba30-048edb5c06fb.jpeg">
 
 </details>
+	
+## <p> <h2> <a id="Stundevom8.3.2022"> Stunde vom 8.3.2022 </a> </h2>
+	
+Aufgrund einer Exkursion musste diese Stunde leider ausfallen.
+	
+## <p> <h2> <a id="Stundevom9.3.2022"> Stunde vom 9.3.2022 </a> </h2>
+
+
