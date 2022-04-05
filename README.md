@@ -1143,6 +1143,30 @@ Nach zwei Wochen des Debuggings und etlichen Stunden Arbeit hat nun das Experime
 ```
 
 </details>
+
+<details>
+	<summary>updateDBLED.php</summary>
+
+```
+<?php     
+  require 'database.php';
+  
+  if (!empty($_POST)) {
+    $Stat = $_POST['Stat'];
+      
+    // insert data
+    $pdo = Database::connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = "UPDATE statusled SET Stat = ? WHERE ID = 0";
+    $q = $pdo->prepare($sql);
+    $q->execute(array($Stat));
+    Database::disconnect();
+    header("Location: index.php");
+  }
+?>
+```
+	
+</details>
 	
 
 ## <p> <h2> <a id="Stundevom29.3.2022"> Stunde vom 29.3.2022 </a> </h2>
