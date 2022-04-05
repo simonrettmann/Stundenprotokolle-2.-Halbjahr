@@ -58,6 +58,8 @@ David Borgmann, Simon Rettmann
 	<td> <a href="#Stundevom29.3.2022"> Stunde vom 29.3.2022 </a></td>
 	<td> <a href="#Stundevom30.3.2022"> Stunde vom 30.3.2022 </a></td>
 </tr>
+</table>
+<table>
 <tr>
 	<td> <a href="#Stundenabdem30.3.2022"> Finalisierung des Projekts ab dem 30.3.2022 </a></td>
 </tr>
