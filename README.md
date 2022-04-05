@@ -874,6 +874,86 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 ```
 </details>
 	
+<details>
+```c
+	
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  delay(500);
+
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password); //--> Connect to your WiFi router
+  Serial.println("");
+    
+  pinMode(ON_Board_LED,OUTPUT); //--> On Board LED port Direction output
+  digitalWrite(ON_Board_LED, HIGH); //--> Turn off Led On Board
+
+  pinMode(LED_D8,OUTPUT); //--> LED port Direction output
+  digitalWrite(LED_D8, LOW); //--> Turn off Led
+
+  //----------------------------------------Wait for connection
+  Serial.print("Connecting");
+  while (WiFi.status() != WL_CONNECTED) {
+    Serial.print(".");
+    //----------------------------------------Make the On Board Flashing LED on the process of connecting to the wifi router.
+    digitalWrite(ON_Board_LED, LOW);
+    delay(250);
+    digitalWrite(ON_Board_LED, HIGH);
+    delay(250);
+    //----------------------------------------
+  }
+  //----------------------------------------
+  digitalWrite(ON_Board_LED, HIGH); //--> Turn off the On Board LED when it is connected to the wifi router.
+  //----------------------------------------If successfully connected to the wifi router, the IP Address that will be visited is displayed in the serial monitor
+  Serial.println("");
+  Serial.print("Successfully connected to : ");
+  Serial.println(ssid);
+  Serial.print("IP address: ");
+  Serial.println(WiFi.localIP());
+  Serial.println();
+  //----------------------------------------
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  HTTPClient http; //--> Declare object of class HTTPClient
+
+  //----------------------------------------Getting Data from MySQL Database
+  String GetAddress, LinkGet, getData;
+  int id = 0; //--> ID in Database
+  GetAddress = "NodeMCU_Get_Database/GetData.php"; 
+  LinkGet = host + GetAddress; //--> Make a Specify request destination
+  getData = "ID=" + String(id);
+  Serial.println("----------------Connect to Server-----------------");
+  Serial.println("Get LED Status from Server or Database");
+  Serial.print("Request Link : ");
+  Serial.println(LinkGet);
+  http.begin(LinkGet); //--> Specify request destination
+  http.addHeader("Content-Type", "application/x-www-form-urlencoded");    //Specify content-type header
+  int httpCodeGet = http.POST(getData); //--> Send the request
+  String payloadGet = http.getString(); //--> Get the response payload from server
+  Serial.print("Response Code : "); //--> If Response Code = 200 means Successful connection, if -1 means connection failed. For more information see here : https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+  Serial.println(httpCodeGet); //--> Print HTTP return code
+  Serial.print("Returned data from Server : ");
+  Serial.println(payloadGet); //--> Print request response payload
+
+  if (payloadGet == "1") {
+    digitalWrite(LED_D8, HIGH); //--> Turn off Led
+  }
+  if (payloadGet == "0") {
+    digitalWrite(LED_D8, LOW); //--> Turn off Led
+  }
+  //----------------------------------------
+  
+  Serial.println("----------------Closing Connection----------------");
+  http.end(); //--> Close connection
+  Serial.println();
+  Serial.println("Please wait 5 seconds for the next connection.");
+  Serial.println();
+  delay(5000); //--> GET Data at every 5 seconds
+	
+```
 ## <p> <h2> <a id="Stundevom2.3.2022"> Stunde vom 2.3.2022 </a> </h2>
 
 In dieser Stunde wurde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Ersteinmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Der php Code wurde daher so einfach wie möglich gehalten. Allerdings trügt der Schein bei php oft, da auch sehr kurze und einfache Scripts kompliziert sind und im Vorhinein viel Recherche bedürfen. Glücklicherweise klappte nach einiger Zeit des Debuggings endlich die Werte anzeigen zu lassen. Da momentan die Kommunikation zwsichen Arduino und Datenbank momentan noch nicht klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Möglich ist auch, dass die Kommunkation deutlich vereinfacht werden würde, wenn man die Kommunikationswege von Website zu Arduino und Arduino zu Website in unterschieldichen Tabellen und nicht nur in verschiedenen Spalten darstellen würde. So kommt man nicht in die Verlegenheit verschiedene Werte einer gleichen Id zuordnen zu müssen, was potenziell zu Problememen führt. Ob diese relativ leicht zu erldigende Verädngerung nötig ist, wird sich in den nächsten Stunden zeigen.
