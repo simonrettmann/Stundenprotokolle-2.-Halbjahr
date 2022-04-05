@@ -1022,9 +1022,11 @@ foreach($pdo->query($sql)as $row){
 
 ## <p> <h2> <a id="Stundevom22.3.2022"> Stunde vom 22.3.2022 </a> </h2>
 	
+Auch in dieser Stunde wurde sich vor allem das "GetData.php" Skript angeschaut. Da die Datenabfrage nicht funktionierte, musste der Fehler innerhalb dieses Dokuments liegen. Hierfür wurde viel herumprobiert. Besonders die if-Schleife fiel ins Auge, da es gut sein kann, dass diese Schleife nicht ausgeführt wird. Durch mehrere Echos außerhalb und innerhalb der Schleife wurde versucht herauszufinden wo das Problem liegt. Gegen Ende der Stunde war die Gruppe mit Hilfe von Herrn Buhl und Henrik soweit, dass die if-Schleife funktionierte und das gewünschte Echo ausgegeben wurde. Leider klappte allerdings die Kommunikation zwischen ESP und Datenbank weiterhin nicht. Da nun aber alle php und html Scripte funktionierten, musste der Fehler in dem Arduinoscript liegen. Diesen ausfindig zu machen und zu beseitigen war das Ziel für die nächste Stunde.
+	
 ## <p> <h2> <a id="Stundevom23.3.2022"> Stunde vom 23.3.2022 </a> </h2>
 	
-Nach mehr als zwei Wochen des Debuggings und etlichen Stunden Arbeit, wurde nun dieses Zwischenprojekt finalisiert. Das Experiment hat nun so geklkappt, wie es sich vorgestellt wurde, und die LED konnte mit Hilfe einer Website an- und ausgeschaltet werden. Das letzte Problem war ein Definitionsfehler, da im Arduinocode die Website mit https und nicht mit http angegeben wurde. So konnte der ESP nicht auf die Datenbank zugreifen und das ganze Projekt funktionierte nicht. Nachdem dieser Schreibfehler bzw. Versionsunterschied behoben war, klappte das Projekt.
+Nach mehr als zwei Wochen des Debuggings und etlichen Stunden Arbeit, wurde nun dieses Zwischenprojekt finalisiert. Das Experiment hat nun so geklappt, wie es sich vorgestellt wurde, und die LED konnte mit Hilfe einer Website an- und ausgeschaltet werden. Das letzte Problem war ein Definitionsfehler, da im Arduinocode die Website mit https und nicht mit http angegeben wurde. So konnte der ESP nicht auf die Datenbank zugreifen und das ganze Projekt funktionierte nicht. Nachdem dieser Schreibfehler behoben war, war das Projekt erfolgreich. Die LED konnte über eine Website gesteuert werden.
 
 <details>
 	<summary>Video der Steuerung der LED - novum hotplate</summary>
@@ -1338,8 +1340,28 @@ Zu Beginn wurde der GitHub-Eintrag der letzten Stunde fertiggestellt. Außerdem 
 
 ## <p> <h2> <a id="Stundevom30.3.2022"> Stunde vom 30.3.2022 </a> </h2>
 	
-Aufgrund der Profilfach Abiturklausuren musste diese Informatikstunde leider ausfallen. Da nun der mit der Klausur verbundene Lernaufwand nicht mehr bevorstand, konnte sich die Gruppe darauf konzentrieren die nahenden Ferien zu nutzen, um das Projet fertigzustellen. 
+Aufgrund der Profilfach Abiturklausuren musste diese Informatikstunde leider ausfallen. Da nun der mit der Klausur verbundene Lernaufwand nicht mehr bevorstand, konnte sich die Gruppe darauf konzentrieren die nahenden Ferien zu nutzen, um das Projet fertigzustellen. Es gilt jetzt den Schwung aus der letzten Woche mitzunehmen, das Gelernte auf unser Projekt zu übertragen und während der Ferien neben der Abiturvorbereitung genug Zeit zu finden das Projekt zu finalisieren.
 	
 ## <p> <h2> <a id="Stundenabdem30.3.2022"> Finalisierung des Projekts ab dem 30.3.2022 </a> </h2>
+	
+Zu Beginn der finalen Phase, wurde erneut der Stand des Projekts rekapituliert und sich neue Ziele für die Ferien gesetzt. 
+	
+<details>
+	<summary>bisheriger Stand des Projekts</summary>
+	<li>Es wurde eine Website programmiert, über die Daten generiert werden können</li>
+	<li>Diese Daten können an eine Datenbannk übermittelt werden und dort gespeichert werden</li>
+	<li>in einem ähnlichen Skript gelang es die in der Datenbannk gespeicherten Daten über den ESP auszulesen</li>
+	<li>Der ESP kann die Daten über Variablen an den Arduino übermitteln, der den Gaskocher steuert</li>
+	<li>Die Website kann Daten, die vom in der Datenbank gespeichert werden auslesen</li>
+</details>
+	
+<details>
+	<summary>noch zu erledigende Arbeitsschritte</summary>
+	<li>die Übertragung des erlenten Wissens über das Beispiel der LED, muss auf unsere Skripte übertragen werden </li>
+	<li>der ESP muss Werte in eine dafür vorgesehen Tabelle der Datenbank eintragen </li>
+</details>
+	
+Sobald diese Schritte geschafft sind, steht das prove of concept unseres Projekts. Je nachdem wie viel Zeit noch verfügbar ist, kann dann noch an der Hardware gepfeilt werden. Da die hardwaretechnische Umsetzung jedoch nicht der primäre Fokus des Informatikunterrichts ist, kann diese eventuelle vor dem Hintergrund der anstehenden Abiturklausuren vernachlässigt werden. 
+	
 	
 	
