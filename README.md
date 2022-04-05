@@ -948,7 +948,31 @@ void loop() {
 	
 ## <p> <h2> <a id="Stundevom2.3.2022"> Stunde vom 2.3.2022 </a> </h2>
 
-In dieser Stunde wurde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Ersteinmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Der php Code wurde daher so einfach wie möglich gehalten. Allerdings trügt der Schein bei php oft, da auch sehr kurze und einfache Scripts kompliziert sind und im Vorhinein viel Recherche bedürfen. Glücklicherweise klappte nach einiger Zeit des Debuggings endlich die Werte anzeigen zu lassen. Da momentan die Kommunikation zwsichen Arduino und Datenbank momentan noch nicht klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Möglich ist auch, dass die Kommunkation deutlich vereinfacht werden würde, wenn man die Kommunikationswege von Website zu Arduino und Arduino zu Website in unterschieldichen Tabellen und nicht nur in verschiedenen Spalten darstellen würde. So kommt man nicht in die Verlegenheit verschiedene Werte einer gleichen Id zuordnen zu müssen, was potenziell zu Problememen führt. Ob diese relativ leicht zu erldigende Verädngerung nötig ist, wird sich in den nächsten Stunden zeigen.
+## <p> <h2> <a id="Stundevom8.3.2022"> Stunde vom 8.3.2022 </a> </h2>
+	
+Aufgrund einer Exkursion musste diese Stunde leider ausfallen.
+	
+## <p> <h2> <a id="Stundevom9.3.2022"> Stunde vom 9.3.2022 </a> </h2>
+
+<details>
+	<summary>Screenshot der Website</summary>
+
+<img src="https://user-images.githubusercontent.com/88385654/156559570-7df79162-2da5-44c5-bc18-5d1365f89a2d.png">
+	
+</details>
+
+<details>
+	<summary>Screenshot der Datenbanktabelle</summary>
+
+<img src="https://user-images.githubusercontent.com/88385654/156559722-109b1cee-2e7e-4a60-8311-3aa72fb5e233.png">
+	
+</details>
+
+## <p> <h2> <a id="Stundevom15.3.2022"> Stunde vom 15.3.2022 </a> </h2>
+	
+## <p> <h2> <a id="Stundevom16.3.2022"> Stunde vom 16.3.2022 </a> </h2>
+
+Da die Gruppe zu diesem Zeitpunkt sehr frustriert war und die Gruppe ein zu starkes Verbeißen in ein Thema verhindern wollte, nahm sich die Gruppe in dieser Stunde eine Auszeit und versuchte an anderer Stelle weiterzuarbeiten. Daher wurde in dieser Stunde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Ersteinmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Der php Code wurde daher so einfach wie möglich gehalten. Allerdings trügt der Schein bei php oft, da auch sehr kurze und einfache Scripts kompliziert sind und im Vorhinein viel Recherche bedürfen. Glücklicherweise klappte nach einiger Zeit des Debuggings endlich die Werte anzeigen zu lassen. Da momentan die Kommunikation zwsichen Arduino und Datenbank momentan noch nicht klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Möglich ist auch, dass die Kommunkation deutlich vereinfacht werden würde, wenn man die Kommunikationswege von Website zu Arduino und Arduino zu Website in unterschieldichen Tabellen und nicht nur in verschiedenen Spalten darstellen würde. So kommt man nicht in die Verlegenheit verschiedene Werte einer gleichen Id zuordnen zu müssen, was potenziell zu Problememen führt. Ob diese relativ leicht zu erldigende Verädngerung nötig ist, wird sich in den nächsten Stunden zeigen.
 
 <details>
 	<summary>php Code - Kommunikation zwischen Datenbank und Website</summary>
@@ -982,32 +1006,7 @@ foreach($pdo->query($sql)as $row){
 
 </details>
 	
-## <p> <h2> <a id="Stundevom8.3.2022"> Stunde vom 8.3.2022 </a> </h2>
-	
-Aufgrund einer Exkursion musste diese Stunde leider ausfallen.
-	
-## <p> <h2> <a id="Stundevom9.3.2022"> Stunde vom 9.3.2022 </a> </h2>
 
-<details>
-	<summary>Screenshot der Website</summary>
-
-<img src="https://user-images.githubusercontent.com/88385654/156559570-7df79162-2da5-44c5-bc18-5d1365f89a2d.png">
-	
-</details>
-
-<details>
-	<summary>Screenshot der Datenbanktabelle</summary>
-
-<img src="https://user-images.githubusercontent.com/88385654/156559722-109b1cee-2e7e-4a60-8311-3aa72fb5e233.png">
-	
-</details>
-
-## <p> <h2> <a id="Stundevom15.3.2022"> Stunde vom 15.3.2022 </a> </h2>
-	
-## <p> <h2> <a id="Stundevom16.3.2022"> Stunde vom 16.3.2022 </a> </h2>
-
-Da die Gruppe zu diesem Zeitpunkt sehr frustriert war und die Gruppe ein zu starkes Verbeißen in ein Thema verhindern wollte, nahm sich die Gruppe in dieser Stunde eine Auszeit und versuchte an anderer Stelle weiterzuarbeiten. Daher wurde in dieser Stunde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Ersteinmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Der php Code wurde daher so einfach wie möglich gehalten. Allerdings trügt der Schein bei php oft, da auch sehr kurze und einfache Scripts kompliziert sind und im Vorhinein viel Recherche bedürfen. Glücklicherweise klappte nach einiger Zeit des Debuggings endlich die Werte anzeigen zu lassen. Da momentan die Kommunikation zwsichen Arduino und Datenbank momentan noch nicht klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Möglich ist auch, dass die Kommunkation deutlich vereinfacht werden würde, wenn man die Kommunikationswege von Website zu Arduino und Arduino zu Website in unterschieldichen Tabellen und nicht nur in verschiedenen Spalten darstellen würde. So kommt man nicht in die Verlegenheit verschiedene Werte einer gleichen Id zuordnen zu müssen, was potenziell zu Problememen führt. Ob diese relativ leicht zu erldigende Verädngerung nötig ist, wird sich in den nächsten Stunden zeigen.**In dieser Stunde wurde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Ersteinmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Der php Code wurde daher so einfach wie möglich gehalten. Allerdings trügt der Schein bei php oft, da auch sehr kurze und einfache Scripts kompliziert sind und im Vorhinein viel Recherche bedürfen. Glücklicherweise klappte nach einiger Zeit des Debuggings endlich die Werte anzeigen zu lassen. Da momentan die Kommunikation zwsichen Arduino und Datenbank momentan noch nicht klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Möglich ist auch, dass die Kommunkation deutlich vereinfacht werden würde, wenn man die Kommunikationswege von Website zu Arduino und Arduino zu Website in unterschieldichen Tabellen und nicht nur in verschiedenen Spalten darstellen würde. So kommt man nicht in die Verlegenheit verschiedene Werte einer gleichen Id zuordnen zu müssen, was potenziell zu Problememen führt. Ob diese relativ leicht zu erldigende Verädngerung nötig ist, wird sich in den nächsten Stunden zeigen.
-	
 ## <p> <h2> <a id="Stundevom22.3.2022"> Stunde vom 22.3.2022 </a> </h2>
 	
 ## <p> <h2> <a id="Stundevom23.3.2022"> Stunde vom 23.3.2022 </a> </h2>
