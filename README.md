@@ -57,6 +57,7 @@ David Borgmann, Simon Rettmann
 	<td> <a href="#Stundevom29.3.2022"> Stunde vom 29.3.2022 </a></td>
 	<td> <a href="#Stundevom30.3.2022"> Stunde vom 30.3.2022 </a></td>
 <tr>
+	<td> <a href="#Stundenabdem30.3.2022"> Finalisierung des Projekts ab dem 30.3.2022 </a></td>
  </table>
 <br>
 
@@ -1327,6 +1328,6 @@ Zu Beginn wurde der GitHub-Eintrag der letzten Stunde fertiggestellt. Außerdem 
 	
 Aufgrund der Profilfach Abiturklausuren musste diese Informatikstunde leider ausfallen. Da nun der mit der Klausur verbundene Lernaufwand nicht mehr bevorstand, konnte sich die Gruppe darauf konzentrieren die nahenden Ferien zu nutzen, um das Projet fertigzustellen. 
 	
-## <p> <h2> <a id="Stundeabdem30.3.2022"> Finalisierung des Projekts ab dem 30.3.2022 </a> </h2>
+## <p> <h2> <a id="Stundenabdem30.3.2022"> Finalisierung des Projekts ab dem 30.3.2022 </a> </h2>
 	
 	
