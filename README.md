@@ -1170,7 +1170,7 @@ Nach zwei Wochen des Debuggings und etlichen Stunden Arbeit hat nun das Experime
 
 <details>
 	<summary>GetData.php</summary>
-
+```
 <?php
   //require 'database.php'; //include
 
@@ -1203,12 +1203,11 @@ Nach zwei Wochen des Debuggings und etlichen Stunden Arbeit hat nun das Experime
   }
 
   //echo "1";
-?>
+?>	
 ```
-	
+
 </details>
 	
-
 ## <p> <h2> <a id="Stundevom29.3.2022"> Stunde vom 29.3.2022 </a> </h2>
 	
 Zu Beginn wurde der GitHub-Eintrag der letzten Stunde fertiggestellt. Außerdem wurde der Rest der Stunde dazu genutzt sich auf das morgige Bioabitur vorzubereiten.
