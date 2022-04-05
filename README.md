@@ -49,6 +49,14 @@ David Borgmann, Simon Rettmann
 <tr>
 	<td> <a href="#Stundevom8.3.2022"> Stunde vom 8.3.2022 </a></td>
 	<td> <a href="#Stundevom9.3.2022"> Stunde vom 9.3.2022 </a></td>
+	<td> <a href="#Stundevom15.3.2022"> Stunde vom 15.3.2022 </a></td>
+	<td> <a href="#Stundevom16.3.2022"> Stunde vom 16.3.2022 </a></td>
+</tr>
+	<td> <a href="#Stundevom22.3.2022"> Stunde vom 22.3.2022 </a></td>
+	<td> <a href="#Stundevom23.3.2022"> Stunde vom 23.3.2022 </a></td>
+	<td> <a href="#Stundevom29.3.2022"> Stunde vom 29.3.2022 </a></td>
+	<td> <a href="#Stundevom30.3.2022"> Stunde vom 30.3.2022 </a></td>
+<tr>
  </table>
 <br>
 
@@ -666,11 +674,11 @@ Die Stunde wurde dazu genutzt den letzten GitHub-Eintrag fertigzustellen. Außer
 
 ## <p> <h2> <a id="Stundevom23.2.2022"> Stunde vom 23.2.2022 </a> </h2>
 
-Nachdem in der letzten Stunde reflektiert wurde und die noch zu erledigenden Schritte definiert waren, wurde klar, dass jetzt mit Hochdruck an der Kommunikation zwischen dem Esp und der Datenbank gearbeitet werden muss. Dies ist der einzige Punkt, der noch realisiert werden muss, damit das Projekt als Prototyp schon einmal funktionstüchtig ist. Dafür wurden mehrere Videos geschaut und viel herumprobiert. Vor allem ein <a href="https://www.youtube.com/watch?v=J9ziYzmiW9I&t"> Video </a> von Uthe Str schien sehr interessant. Das in dem Video gezeigte Beispiel sollte in der nächsten Stunde nachgebaut werden. 
+Nachdem in der letzten Stunde reflektiert wurde und die noch zu erledigenden Schritte definiert waren, wurde klar, dass jetzt mit Hochdruck an der Kommunikation zwischen dem Esp und der Datenbank gearbeitet werden muss. Dies ist der einzige Punkt, der noch realisiert werden muss, damit das Projekt als Prototyp schon einmal funktionstüchtig ist. Dafür wurden mehrere Videos geschaut und viel  versucht. Vor allem ein <a href="https://www.youtube.com/watch?v=J9ziYzmiW9I&t"> Video </a> von Uthe Str schien sehr interessant. Das in dem Video gezeigte Beispiel sollte in der nächsten Stunde nachgebaut werden. 
 
 ## <p> <h2> <a id="Stundevom1.3.2022"> Stunde vom 1.3.2022 </a> </h2>
 
-Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht den Code zu verstehen. Dafür wurden mehrere php-Dokumente und html-Dokumente erstellt. Um die Funktionalität der Website zu testen, wurden diese Dokumente auf den Sever hochgeladen. Über die bekannte Adresse, konnte so die Website erreicht werden und ein Befehl über das An- und Ausschalten der Led gegeben werden. Dieser Wert wird als Status (stat = "0" -> aus oder stat = "1" -> an) gespeichert. Der Test war erfolgreich und der Zugriff von der Website auf die Datenbank gelang. Nach einiger Arbeit von zu Hause, gelang es auch mit dem Arduino auf die Datenbank zuzugreifen und die LED zu steuern. Dieses Beispiel hat in der Tat zum weiteren und dem Verbessern der Programmierkünste beigetragen und kann somit als Erfolg gewertet werden. Aufgabe für die nächsten Stunden ist es dieses neu erlangte Wissen tatsächlich auch für die konkrete Umsetzung des Projekts zu nutzen. 
+Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht den Code zu verstehen. Dafür wurden mehrere php-Dokumente und html-Dokumente erstellt. Um die Funktionalität der Website zu testen, wurden diese Dokumente auf den Sever hochgeladen. Über die bekannte Adresse, konnte so die Website erreicht werden und ein Befehl über das An- und Ausschalten der Led gegeben werden. Dieser Wert wird als Status (stat = "0" -> aus oder stat = "1" -> an) gespeichert. In der Theorie sollten diese Werte dann in die Datenbank, in einer speziell hierfür angelegten Tabelle "statusled" gespeichert werden. Der jeweilige Wert (0 oder 1) sollte dann vom Arduino ausgelesen werden, sodass nun die LED an- oder ausgeschaltet wird. Leider funktionierte dies am Ende der Stunde nicht. In den nächsten Stunden sollten nun die einzelnen Scripts auf ihre Funktionstüchtigkeit geprüft werden. 
 
 <details>
 	<summary>Screenshot der Website</summary>
@@ -868,7 +876,7 @@ Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und an
 	
 ## <p> <h2> <a id="Stundevom2.3.2022"> Stunde vom 2.3.2022 </a> </h2>
 
-In dieser Stunde wurde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Ersteinmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Nach einiger Zeit des Debuggings gelang es endlich die Werte anzeigen zu lassen. Da momentan die Kommunikation zwsichen Arduino und Datenbank klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Möglich ist auch, dass die Kommunkation deutlich vereinfacht werden würde, wenn man die Kommunikationswege von Website zu Arduino und Arduino zu Website in unterschieldichen Tabellen und nicht nur in verschiedenen Spalten dargesellt wird. So kommt man nicht in die Verlegenheit verschiedene Werte einer gleichen Id zuordnen zu müssen, was potenziell zu Problememen führt. Ob diese relativ leicht zu erldigende Verädngerung nötig ist, wird sich in den nächsten Stunden zeigen.
+In dieser Stunde wurde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Ersteinmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Der php Code wurde daher so einfach wie möglich gehalten. Allerdings trügt der Schein bei php oft, da auch sehr kurze und einfache Scripts kompliziert sind und im Vorhinein viel Recherche bedürfen. Glücklicherweise klappte nach einiger Zeit des Debuggings endlich die Werte anzeigen zu lassen. Da momentan die Kommunikation zwsichen Arduino und Datenbank momentan noch nicht klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Möglich ist auch, dass die Kommunkation deutlich vereinfacht werden würde, wenn man die Kommunikationswege von Website zu Arduino und Arduino zu Website in unterschieldichen Tabellen und nicht nur in verschiedenen Spalten darstellen würde. So kommt man nicht in die Verlegenheit verschiedene Werte einer gleichen Id zuordnen zu müssen, was potenziell zu Problememen führt. Ob diese relativ leicht zu erldigende Verädngerung nötig ist, wird sich in den nächsten Stunden zeigen.
 
 <details>
 	<summary>php Code - Kommunikation zwischen Datenbank und Website</summary>
@@ -908,4 +916,16 @@ Aufgrund einer Exkursion musste diese Stunde leider ausfallen.
 	
 ## <p> <h2> <a id="Stundevom9.3.2022"> Stunde vom 9.3.2022 </a> </h2>
 
+## <p> <h2> <a id="Stundevom15.3.2022"> Stunde vom 9.3.2022 </a> </h2>
+	
+## <p> <h2> <a id="Stundevom16.3.2022"> Stunde vom 9.3.2022 </a> </h2>
+	
+## <p> <h2> <a id="Stundevom22.3.2022"> Stunde vom 9.3.2022 </a> </h2>
+	
+## <p> <h2> <a id="Stundevom23.3.2022"> Stunde vom 9.3.2022 </a> </h2>
+	
+## <p> <h2> <a id="Stundevom29.3.2022"> Stunde vom 29.3.2022 </a> </h2>
 
+## <p> <h2> <a id="Stundevom30.3.2022"> Stunde vom 30.3.2022 </a> </h2>
+	
+Aufgrund der Profilfach Abiturklausuren musste diese Informatikstunde leider ausfallen. Da nun der mit der Klausur verbundene Lernaufwand nicht mehr bevorstand, konnte sich die Gruppe darauf konzentrieren die nahenden Ferien zu nutzen, um das Projet fertigzustellen. 
