@@ -1167,6 +1167,46 @@ Nach zwei Wochen des Debuggings und etlichen Stunden Arbeit hat nun das Experime
 ```
 	
 </details>
+
+<details>
+	<summary>GetData.php</summary>
+
+<?php
+  //require 'database.php'; //include
+
+  $dbName = 'sschuelersql4';
+  $dbHost = 'localhost';
+  $dbUsername = 'sschuelersql4';
+  $dbUserPassword = 'lycquzesjb';
+ $pdo = new PDO( "mysql:host=$dbHost;dbname=$dbName", $dbUsername, $dbUserPassword);
+
+  /*echo $_POST;
+  if (!empty($_POST)) //empty !
+  { 
+    echo "drgdrg";
+    $id=$_POST["ID"]; //? warum ID und nicht "Stat"
+    $pdo = Database::connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = 'SELECT * FROM statusled WHERE ID = ?';
+    
+    $q = $pdo->prepare($sql);
+    $q->execute(array($id));
+    $data = $q->fetch(PDO::FETCH_ASSOC);
+    Database::disconnect();
+    
+    echo $data['Stat'];
+  }
+*/
+  $sql = 'SELECT * FROM statusled';
+  foreach ($pdo->query($sql) as $row) {
+    echo $row['Stat'];
+  }
+
+  //echo "1";
+?>
+```
+	
+</details>
 	
 
 ## <p> <h2> <a id="Stundevom29.3.2022"> Stunde vom 29.3.2022 </a> </h2>
