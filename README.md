@@ -1011,7 +1011,18 @@ foreach($pdo->query($sql)as $row){
 	
 ## <p> <h2> <a id="Stundevom23.3.2022"> Stunde vom 23.3.2022 </a> </h2>
 	
+Nach zwei Wochen des Debuggings und etlichen Stunden Arbeit hat nun das Experiment so geklkappt, wie es sich vorgestellt wurde und die LED konnte mit Hilfe einer Website an- und ausgeschaltet werden. 
+
+<details>
+	<summary>Video der Steuerung der LED - novum hotplate</summary>
+	<div align="center">
+  			<a href="https://www.youtube.com/watch?v=xTHpKBRuh9c"><img src="https://user-images.githubusercontent.com/88385654/161727389-0f1cf787-5f1d-463c-ac45-d298d5613ecc.png" alt="Fernsteuerung LED"></a>	
+	</div>
+</details>
+	
 ## <p> <h2> <a id="Stundevom29.3.2022"> Stunde vom 29.3.2022 </a> </h2>
+	
+Zu Beginn wurde der GitHub-Eintrag der letzten Stunde fertiggestellt. Außerdem wurde der Rest der Stunde dazu genutzt sich auf das morgige Bioabitur vorzubereiten.
 
 ## <p> <h2> <a id="Stundevom30.3.2022"> Stunde vom 30.3.2022 </a> </h2>
 	
