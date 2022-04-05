@@ -1170,7 +1170,9 @@ Nach zwei Wochen des Debuggings und etlichen Stunden Arbeit hat nun das Experime
 
 <details>
 	<summary>GetData.php</summary>
+	
 ```
+	
 <?php
   //require 'database.php'; //include
 
@@ -1203,7 +1205,8 @@ Nach zwei Wochen des Debuggings und etlichen Stunden Arbeit hat nun das Experime
   }
 
   //echo "1";
-?>	
+?>
+	
 ```
 
 </details>
