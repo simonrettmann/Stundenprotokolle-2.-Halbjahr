@@ -1366,7 +1366,14 @@ Zu Beginn der finalen Phase, wurde erneut der Stand des Projekts rekapituliert u
 	<li>der ESP muss Werte in eine dafür vorgesehen Tabelle der Datenbank eintragen </li>
 </details>
 	
-Sobald diese Schritte geschafft sind, steht das prove of concept unseres Projekts. Je nachdem wie viel Zeit noch verfügbar ist, kann dann noch an der Hardware gepfeilt werden. Da die hardwaretechnische Umsetzung jedoch nicht der primäre Fokus des Informatikunterrichts ist, kann diese eventuelle vor dem Hintergrund der anstehenden Abiturklausuren vernachlässigt werden. 
-	
-	
+Sobald diese Schritte geschafft sind, steht das prove of concept des Projekts. Je nachdem wie viel Zeit noch verfügbar ist, kann dann noch an der Hardware gepfeilt werden. Da die hardwaretechnische Umsetzung jedoch nicht der primäre Fokus des Informatikunterrichts ist, kann diese eventuelle vor dem Hintergrund der anstehenden Abiturklausuren vernachlässigt werden. 
+
+Nachdem das Projekt der Ansteuerung einer LED ausreichend dokumentiert und gefilmt war, wurde daran gearbeitet das erlernte Wissen auf das Gaskocher-Projekt zu übertragen. Erstaunlicherweise funktionierte dies relativ problemlos. <br/>
+Nachdem der serielle Monitor des Arduinos die Werte, die über die Website eingegeben wurden, ausgegeben hat, wagte sich die Gruppe an den Test aller Komponenten zusammen. Dafür wurde der Arduino-Codes des letzten Halbjahres angepasst. Nachdem dieses Dokument fertig war und alles aufgebaut war, konnte der Test beginnen. Der Test wurde gefilmt und ein YouTube-Video zusammengeschnitten.
+<br/>
+Nachdem die Kommunikation von Website zu ESP funktionierte, wurde versucht auch die andere Richtung, von ESP zu Website, zum Laufen zu bringen. Nachdem alle erforderlichen Codes geschrieben waren, scheiterte dieses Vorhaben leider an dem stark schwankenden Strombedarf des ESP, sodass dieser sich selbst ausschaltet. 
+<br/>
+Aufgrund der kanppen Zeit war es leider auch nicht möglich andere bereits in Auge gefassten Ziele umzusetzen. Man kann also sagen, dass der Hauptteil des Projekts realisiert wurde, allerdings einige Abstriche links und rechts des Weges gemacht werden mussten, damit das Projekt rechtzeitig fertig wird. Die andere Ziele, wie die Verschönerung der Hardware, sind zwar nicht zwingend notwendig, hätten aber für einen runderen Gesamteindruck gesorgt. 
+<br/>
+Während der letzten Phase wurde noch der Übliche Feinschliff in Angriff genommen und an der Dokumentation in Form von Stundenprotokollen, Projektseite und YouTube-Kanal gearbeitet. Seitdem auch die letzten Überarbeitungen abgeschlossen sind, ist das 2. Halbjahresprojekt fertig. 
 	
