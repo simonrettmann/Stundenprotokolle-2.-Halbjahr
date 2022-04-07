@@ -1029,6 +1029,11 @@ Auch in dieser Stunde wurde sich vor allem das "GetData.php" Skript angeschaut. 
 Nach mehr als zwei Wochen des Debuggings und etlichen Stunden Arbeit, wurde nun dieses Zwischenprojekt finalisiert. Das Experiment hat nun so geklappt, wie es sich vorgestellt wurde, und die LED konnte mit Hilfe einer Website an- und ausgeschaltet werden. Das letzte Problem war ein Definitionsfehler, da im Arduinocode die Website mit https und nicht mit http angegeben wurde. So konnte der ESP nicht auf die Datenbank zugreifen und das ganze Projekt funktionierte nicht. Nachdem dieser Schreibfehler behoben war, war das Projekt erfolgreich. Die LED konnte über eine Website gesteuert werden.
 
 <details>
+	<summary>Screenshot der Website</summary>
+<img src="https://user-images.githubusercontent.com/88385654/156559570-7df79162-2da5-44c5-bc18-5d1365f89a2d.png">
+</details>
+	
+<details>
 	<summary>Video der Steuerung der LED - novum hotplate</summary>
 	<div align="center">
   			<a href="https://www.youtube.com/watch?v=xTHpKBRuh9c"><img src="https://user-images.githubusercontent.com/88385654/161727389-0f1cf787-5f1d-463c-ac45-d298d5613ecc.png" alt="Fernsteuerung LED"></a>	
