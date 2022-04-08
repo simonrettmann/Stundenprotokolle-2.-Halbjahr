@@ -1355,7 +1355,7 @@ Zu Beginn wurde der GitHub-Eintrag der letzten Stunde fertiggestellt. Außerdem 
 
 ## <p> <h2> <a id="Stundevom30.3.2022"> Stunde vom 30.3.2022 </a> </h2>
 	
-Aufgrund der Profilfach Abiturklausuren musste diese Informatikstunde leider ausfallen. Da nun der mit der Klausur verbundene Lernaufwand nicht mehr bevorstand, konnte sich die Gruppe darauf konzentrieren die nahenden Ferien zu nutzen, um das Projet fertigzustellen. Es gilt jetzt den Schwung aus der letzten Woche mitzunehmen, das Gelernte auf unser Projekt zu übertragen und während der Ferien neben der Abiturvorbereitung genug Zeit zu finden das Projekt zu finalisieren.
+Aufgrund der Profilfach Abiturklausuren musste diese Informatikstunde leider ausfallen. Da nun der mit der Klausur verbundene Lernaufwand nicht mehr bevorstand, konnte sich die Gruppe darauf konzentrieren die nahenden Ferien zu nutzen, um das Projet fertigzustellen. Es gilt jetzt den Schwung aus der letzten Woche mitzunehmen, das Gelernte auf unser Projekt zu übertragen und während der Ferien neben den weiteren Abiturvorbereitung genug Zeit zu finden das Projekt zu finalisieren.
 	
 ## <p> <h2> <a id="Stundenabdem30.3.2022"> Finalisierung des Projekts ab dem 30.3.2022 </a> </h2>
 	
