@@ -318,6 +318,12 @@ Netterweise antwortete Herr Adiwidjaja im Laufe der restlichen Woche. Dies nahm 
 Neben diesem technischen Problem, wurde sich auch mit dem weiteren Verlauf des Projekts beschäftigt. Herr Buhl sprach erneut ein Thema an, über das die Gruppe sich zu Beginn schon einmal Gedanken gemacht hat. Eine wirkliche Aufwertung für die Website wäre es, wenn es dort neben der einstellbaren Temperatur auch einen 24/7 verfügbaren Livestream geben würde. Ein solcher Livestream wäre ein echtes Highlight, allerdings nicht realisitsch umsetzbar. Problematisch ist hierbei das sehr teure Hardware-Equipment und die großen Datenmengen. Kameras, die einen solchen Livestream unterstützen kosten oft über 100 € und die transportierten Datenmengen wären wahrscheinlich so groß, dass die reibungslose Darstellung der Website nicht sichergestellt wäre.
 
 <details>
+	<summary>Projektplanung</summary>
+<img src="https://user-images.githubusercontent.com/88385654/162341502-260a8825-e01f-4def-a027-3dc93b456c50.jpg">
+
+</details>
+
+<details>
 	<summary> Screenshot der Antwort von Herrn Adiwidjaja </summary>
 
 <img width="1307" alt="Bild der Anwort" src="https://user-images.githubusercontent.com/88385654/153012378-e82f82cc-3058-432b-8bf2-d39e53378889.jpeg">
