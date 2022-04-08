@@ -975,11 +975,11 @@ Auch die Übertragung der Werte in die Datenbank funktionierte nicht auf anhieb.
 
 ## <p> <h2> <a id="Stundevom8.3.2022"> Stunde vom 8.3.2022 </a> </h2>
 	
-Aufgrund einer Exkursion musste diese Stunde leider ausfallen. Über den Lauf der Woche wurde allerdins weiter an dem Beispiel gearbeitet, um die Kommunikation zwischen ESP und Datenbank endlich herzustellen.
+Aufgrund einer Exkursion musste diese Stunde leider ausfallen. Über den Lauf der Woche wurde allerdings weiter an dem Beispiel gearbeitet, um die Kommunikation zwischen ESP und Datenbank endlich herzustellen.
 	
 ## <p> <h2> <a id="Stundevom9.3.2022"> Stunde vom 9.3.2022 </a> </h2>
 	
-Leider gelang der Erfolg von zu Hause noch nicht, sodass in dieser Stunde weiter am Arduino Script und dem Dokument "GetData.php" gearbeitet wurde. Leider gelang es auch in dieser Stunde nicht die Fehler zu beheben. Die Gruppe nahm sich vor auch weiter von zu Hause an dem Problem zu arbeiten.
+Leider gelang der Erfolg von zu Hause noch nicht, sodass in dieser Stunde weiter am Arduino Script und dem Dokument "GetData.php" gearbeitet wurde. Allerdings gelang es auch innerhalb dieser Stunde nicht die Fehler zu beheben. Die Gruppe nahm sich vor auch weiter von zu Hause an dem Problem zu arbeiten.
 
 ## <p> <h2> <a id="Stundevom15.3.2022"> Stunde vom 15.3.2022 </a> </h2>
 	
@@ -1025,7 +1025,7 @@ foreach($pdo->query($sql)as $row){
 
 ## <p> <h2> <a id="Stundevom22.3.2022"> Stunde vom 22.3.2022 </a> </h2>
 	
-Auch in dieser Stunde wurde sich vor allem das "GetData.php" Skript angeschaut. Da die Datenabfrage nicht funktionierte, musste der Fehler innerhalb dieses Dokuments liegen. Hierfür wurde viel herumprobiert. Besonders die if-Schleife fiel ins Auge, da es gut sein kann, dass diese Schleife nicht ausgeführt wird. Durch mehrere Echos außerhalb und innerhalb der Schleife wurde versucht herauszufinden wo das Problem liegt. Gegen Ende der Stunde war die Gruppe mit Hilfe von Herrn Buhl und Henrik soweit, dass die if-Schleife funktionierte und das gewünschte Echo ausgegeben wurde. Leider klappte allerdings die Kommunikation zwischen ESP und Datenbank weiterhin nicht. Da nun aber alle php und html Scripte funktionierten, musste der Fehler in dem Arduinoscript liegen. Diesen ausfindig zu machen und zu beseitigen war das Ziel für die nächste Stunde.
+In dieser Stunde wurde sich wieder vor allem das "GetData.php" Skript angeschaut. Da die Datenabfrage des ESP nicht funktionierte, musste der Fehler innerhalb dieses Dokuments liegen. Hierfür wurde viel herumprobiert. Besonders die if-Schleife fiel ins Auge, da es gut sein kann, dass diese Schleife nicht ausgeführt wird. Durch mehrere Echos außerhalb und innerhalb der Schleife wurde versucht herauszufinden wo das Problem liegt. Gegen Ende der Stunde war die Gruppe mit Hilfe von Herrn Buhl und Henrik soweit, dass die if-Schleife funktionierte und das gewünschte Echo ausgegeben wurde. Leider klappte die Kommunikation zwischen ESP und Datenbank weiterhin nicht. Da nun aber alle php und html Scripte funktionierten, musste der Fehler in dem Arduinoscript liegen. Diesen ausfindig zu machen und zu beseitigen war das Ziel für die nächste Stunde.
 	
 ## <p> <h2> <a id="Stundevom23.3.2022"> Stunde vom 23.3.2022 </a> </h2>
 	
@@ -1034,6 +1034,13 @@ Nach mehr als zwei Wochen des Debuggings und etlichen Stunden Arbeit, wurde nun 
 <details>
 	<summary>Screenshot der Website</summary>
 <img src="https://user-images.githubusercontent.com/88385654/156559570-7df79162-2da5-44c5-bc18-5d1365f89a2d.png">
+</details>
+
+<details>
+	<summary>Screenshot von fritzing</summary>
+
+<img src="https://user-images.githubusercontent.com/88385654/162340919-8e7e66de-1e61-4e72-8f52-b9dde18ab755.png">
+	
 </details>
 	
 <details>
