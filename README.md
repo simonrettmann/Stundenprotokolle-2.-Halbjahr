@@ -88,6 +88,13 @@ Für die nächste Zeit setzte sich die Gruppe folgende Ziele:
 	<li>Einarbeitung in PHP, sodass eine datenverarbeitende Website erstellt werden kann und diese dadurch gewonnen Daten in einer Datenbank gespeichert werden können.
 	</li>
 </ul>
+Dazu wurden einige Quellen verwendet
+<ul>
+	<li>https://www.peterkropff.de/site/mysql/grundlagen.htm<li>
+	<li>https://www.ionos.de/digitalguide/server/knowhow/was-ist-ein-server-ein-begriff-zwei-definitionen/</li>
+	<li>https://opencommons.linz.at/public-space-server/</li>
+	<li>https://www.php-einfach.de/</li>
+</ul>
 
 ## <p> <h2> <a id="Stundevom21.12.2021"> Stunde vom 21.12.2021 </a> </h2>
 
