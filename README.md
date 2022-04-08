@@ -85,12 +85,11 @@ Für die nächste Zeit setzte sich die Gruppe folgende Ziele:
 <ul>
 	<li>Einarbeitung und anlegen einer sql-Datenbank</li>
 	<li>Suche eines Servers auf der sowohl die Website als auch die Datenbank laufen können </li>
-	<li>Einarbeitung in PHP, sodass eine datenverarbeitende Website erstellt werden kann und diese dadurch gewonnen Daten in einer Datenbank gespeichert werden können.
-	</li>
+	<li>Einarbeitung in PHP, sodass eine datenverarbeitende Website erstellt werden kann und diese dadurch gewonnen Daten in einer Datenbank gespeichert werden können.</li>
 </ul>
 Dazu wurden einige Quellen verwendet
 <ul>
-	<li>https://www.peterkropff.de/site/mysql/grundlagen.htm<li>
+	<li>https://www.peterkropff.de/site/mysql/grundlagen.htm</li>
 	<li>https://www.ionos.de/digitalguide/server/knowhow/was-ist-ein-server-ein-begriff-zwei-definitionen/</li>
 	<li>https://opencommons.linz.at/public-space-server/</li>
 	<li>https://www.php-einfach.de/</li>
