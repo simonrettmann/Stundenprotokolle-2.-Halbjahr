@@ -67,7 +67,7 @@ David Borgmann, Simon Rettmann
 <br>
 
 ## <p> <h2> <a id="Stundevom14.12.2021"> Stunde vom 14.12.2021 </a> </h2>
-In dieser Stunde begann die zweite Projektfindungsphase. Der Abgabetermin wurde auf den 19.4.2022 festgelegt. Um ein Projekt zu finden, wurde erneut eine MindMap erstellt. Diskutierte Ideen waren die Weiterführung des arduinogesteuerten Gaskochers, da die Gruppe während der letzten Phase von diesem Projekt begeistert war und eine Kamera, die auf einer Schiene befestigt ist und Kamerafahrten, sogar durch eine Objekterfassung gesteuerte Kamerafahrten, aufnehmen kann. 
+In dieser Stunde begann die zweite Projektfindungsphase. Der Abgabetermin wurde auf den 19.4.2022 festgelegt. Um ein Projekt zu finden, wurde erneut eine MindMap erstellt. Diskutierte Ideen waren erstens die Weiterführung des arduinogesteuerten Gaskochers, da die Gruppe während der letzten Phase von diesem Projekt begeistert war, oder zweitens eine Kamera, die auf einer Schiene befestigt ist und Kamerafahrten, sogar durch eine Objekterfassung gesteuerte Kamerafahrten, aufnehmen kann. 
 <a href="https://youtu.be/h5faZXlyLzY"> Link von YouTube zu einer Videoinspiraton zum Kameraprojekt</a>
 
 <details>
@@ -75,7 +75,7 @@ In dieser Stunde begann die zweite Projektfindungsphase. Der Abgabetermin wurde 
 <img alt="Bild der MindMap" src="https://user-images.githubusercontent.com/88385654/146187027-ce64e107-2326-4b0b-a0ec-b7d27955739d.jpeg">
 </details>
 
-Nach längerer Diskussion und Ausarbeitung der beiden Ideen mit Herrn Buhl, entschied sich die Gruppe den arduinogesteuerten Gaskocher weiterzuführen. Die vorherrschende Meinung war, dass es noch genug zu verbessern gibt und diese weitere Entwicklung eventuell sogar die Teilnahme an Wettbewerben wie Jugend forscht ermöglicht. 
+Nach längerer Diskussion und Ausarbeitung der beiden Ideen mit Herrn Buhl entschied sich die Gruppe, den arduinogesteuerten Gaskocher weiterzuführen. Die vorherrschende Meinung war, dass es noch genug zu verbessern gibt und diese weitere Entwicklung eventuell sogar die Teilnahme an Wettbewerben wie "Jugend forscht" ermöglicht. 
 	
 ## <p> <h2> <a id="Stundevom15.12.2021"> Stunde vom 15.12.2021 </a> </h2>
 
@@ -83,11 +83,11 @@ Von zu Hause begann bereits der Denkprozess, wie die Ideen konkret umgesetzt wer
 Weiter wurde sich auch mit der Kompatibilität dieses Chips mit verschiedenen Website und Datentypen auseinandergesetzt. 
 Für die nächste Zeit setzte sich die Gruppe folgende Ziele:
 <ul>
-	<li>Einarbeitung und anlegen einer sql-Datenbank</li>
+	<li>Einarbeitung und Anlegen einer sql-Datenbank</li>
 	<li>Suche eines Servers auf der sowohl die Website als auch die Datenbank laufen können </li>
 	<li>Einarbeitung in PHP, sodass eine datenverarbeitende Website erstellt werden kann und diese dadurch gewonnen Daten in einer Datenbank gespeichert werden können.</li>
 </ul>
-Dazu wurden einige Quellen verwendet
+Dazu wurden einige Quellen verwendet:
 <ul>
 	<li>https://www.peterkropff.de/site/mysql/grundlagen.htm</li>
 	<li>https://www.ionos.de/digitalguide/server/knowhow/was-ist-ein-server-ein-begriff-zwei-definitionen/</li>
@@ -105,16 +105,16 @@ Aufgrund der Ferien musste diese Stunde leider ausfallen.
 
 ## <p> <h2> <a id="Stundevom11.1.2022"> Stunde vom 11.1.2022 </a> </h2>
 Die erste Stunde nach den Ferien wurde von der Gruppe genutzt, um die Ergebnisse der Einarbeitungsphase zu besprechen. Das bestellte Bauteil kam über die Ferien an und erste Ansteuerungsversuche wurden getätigt. <br>
-Als erster Schritt wurde die I2C-Kommunikation angegangen. Zwar wurde diese Technologie bereits in der ersten Projektphase verwendet, jedoch wurde die I2C-Kommunikation mit dem LC-Display und einer simplen Libary verwendet. In der zweiten Projektphase soll der I2C-Datenbus benutzt werden, um Daten zwischen WLAN-fähigen NodeMCU-Mikrokontroller (Name des Moduls, in welches das ESP8862 eingearbeitet ist) und dem Arduino auszutauschen. Da bisher noch keine geeignete Libary gefunden wurde, wurde sich mit der hardwarenahen Programmierung beschäftigt. Das NodeMCU soll dabei die Rolle als "Master-Device" und der Arduino als "Slave-Device" übernehmen. Problematisch dabei ist, dass am Ende hauptsächlich Integer- und Floatvariablen übertragen werden sollen. Standardmäßig können aber nur Bytes mit I2C übertragen werden. Es ist also nötig die Daten in Bytes zu trennen, die Bytes zu übertragen und anschließend die Daten beim Empfänger wieder zusammenzusetzen. Die einfache Übertragung von Bytes zwischen den beiden Geräten funktionierte nach kurzem Testen ohne große Probleme. Schwierig gestaltete sich jedoch die Zusammensetzung der Bytes zu den Variablen, sobald mehrere verschiedene Variablen involviert waren. <br>
+Als erster Schritt wurde die I2C-Kommunikation angegangen. Zwar wurde diese Technologie bereits in der ersten Projektphase verwendet, jedoch wurde die I2C-Kommunikation mit dem LC-Display und einer simplen Libary verwendet. In der zweiten Projektphase soll der I2C-Datenbus benutzt werden, um Daten zwischen WLAN-fähigen NodeMCU-Mikrokontroller (Name des Moduls, in welches das ESP8862 eingearbeitet ist) und dem Arduino auszutauschen. Da bisher noch keine geeignete Libary gefunden wurde, wurde sich mit der hardwarenahen Programmierung beschäftigt. Das NodeMCU soll dabei die Rolle als "Master-Device" und der Arduino als "Slave-Device" übernehmen. Problematisch dabei ist, dass am Ende hauptsächlich Integer- und Floatvariablen übertragen werden sollen. Standardmäßig können aber nur Bytes mit I2C übertragen werden. Es ist also nötig, die Daten in Bytes zu trennen, die Bytes zu übertragen und anschließend die Daten beim Empfänger wieder zusammenzusetzen. Die einfache Übertragung von Bytes zwischen den beiden Geräten funktionierte nach kurzem Testen ohne große Probleme. Schwierig gestaltete sich jedoch die Zusammensetzung der Bytes zu den Variablen, sobald mehrere verschiedene Variablen involviert waren. <br>
 Nachdem sich die Gruppenmitglieder erfolglos über eine Lösung des Problems beraten hatten, folgte gegen Ende der Stunde eine Recherche über eine geeignete Libary zur Übertragung der gewünschten Variablen.
 
 ## <p> <h2> <a id="Stundevom12.1.2022"> Stunde vom 12.1.2022 </a> </h2>
-Diese Unterrichtseinheit wurde von der Gruppe genutzt, um die Kentnisse zu erweitern, damit die Herausforderungen, die dieses neue Projekt mit sich bringt, gemeistert werden können. Vor allem die Website stellt eine große Herausforderung dar, weil nicht nur die html Kentnisse vertieft werden müssen, sondern css und php neu erlernt werden müssen. Essenziell ist es Daten bei der Website eingeben zu können und diese Daten dann auf einem Server oder einer Datenbank zu speichern, sodass der Arduino über den ESp auf diese zugreifen kann. 
+Diese Unterrichtseinheit wurde von der Gruppe genutzt, um die Kenntnisse zu erweitern, damit die Herausforderungen, die dieses neue Projekt mit sich bringt, gemeistert werden können. Vor allem die Website stellt eine große Herausforderung dar, weil nicht nur die html Kentnisse vertieft werden müssen, sondern css und php neu erlernt werden müssen. Essenziell ist es, Daten bei der Website eingeben zu können und diese Daten dann auf einem Server oder einer Datenbank zu speichern, sodass der Arduino über den ESp auf diese zugreifen kann. 
 
 
 ## <p> <h2> <a id="Stundevom18.1.2022"> Stunde vom 18.1.2022 </a> </h2>
 Auch in dieser Doppelstunde wurden viele Quellen, wie Videos und Blogs, zu Rate gezogen, um die ehrgeizigen Ziele zu erreichen. Außerdem wurde in dieser Stunde bereits ein wenig programmiert. 
-Für das Programmieren wurde Visual Studio Code benutzt, da dieses Programm in der Informatikwelt ein weitverbreitetes, kostenloses Tool ist, dass für die Anwendung der Gruppe viele Möglichkeiten bietet. <a href="https://code.visualstudio.com/"> Link zu Visual Studio Code </a>
+Für das Programmieren wurde Visual Studio Code benutzt, da dieses Programm in der Informatikwelt ein weitverbreitetes, kostenloses Tool ist, das für die Anwendung der Gruppe viele Möglichkeiten bietet. <a href="https://code.visualstudio.com/"> Link zu Visual Studio Code </a>
 Es wurde bereits eine .html-Datei angelegt und eine .css-Datei angelegt. 
 
 <details>
@@ -219,7 +219,7 @@ Auch wenn diese Informatikstunde leider ausfallen musste, wurde das Projekt von 
 Auch wenn diese Informatikstunde leider ausfallen musste, wurde das Projekt von zu Hause weitergeführt.  
 
 ## <p> <h2> <a id="Stundevom1.2.2022"> Stunde vom 1.2.2022 </a> </h2>
-In dieser Informatikstunde wurde ein erster Prototyp der Website fertiggestellt. Auch wenn diese Seite noch keinen Designpreis verdient hat, ist diese funktional genug, um das Projekt zu unterstützen. Neben kleinen Designveränderungen, wurde in dieser Stunde vor allem das Input-Eingabefeld überarbeitet. In den Code des Feldes wurde bereits ein php-Tag eingearbeitet. Außerdem wurde sich informiert welche Möglichkeiten bestehen die Website zu hosten und mit welcher Datenbank diese verknüpft werden kann. Für die Datenbank wurde von Herrn Buhl mysql empfohlen, da diese gratis und sehr funktional ist. Für die Serverunterstützung wurde uns netterweise die Kontaktadresse von Herrn Adiwidjaja gegeben. Ziel für die nächste Stunde ist es diesen Kontakt herzustellen und nach Serverplatz zu fragen. 
+In dieser Informatikstunde wurde ein erster Prototyp der Website fertiggestellt. Auch wenn diese Seite noch keinen Designpreis verdient hat, ist diese funktional genug, um das Projekt zu unterstützen. Neben kleinen Designveränderungen wurde in dieser Stunde vor allem das Input-Eingabefeld überarbeitet. In den Code des Feldes wurde bereits ein php-Tag eingearbeitet. Außerdem wurde sich informiert, welche Möglichkeiten bestehen, die Website zu hosten und mit welcher Datenbank diese verknüpft werden kann. Für die Datenbank wurde von Herrn Buhl mysql empfohlen, da diese gratis und sehr funktional ist. Für die Serverunterstützung wurde uns netterweise die Kontaktadresse von Herrn Adiwidjaja gegeben. Ziel für die nächste Stunde ist es, diesen Kontakt herzustellen und nach Serverplatz zu fragen. 
 
 <details>
 	<summary>Screenshot der Website</summary>
@@ -314,8 +314,8 @@ Wie letzte Stunde besprochen, wurde zu Beginn dieser Stunde die E-Mail an Herrn 
 
 ## <p> <h2> <a id="Stundevom8.2.2022"> Stunde vom 8.2.2022 </a> </h2>
 
-Netterweise antwortete Herr Adiwidjaja im Laufe der restlichen Woche. Dies nahm die Gruppe zum Anlass sich von nun an auch über die Umsetzung des Hostings Gedanken zu machen. Serverkommunikation und die Bereitstellung einer Website über einen Server waren nämlich bisher noch Neuland. 
-Neben diesem technischen Problem, wurde sich auch mit dem weiteren Verlauf des Projekts beschäftigt. Herr Buhl sprach erneut ein Thema an, über das die Gruppe sich zu Beginn schon einmal Gedanken gemacht hat. Eine wirkliche Aufwertung für die Website wäre es, wenn es dort neben der einstellbaren Temperatur auch einen 24/7 verfügbaren Livestream geben würde. Ein solcher Livestream wäre ein echtes Highlight, allerdings nicht realisitsch umsetzbar. Problematisch ist hierbei das sehr teure Hardware-Equipment und die großen Datenmengen. Kameras, die einen solchen Livestream unterstützen kosten oft über 100 € und die transportierten Datenmengen wären wahrscheinlich so groß, dass die reibungslose Darstellung der Website nicht sichergestellt wäre.
+Netterweise antwortete Herr Adiwidjaja im Laufe der restlichen Woche. Dies nahm die Gruppe zum Anlass, sich von nun an auch über die Umsetzung des Hostings Gedanken zu machen. Serverkommunikation und die Bereitstellung einer Website über einen Server waren nämlich bisher noch Neuland. 
+Neben diesem technischen Problem wurde sich auch mit dem weiteren Verlauf des Projekts beschäftigt. Herr Buhl sprach erneut ein Thema an, über das die Gruppe sich zu Beginn schon einmal Gedanken gemacht hat. Eine wirkliche Aufwertung für die Website wäre es, wenn es dort neben der einstellbaren Temperatur auch einen 24/7 verfügbaren Livestream geben würde. Ein solcher Livestream wäre ein echtes Highlight, allerdings nicht realisitsch umsetzbar. Problematisch ist hierbei das sehr teure Hardware-Equipment und die großen Datenmengen. Kameras, die einen solchen Livestream unterstützen, kosten oft über 100 € und die transportierten Datenmengen wären wahrscheinlich so groß, dass die reibungslose Darstellung der Website nicht sichergestellt wäre.
 
 <details>
 	<summary>Projektplanung</summary>
@@ -339,12 +339,12 @@ Neben diesem technischen Problem, wurde sich auch mit dem weiteren Verlauf des P
 
 ## <p> <h2> <a id="Stundevom9.2.2022"> Stunde vom 9.2.2022 </a> </h2>
 
-Die heutige Stunde wurde unter anderem dazu verwendet, intensive Recherche über das Übermitteln von Daten via I2C anzustellen, da die Gruppe keine geeignete Libary für die Anforderungen an die I2C-Kommunikation finden konnte. Gegen Ende der Stunde stieß das Team auf eine vielversprechende Website, die eine Einführung in die Verwendung von Arrays (Liste von Variablen einer Art) gibt: 
+Die heutige Stunde wurde unter anderem dazu verwendet, intensive Recherchen über das Übermitteln von Daten via I2C anzustellen, da die Gruppe keine geeignete Libary für die Anforderungen an die I2C-Kommunikation finden konnte. Gegen Ende der Stunde stieß das Team auf eine vielversprechende Website, die eine Einführung in die Verwendung von Arrays (Liste von Variablen einer Art) gibt: 
 <a href="https://starthardware.org/lektion-15-array/"> Website über die Verwendung von Arrays </a> <br>
-Weiterführnd kam die Idee auf, die benötigten Integer-Variablen in Bytes zu zerlegen und diese dann als Array zu übermitteln. Integer-Variablen bestehen aus 2 Bytes. Diese Information kann in einen High-Byte und einen Low-Byte zerlegt werden. Die Idee war es nun, alle benötigten Variablen in die einzelnen High- und Low-Bytes zu zerlegen, die Bytes einzeln zu übermitteln und anschließend die Bytes wieder zu einer Integer zusammenzusetzen. Das Erzeugen der High- und Low-Bytes gestaltet sich relativ simpel: "highByte(x)" erzeugt den Highbyte und "lowByte(x)" den Lowbyte der eingesetzten Integervariable. 
+Weiterführend kam die Idee auf, die benötigten Integer-Variablen in Bytes zu zerlegen und diese dann als Array zu übermitteln. Integer-Variablen bestehen aus 2 Bytes. Diese Information kann in einen High-Byte und einen Low-Byte zerlegt werden. Die Idee war es nun, alle benötigten Variablen in die einzelnen High- und Low-Bytes zu zerlegen, die Bytes einzeln zu übermitteln und anschließend die Bytes wieder zu einer Integer zusammenzusetzen. Das Erzeugen der High- und Low-Bytes gestaltet sich relativ simpel: "highByte(x)" erzeugt den Highbyte und "lowByte(x)" den Lowbyte der eingesetzten Integervariable. 
 
 ## <p> <h2> <a id="Stundevom15.2.2022"> Stunde vom 15.2.2022</a> </h2>
-In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen. Das in der vorherigen Stunde erlangte Wissen wurde erfolgreich angewendet, sodass ein "Prove of Concept" in der Form eines Programms gelang. Es handelt sich um die vorher beschreibene Lösung. Dabei wird demonstriert, dass Variablen sowohl von "Master" zu "Slave", als auch von "Slave" zu "Master" übermittelt werden können.
+In dieser Stunde gelang der Durchbruch bezüglich der Übertragung der Variablen. Das in der vorherigen Stunde erlangte Wissen wurde erfolgreich angewendet, sodass ein "Prove of Concept" in der Form eines Programms gelang. Es handelt sich um die vorher beschriebene Lösung. Dabei wird demonstriert, dass Variablen sowohl von "Master" zu "Slave", als auch von "Slave" zu "Master" übermittelt werden können.
 
 <details>
 	<summary>Arduino Code - Arduino Uno</summary>
@@ -488,10 +488,10 @@ int setzeZahlZusammen(unsigned int high, unsigned int low) {
 	
 ## <p> <h2> <a id="Stundevom16.2.2022"> Stunde vom 16.2.2022 </a> </h2>
 Auch die Website wurde in den letzten Stunden und von zu Hause weitergebracht. Nachdem der Serverplatz netterweise zur Verfügung gestellt wurde, musste noch ein Programm gefunden werden, sodass auf den Server zugegriffen werden konnte. Dafür wurde sich das Programm Cyberduck installiert. <a href="https://cyberduck.io/"> Link zu Cyberduck</a>
-So gelang es auf den Server zuzugreifen und die im Vorhinein programmierten Dateien dort hochzuladen. Nachdem einige Zeit rumgespielt wurde und herumprobiert wurde, gelang es die Website unter der Adresse <a href="https://gaskocher.stormarnschueler.de/"> https://gaskocher.stormarnschueler.de/</a> zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter mit fiktiven Werten eingerichtet, die später als aktiver Wertemonitor funktionieren soll. <br/>
-Außerdem wurden zwei wichtige Erfolge erreicht, sodass der in der Website eingestellte Wert über einen php Code gesendet und empfangen werden kann. Außerdem wird dieser Wert an die mysql-Datenbank gesendet und dort in einer Tabelle gespeichert. Dieser recht komplexe php Code wurde oft getestet, damit er nun endgültig funktionstüchtig ist. Schwierig war es auch mit Hilfe der Seite phpMyAdmin auf die Datenbank zuzugreifen und dort eine passende Tabelle zu erstellen, in der die Werte unter der Spalte "eintemperatur" gespeichert werden. Dies liegt daran, dass sql sehr unintuitiv ist und mit vielen komplexen Funktionen nicht anfängerfreundlich. <br/>
-Konkret wurde ein php-Dokument mit dem Namen .config angelegt, dass die Zugangsdaten zu der mysql Datenbank speichert. Außerdem wurde ein zweites php Dokument angelegt, dass die Kommunikation zwischen der Website und der Datenbank regelt. Dafür wird der Wert der Temperatureingabe über den Code empfangen und dann mit der "insert to funktion" in die Datenbank eingepflegt. Diese neuen Möglichkeiten stellen einen großen Meilenstein dar, da nun eine wichtige Funktion des Endproduktes funktioniert. 
-Es ist nun möglich eine Website über das World Wide Web zu öffnen und dort über ein Eingabefeld eine Temperatur zu speichern, die in die passende Spalte der Datenbank eingepflegt wird. 
+So konnten wir auf den Server zugreifen und die im Vorhinein programmierten Dateien dort hochladen. Nachdem einige Zeit herumprobiert worden war, gelang es auch, die Website unter der Adresse <a href="https://gaskocher.stormarnschueler.de/"> https://gaskocher.stormarnschueler.de/</a> zu erreichen. Um die Möglichkeiten von css ein bisschen auszutesten, wurden die bereits aufgenommenen Fotos des letzten Halbjahres eingefügt und eine Tabelle als Platzhalter mit fiktiven Werten eingerichtet, die später als aktiver Wertemonitor funktionieren soll. <br/>
+Außerdem wurden zwei wichtige Erfolge erreicht, indem ein in der Website eingestellter Wert über einen php Code gesendet und empfangen werden konnte. Zudem  wird dieser Wert an die mysql-Datenbank gesendet und dort in einer Tabelle gespeichert. Dieser recht komplexe php Code wurde oft getestet, damit er nun endgültig funktionstüchtig ist. Schwierig war es, auch mit Hilfe der Seite phpMyAdmin auf die Datenbank zuzugreifen und dort eine passende Tabelle zu erstellen, in der die Werte unter der Spalte "eintemperatur" gespeichert werden. Dies liegt daran, dass sql sehr unintuitiv und mit vielen komplexen Funktionen nicht anfängerfreundlich ist. <br/>
+Konkret wurde ein php-Dokument mit dem Namen .config angelegt, das die Zugangsdaten zu der mysql Datenbank speichert. Außerdem wurde ein zweites php Dokument angelegt, das die Kommunikation zwischen der Website und der Datenbank regelt. Dafür wird der Wert der Temperatureingabe über den Code empfangen und dann mit der "insert to funktion" in die Datenbank eingepflegt. Diese neuen Möglichkeiten stellen einen großen Meilenstein dar, da nun eine wichtige Funktion des Endproduktes funktioniert. 
+Es ist nun möglich, eine Website über das World Wide Web zu öffnen und dort über ein Eingabefeld eine Temperatur zu speichern, die in die passende Spalte der Datenbank eingepflegt wird. 
 
 <details>
 	<summary>Screenshot der Website</summary>
@@ -667,7 +667,7 @@ table, th, td, caption {
 
 ## <p> <h2> <a id="Stundevom22.2.2022"> Stunde vom 22.2.2022 </a> </h2>
 
-Die Stunde wurde dazu genutzt den letzten GitHub-Eintrag fertigzustellen. Außerdem wurde der bisherige Verlauf des Projekts reflektiert und sich Ziele für die Zukunft gesetzt. So soll sichergestellt werden, dass trotz der momentan hohen Arbeitsbelastung und der nahenden Abiturprüfungen genug Zeit zur Verfügung steht das Projekt zu beenden. 
+Die Stunde wurde dazu genutzt, den letzten GitHub-Eintrag fertigzustellen. Außerdem wurde der bisherige Verlauf des Projekts reflektiert und sich Ziele für die Zukunft gesetzt. So soll sichergestellt werden, dass trotz der momentan hohen Arbeitsbelastung und der nahenden Abiturprüfungen genug Zeit zur Verfügung steht, das Projekt zu beenden. 
 
 <details>
 	<summary>bisheriger Stand des Projekts</summary>
@@ -698,7 +698,7 @@ Nachdem in der letzten Stunde reflektiert wurde und die noch zu erledigenden Sch
 
 ## <p> <h2> <a id="Stundevom1.3.2022"> Stunde vom 1.3.2022 </a> </h2>
 
-Wie in der letzten Stunde festgelegt wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht den Code zu verstehen. Dafür wurden mehrere php-Dokumente und html-Dokumente erstellt. Um die Funktionalität der Website zu testen, wurden diese Dokumente auf den Sever hochgeladen. Über die bekannte Adresse konnte so die Website erreicht werden und ein Befehl über das An- und Ausschalten der LED gegeben werden. Dieser Wert wird als Status (stat = "0" -> aus oder stat = "1" -> an) gespeichert. In der Theorie sollten diese Werte dann in die Datenbank, in einer speziell hierfür angelegten Tabelle "statusled" gespeichert werden. Der jeweilige Wert (0 oder 1) sollte dann vom Arduino ausgelesen werden, sodass nun die LED an- oder ausgeschaltet wird. Leider funktionierte dies am Ende der Stunde nicht. In den nächsten Stunden sollten nun die einzelnen Scripts auf ihre Funktionstüchtigkeit geprüft werden. 
+Wie in der letzten Stunde festgelegt, wurde das Video noch einmal geschaut und anhand dieses Beispiels versucht, den Code zu verstehen. Dafür wurden mehrere php-Dokumente und html-Dokumente erstellt. Um die Funktionalität der Website zu testen, wurden diese Dokumente auf den Sever hochgeladen. Über die bekannte Adresse konnte so die Website erreicht werden und ein Befehl über das An- und Ausschalten der LED gegeben werden. Dieser Wert wird als Status (stat = "0" -> aus oder stat = "1" -> an) gespeichert. In der Theorie sollten diese Werte dann in die Datenbank, in einer speziell hierfür angelegten Tabelle "statusled" gespeichert werden. Der jeweilige Wert (0 oder 1) sollte dann vom Arduino ausgelesen werden, sodass nun die LED an- oder ausgeschaltet wird. Leider funktionierte dies am Ende der Stunde nicht. In den nächsten Stunden sollten nun die einzelnen Scripts auf ihre Funktionstüchtigkeit geprüft werden. 
 
 	
 <details>
@@ -968,8 +968,8 @@ void loop() {
 	
 ## <p> <h2> <a id="Stundevom2.3.2022"> Stunde vom 2.3.2022 </a> </h2>
 
-Es stellte sich heraus, dass die aus dem Internet kopierten Scripte leider sehr fehlerhaft waren, sodass Fehler an mehreren Stellen auftauchten, die behoben werden mussten. Selbst das Aufrufen der Website, die im Video gezeigt war, funktionierte nicht. Dieser Fehler konnte jedoch schnell behoben werden, da das Hauptdokument, dass die Website in html vorgibt "index.php" und nicht "main.php" heißen muss. Anschließend konnte die Website aufgerufen werden.
-Auch die Übertragung der Werte in die Datenbank funktionierte nicht auf anhieb. Nach etwas Bastelei an dem php Dokument "database.php", gelang die Übertragung jedoch und die eingestellten Werte erschienen in der Datenbank. Leider konnte die Kommunikation zwischen ESP und Arduino jedoch nicht hergestellt werden, sodass die LED noch nicht gesteuert werden konnte. 
+Es stellte sich heraus, dass die aus dem Internet kopierten Scripte leider sehr fehlerhaft waren, sodass Fehler an mehreren Stellen auftauchten, die behoben werden mussten. Selbst das Aufrufen der Website, die im Video gezeigt war, funktionierte nicht. Dieser Fehler konnte jedoch schnell behoben werden, da das Hauptdokument, das die Website in html vorgibt "index.php" und nicht "main.php" heißen muss. Anschließend konnte die Website aufgerufen werden.
+Auch die Übertragung der Werte in die Datenbank funktionierte nicht auf Anhieb. Nach etwas Bastelei an dem php Dokument "database.php", gelang die Übertragung jedoch, und die eingestellten Werte erschienen in der Datenbank. Leider konnte die Kommunikation zwischen ESP und Arduino jedoch nicht hergestellt werden, sodass die LED noch nicht gesteuert werden konnte. 
 	
 <details>
 	<summary>Screenshot der Website</summary>
@@ -991,16 +991,16 @@ Aufgrund einer Exkursion musste diese Stunde leider ausfallen. Über den Lauf de
 	
 ## <p> <h2> <a id="Stundevom9.3.2022"> Stunde vom 9.3.2022 </a> </h2>
 	
-Leider gelang der Erfolg von zu Hause noch nicht, sodass in dieser Stunde weiter am Arduino Script und dem Dokument "GetData.php" gearbeitet wurde. Allerdings gelang es auch innerhalb dieser Stunde nicht die Fehler zu beheben. Die Gruppe nahm sich vor auch weiter von zu Hause an dem Problem zu arbeiten.
+Leider gelang der Erfolg von zu Hause noch nicht, sodass in dieser Stunde weiter am Arduino Script und dem Dokument "GetData.php" gearbeitet wurde. Allerdings gelang es auch innerhalb dieser Stunde nicht, die Fehler zu beheben. Die Gruppe nahm sich vor, auch weiter von zu Hause an dem Problem zu arbeiten.
 
 ## <p> <h2> <a id="Stundevom15.3.2022"> Stunde vom 15.3.2022 </a> </h2>
 	
-Da die Fehlerbehebung auch nach viel Arbeit von zu Hause nicht klappte und die Gruppe sich daher etwas überfordert fühlte, wurde in dieser Stunde auch Herr Buhl eingeschaltet. Ersteinmal wurde der Zwischenstand des Projekts gezeigt und erklärt was erreicht werden sollte. Gemeinsam wurde noch einmal das Beispiel angeschaut und die Scripte einzeln auf Fehler untersucht. Es bestätigte sich erneut, dass die Website aufgerufen werden kann und auch Werte von der Webiste in der Datenbank gespeichert werden können. Leider gelang es aber nicht die Kommunikation von zwischen Datenbank und Arduino herzustellen. Netterweise bat Herr Buhl an, dass wir ihm die Codes per Mail senden können und er sich diese von zu Hause erneut anschaut.
+Da die Fehlerbehebung auch nach viel Arbeit von zu Hause nicht klappte und die Gruppe sich daher etwas überfordert fühlte, wurde in dieser Stunde auch Herr Buhl eingeschaltet. Erst einmal wurde der Zwischenstand des Projekts gezeigt und erklärt, was erreicht werden sollte. Gemeinsam wurde noch einmal das Beispiel angeschaut und die Scripte einzeln auf Fehler untersucht. Es bestätigte sich erneut, dass die Website aufgerufen werden kann und auch Werte von der Website in der Datenbank gespeichert werden können. Leider gelang es aber nicht, die Kommunikation zwischen Datenbank und Arduino herzustellen. Netterweise bot Herr Buhl an, dass wir ihm die Codes per Mail senden können und er sich diese von zu Hause erneut anschaut.
 	
 ## <p> <h2> <a id="Stundevom16.3.2022"> Stunde vom 16.3.2022 </a> </h2>
 
-Da die Gruppe zu diesem Zeitpunkt sehr frustriert war und Herr Buhl noch etwas Zeit benötigte die Scripte auf Fehler anzugucken, entschied sich die Gruppe an anderer Stelle weiterzuarbeiten. Daher wurde in dieser Stunde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Ersteinmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Der php Code wurde daher so einfach wie möglich gehalten. Allerdings trügt der Schein bei php oft, da auch sehr kurze und einfache Scripte kompliziert sind und im Vorhinein viel Recherche bedürfen. Glücklicherweise klappte es nach einiger Zeit des Debuggings endlich die Werte anzeigen zu lassen. Da momentan die Kommunikation zwsichen Arduino und Datenbank momentan noch nicht klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Dieser Schritt hat aber erstmal keine hohe Priorittät, da ersteinmal die Kommunikation von ESP und Datenbank in beide Richtungen funktionieren muss. <br/>
-Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Möglich ist es auch, dass die Kommunkation deutlich vereinfacht werden würde, wenn man die Kommunikationswege von Website zu Arduino und Arduino zu Website in unterschieldichen Tabellen und nicht nur in verschiedenen Spalten darstellen würde. So kommt man nicht in die Verlegenheit verschiedene Werte einer gleichen Id zuordnen zu müssen, was potenziell zu Problememen führen kann. Ob diese relativ leicht zu erldigende Verädngerung nötig ist, wird sich in den nächsten Stunden zeigen. Positiv war die Stunde nicht nur weil ein  wichtiger Erfolg erzielt wurde, sondern auch, weil die angestaute Frustration durch den heutigen Erfolg deutlich reduziert wurde. Hoffentlich kann diese Enerigie mit in die nächste Stunde genommen werden. 
+Da die Gruppe zu diesem Zeitpunkt sehr frustriert war und Herr Buhl noch etwas Zeit benötigte, die Scripte auf Fehler zu prüfen, entschied sich die Gruppe, an anderer Stelle weiterzuarbeiten. Daher wurde in dieser Stunde an der Kommunikation zwischen Website und Datenbank gearbeitet. Ziel ist es, die Werte, die vom Arduino in die Datenbank eingetragen wurden, auf der Website in einer Tabelle oder einem Feld darzustellen. Dafür muss die Kommunikation zwischen Website und Datenbank nun in die andere Richtung funktionieren. Dafür wurde ein php-Dokument erstellt. Damit die Fehlerquellen minimiert werden, wurde nicht sofort an der anschaulichen Darstellung der Werte gearbeitet. Erst einmal sollte die Website die in der Datenbank gespeicherten Werte ausgeben können. Der php Code wurde daher so einfach wie möglich gehalten. Allerdings trügt der Schein bei php oft, da auch sehr kurze und einfache Scripte kompliziert sind und im Vorhinein viel Recherche bedürfen. Glücklicherweise klappte es nach einiger Zeit des Debuggings endlich, die Werte anzeigen zu lassen. Da momentan die Kommunikation zwischen Arduino und Datenbank noch nicht klappt, sind die in der Datenbank gespeicherten Werte (gemtemperatur) nur = 0. In der Zukunft muss jetzt daran gearbeitet werden, diese Werte mit html und css in einer Tabelle oder einem Fenster darzustellen. Dieser Schritt hat aber keine hohe Priorität, da zunächst die Kommunikation von ESP und Datenbank in beide Richtungen funktionieren muss. <br/>
+Sobald die Kommunkation zuverlässig klappt, wäre es auch sinnvoll, mehrere Werte z.B. die gemessene Temperatur und die prozentuale Öffnung des Ventils anzeigen zu lassen. Zudem würde die Kommunkation deutlich vereinfacht werden, wenn man die Kommunikationswege von Website zu Arduino und Arduino zu Website in unterschiedlichen Tabellen und nicht nur in verschiedenen Spalten darstellen würde. So kommt man nicht in die Verlegenheit, verschiedene Werte einer gleichen Id zuordnen zu müssen, was potenziell zu Problememen führen kann. Ob diese relativ leicht zu erledigende Verändgerung nötig ist, wird sich in den nächsten Stunden zeigen. Positiv war die Stunde nicht nur, weil ein  wichtiger Erfolg erzielt wurde, sondern auch, weil die angestaute Frustration durch den heutigen Erfolg deutlich reduziert wurde. Hoffentlich kann diese Energie mit in die nächste Stunde genommen werden. 
 
 <details>
 	<summary>php Code - Kommunikation zwischen Datenbank und Website</summary>
@@ -1037,11 +1037,11 @@ foreach($pdo->query($sql)as $row){
 
 ## <p> <h2> <a id="Stundevom22.3.2022"> Stunde vom 22.3.2022 </a> </h2>
 	
-In dieser Stunde wurde sich wieder vor allem das "GetData.php" Skript angeschaut. Da die Datenabfrage des ESP nicht funktionierte, musste der Fehler innerhalb dieses Dokuments liegen. Hierfür wurde viel herumprobiert. Besonders die if-Schleife fiel ins Auge, da es gut sein kann, dass diese Schleife nicht ausgeführt wird. Durch mehrere Echos außerhalb und innerhalb der Schleife wurde versucht herauszufinden wo das Problem liegt. Gegen Ende der Stunde war die Gruppe mit Hilfe von Herrn Buhl und Henrik soweit, dass die if-Schleife funktionierte und das gewünschte Echo ausgegeben wurde. Leider klappte die Kommunikation zwischen ESP und Datenbank weiterhin nicht. Da nun aber alle php und html Scripte funktionierten, musste der Fehler in dem Arduinoscript liegen. Diesen ausfindig zu machen und zu beseitigen war das Ziel für die nächste Stunde.
+In dieser Stunde wurde sich wieder vor allem das "GetData.php" Skript angeschaut. Da die Datenabfrage des ESP nicht funktionierte, musste der Fehler innerhalb dieses Dokuments liegen. Hierfür wurde viel herumprobiert. Besonders die if-Schleife fiel ins Auge, da es gut sein kann, dass diese Schleife nicht ausgeführt wird. Durch mehrere Echos außerhalb und innerhalb der Schleife wurde versucht herauszufinden, wo das Problem liegt. Gegen Ende der Stunde war die Gruppe mit Hilfe von Herrn Buhl und Henrik soweit, dass die if-Schleife funktionierte und das gewünschte Echo ausgegeben wurde. Leider klappte die Kommunikation zwischen ESP und Datenbank weiterhin nicht. Da nun aber alle php und html Scripte funktionierten, musste der Fehler in dem Arduinoscript liegen. Diesen ausfindig zu machen und zu beseitigen, war das Ziel für die nächste Stunde.
 	
 ## <p> <h2> <a id="Stundevom23.3.2022"> Stunde vom 23.3.2022 </a> </h2>
 	
-Nach mehr als zwei Wochen des Debuggings und etlichen Stunden Arbeit, wurde nun dieses Zwischenprojekt finalisiert. Das Experiment hat nun so geklappt, wie es sich vorgestellt wurde, und die LED konnte mit Hilfe einer Website an- und ausgeschaltet werden. Das letzte Problem war ein Definitionsfehler, da im Arduinocode die Website mit https und nicht mit http angegeben wurde. So konnte der ESP nicht auf die Datenbank zugreifen und das ganze Projekt funktionierte nicht. Nachdem dieser Schreibfehler behoben war, war das Projekt erfolgreich. Die LED konnte über eine Website gesteuert werden.
+Nach mehr als zwei Wochen des Debuggings und etlichen Stunden Arbeit, wurde nun dieses Zwischenprojekt finalisiert. Das Experiment hat nun wie geplant funktioniert und die LED konnte mit Hilfe einer Website an- und ausgeschaltet werden. Das letzte Problem war ein Definitionsfehler, da im Arduinocode die Website mit https und nicht mit http angegeben wurde. So konnte der ESP nicht auf die Datenbank zugreifen und das ganze Projekt funktionierte nicht. Nachdem dieser Schreibfehler behoben war, war das Projekt erfolgreich. Die LED konnte über eine Website gesteuert werden.
 
 <details>
 	<summary>Screenshot der Website</summary>
@@ -1363,39 +1363,39 @@ void loop() {
 	
 ## <p> <h2> <a id="Stundevom29.3.2022"> Stunde vom 29.3.2022 </a> </h2>
 	
-Zu Beginn wurde der GitHub-Eintrag der letzten Stunde fertiggestellt. Außerdem wurde der Rest der Stunde dazu genutzt sich auf das morgige Bioabitur vorzubereiten.
+Zu Beginn wurde der GitHub-Eintrag der letzten Stunde fertiggestellt. Außerdem wurde der Rest der Stunde dazu genutzt, sich auf das morgige Bioabitur vorzubereiten.
 
 ## <p> <h2> <a id="Stundevom30.3.2022"> Stunde vom 30.3.2022 </a> </h2>
 	
-Aufgrund der Profilfach Abiturklausuren musste diese Informatikstunde leider ausfallen. Da nun der mit der Klausur verbundene Lernaufwand nicht mehr bevorstand, konnte sich die Gruppe darauf konzentrieren die nahenden Ferien zu nutzen, um das Projet fertigzustellen. Es gilt jetzt den Schwung aus der letzten Woche mitzunehmen, das Gelernte auf unser Projekt zu übertragen und während der Ferien neben den weiteren Abiturvorbereitung genug Zeit zu finden das Projekt zu finalisieren.
+Aufgrund der Abiturklausuren im Profilfach musste diese Informatikstunde leider ausfallen. Da nun der mit der Klausur verbundene Lernaufwand nicht mehr bevorstand, konnte sich die Gruppe darauf konzentrieren, die restliche Zeit und vor allem die bevorstehenden Ferien zu nutzen, um das Projekt fertigzustellen. Es gilt jetzt, den Schwung aus der letzten Woche mitzunehmen, das Gelernte auf unser Projekt zu übertragen und während der Ferien neben den weiteren Abiturvorbereitung genug Zeit zu finden das Projekt zu finalisieren.
 	
 ## <p> <h2> <a id="Stundenabdem30.3.2022"> Finalisierung des Projekts ab dem 30.3.2022 </a> </h2>
 	
-Zu Beginn der finalen Phase, wurde erneut der Stand des Projekts rekapituliert und sich neue Ziele für die Ferien gesetzt. 
+Zu Beginn der finalen Phase wurde erneut der Stand des Projekts rekapituliert und sich neue Ziele für die Ferien gesetzt. 
 	
 <details>
 	<summary>bisheriger Stand des Projekts</summary>
 	<li>Es wurde eine Website programmiert, über die Daten generiert werden können</li>
 	<li>Diese Daten können an eine Datenbannk übermittelt werden und dort gespeichert werden</li>
-	<li>in einem ähnlichen Skript gelang es die in der Datenbannk gespeicherten Daten über den ESP auszulesen</li>
+	<li>in einem ähnlichen Skript gelang es, die in der Datenbannk gespeicherten Daten über den ESP auszulesen</li>
 	<li>Der ESP kann die Daten über Variablen an den Arduino übermitteln, der den Gaskocher steuert</li>
-	<li>Die Website kann Daten, die vom in der Datenbank gespeichert werden auslesen</li>
+	<li>Die Website kann Daten, die in der Datenbank gespeichert werden, auslesen</li>
 </details>
 	
 <details>
 	<summary>noch zu erledigende Arbeitsschritte</summary>
-	<li>die Übertragung des erlenten Wissens über das Beispiel der LED, muss auf unsere Skripte übertragen werden </li>
+	<li>die Übertragung des erlernten Wissens über das Beispiel der LED muss auf unsere Skripte übertragen werden </li>
 	<li>der ESP muss Werte in eine dafür vorgesehen Tabelle der Datenbank eintragen </li>
 </details>
 	
-Sobald diese Schritte geschafft sind, steht das prove of concept des Projekts. Je nachdem wie viel Zeit noch verfügbar ist, kann dann noch an der Hardware gepfeilt werden. Da die hardwaretechnische Umsetzung jedoch nicht der primäre Fokus des Informatikunterrichts ist, kann diese eventuelle vor dem Hintergrund der anstehenden Abiturklausuren vernachlässigt werden. 
+Sobald diese Schritte geschafft sind, steht das prove of concept des Projekts. Je nachdem, wie viel Zeit noch verfügbar ist, kann dann noch an der Hardware gepfeilt werden. Da die hardwaretechnische Umsetzung jedoch nicht der primäre Fokus des Informatikunterrichts ist, kann diese eventuell vor dem Hintergrund der anstehenden Abiturklausuren vernachlässigt werden. 
 
-Nachdem das Projekt der Ansteuerung einer LED ausreichend dokumentiert und gefilmt war, wurde daran gearbeitet das erlernte Wissen auf das Gaskocher-Projekt zu übertragen. Erstaunlicherweise funktionierte dies relativ problemlos. <br/>
-Nachdem der serielle Monitor des Arduinos die Werte, die über die Website eingegeben wurden, ausgegeben hat, wagte sich die Gruppe an den Test aller Komponenten zusammen. Dafür wurde der Arduino-Codes des letzten Halbjahres angepasst. Nachdem dieses Dokument fertig war und alles aufgebaut war, konnte der Test beginnen. Der Test wurde gefilmt und ein YouTube-Video zusammengeschnitten.
+Nachdem das Projekt der Ansteuerung einer LED ausreichend dokumentiert und gefilmt war, wurde daran gearbeitet, das erlernte Wissen auf das Gaskocher-Projekt zu übertragen. Erstaunlicherweise funktionierte dies relativ problemlos. <br/>
+Nachdem der serielle Monitor des Arduinos die Werte, die über die Website eingegeben wurden, ausgegeben hat, wagte sich die Gruppe an den Test aller Komponenten zusammen. Dafür wurde der Arduino-Codes des letzten Halbjahres angepasst. Nach Fertigstellung des Dokuments und Aufbau aller Teile konnte der Test beginnen. Der Test wurde gefilmt und ein YouTube-Video zusammengeschnitten.
 <br/>
-Nachdem die Kommunikation von Website zu ESP funktionierte, wurde versucht auch die andere Richtung, von ESP zu Website, zum Laufen zu bringen. Nachdem alle erforderlichen Codes geschrieben waren, scheiterte dieses Vorhaben leider an dem stark schwankenden Strombedarf des ESP, sodass dieser sich selbst ausschaltet. 
+Nachdem die Kommunikation von Website zu ESP funktionierte, wurde versucht, auch die andere Richtung, von ESP zu Website, zum Laufen zu bringen. Nachdem alle erforderlichen Codes geschrieben waren, scheiterte dieses Vorhaben leider an dem stark schwankenden Strombedarf des ESP, der zu einer Selbstausschaltung des ESP führt. 
 <br/>
-Aufgrund der kanppen Zeit war es leider auch nicht möglich andere bereits in Auge gefassten Ziele umzusetzen. Man kann also sagen, dass der Hauptteil des Projekts realisiert wurde, allerdings einige Abstriche links und rechts des Weges gemacht werden mussten, damit das Projekt rechtzeitig fertig wird. Die andere Ziele, wie die Verschönerung der Hardware, sind zwar nicht zwingend notwendig, hätten aber für einen runderen Gesamteindruck gesorgt. 
+Aufgrund der knappen Zeit war es leider auch nicht möglich, andere bereits in Auge gefassten Ziele umzusetzen. Man kann also sagen, dass der Hauptteil des Projekts realisiert wurde, allerdings einige Abstriche links und rechts des Weges gemacht werden mussten, damit das Projekt rechtzeitig fertig wird. Die anderen Ziele, wie die Verschönerung der Hardware, sind zwar nicht zwingend notwendig, hätten aber für einen runderen Gesamteindruck gesorgt. 
 <br/>
-Während der letzten Phase wurde noch der Übliche Feinschliff in Angriff genommen und an der Dokumentation in Form von Stundenprotokollen, Projektseite und YouTube-Kanal gearbeitet. Seitdem auch die letzten Überarbeitungen abgeschlossen sind, ist das 2. Halbjahresprojekt fertig. 
+Während der letzten Phase wurde noch der übliche Feinschliff in Angriff genommen und an der Dokumentation in Form von Stundenprotokollen, Projektseite und YouTube-Kanal gearbeitet. Seitdem auch die letzten Überarbeitungen abgeschlossen sind, ist das 2. Halbjahresprojekt fertig. 
 	
