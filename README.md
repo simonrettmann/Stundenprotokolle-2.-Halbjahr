@@ -308,7 +308,7 @@ Wie letzte Stunde besprochen, wurde zu Beginn dieser Stunde die E-Mail an Herrn 
 <details>
 	<summary>Screenshot der Mail</summary>
 	
-<img width="1307" alt="Bild der Mail" src="">
+<img width="1307" alt="Bild der Mail" src="https://user-images.githubusercontent.com/88385654/164093799-b994f804-5a25-4c12-aa23-585134854b6e.png">
 
 </details>
 
