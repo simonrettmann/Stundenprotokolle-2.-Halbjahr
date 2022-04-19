@@ -8,7 +8,7 @@ Informatik, Bl
 
 David Borgmann, Simon Rettmann
 	
-&#10132;<a href="https://github.com/simonrettmann/Projektseite"> Projektseite</a> <br>
+&#10132;<a href="https://github.com/simonrettmann/Projektseite-2.-Halbjahr"> Projektseite</a> <br>
 &#10132;<a href="https://www.youtube.com/channel/UCEljeGxqUxyXQlMq9Q-U8_w">YouTube Kanal - Novum hotplate</a>	
 </p>
 
