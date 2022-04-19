@@ -308,7 +308,7 @@ Wie letzte Stunde besprochen, wurde zu Beginn dieser Stunde die E-Mail an Herrn 
 <details>
 	<summary>Screenshot der Mail</summary>
 	
-<img width="1307" alt="Bild der Mail" src="https://user-images.githubusercontent.com/88385654/152154365-e88ca217-e959-4090-8d68-7b40a5f5f016.png">
+<img width="1307" alt="Bild der Mail" src="">
 
 </details>
 
@@ -326,7 +326,7 @@ Neben diesem technischen Problem wurde sich auch mit dem weiteren Verlauf des Pr
 <details>
 	<summary> Screenshot der Antwort von Herrn Adiwidjaja </summary>
 
-<img width="1307" alt="Bild der Anwort" src="![153012378-e82f82cc-3058-432b-8bf2-d39e53378889](https://user-images.githubusercontent.com/88385654/164092379-41e64983-88cc-410a-8e03-8340efd32c61.jpg">
+<img width="1307" alt="Bild der Anwort" src="https://user-images.githubusercontent.com/88385654/164092379-41e64983-88cc-410a-8e03-8340efd32c61.jpg">
 
 </details>
 
