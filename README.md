@@ -537,7 +537,7 @@ header("location:index.html")
 ```
 	<?php
 
-$pdo = new PDO('mysql:host=localhost;dbname=sschuelersql4', 'sschuelersql4', 'lycquzesjb');
+$pdo = new PDO('mysql:host=*****;dbname=****', '****', '****');
 
 ?>	
 ```
