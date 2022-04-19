@@ -1218,10 +1218,10 @@ Nach mehr als zwei Wochen des Debuggings und etlichen Stunden Arbeit, wurde nun 
 <?php
   //require 'database.php'; //include
 
-  $dbName = 'sschuelersql4';
-  $dbHost = 'localhost';
-  $dbUsername = 'sschuelersql4';
-  $dbUserPassword = 'lycquzesjb';
+  $dbName = '****';
+  $dbHost = '******';
+  $dbUsername = '*****';
+  $dbUserPassword = '******';
  $pdo = new PDO( "mysql:host=$dbHost;dbname=$dbName", $dbUsername, $dbUserPassword);
 
   /*echo $_POST;
@@ -1270,8 +1270,8 @@ Nach mehr als zwei Wochen des Debuggings und etlichen Stunden Arbeit, wurde nun 
 #define LED_D8 15 //--> Defines an LED Pin. D8 = GPIO15
 
 //----------------------------------------SSID and Password of your WiFi router.
-const char* ssid = "Simons Iphone"; //--> Your wifi name or SSID.
-const char* password = "sesmon3112"; //--> Your wifi password.
+const char* ssid = "****"; //--> Your wifi name or SSID.
+const char* password = "*****"; //--> Your wifi password.
 //----------------------------------------
 
 //--------------------- -------------------Web Server address / IPv4
