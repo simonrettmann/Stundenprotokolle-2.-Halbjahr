@@ -326,7 +326,7 @@ Neben diesem technischen Problem wurde sich auch mit dem weiteren Verlauf des Pr
 <details>
 	<summary> Screenshot der Antwort von Herrn Adiwidjaja </summary>
 
-<img width="1307" alt="Bild der Anwort" src="https://user-images.githubusercontent.com/88385654/153012378-e82f82cc-3058-432b-8bf2-d39e53378889.jpeg">
+<img width="1307" alt="Bild der Anwort" src="![153012378-e82f82cc-3058-432b-8bf2-d39e53378889](https://user-images.githubusercontent.com/88385654/164092379-41e64983-88cc-410a-8e03-8340efd32c61.jpg">
 
 </details>
 
@@ -1153,10 +1153,10 @@ Nach mehr als zwei Wochen des Debuggings und etlichen Stunden Arbeit, wurde nun 
 ```
 <?php
 	class Database {
-		private static $dbName = 'sschuelersql4' ;
+		private static $dbName = '*******' ;
 		private static $dbHost = 'localhost' ;
-		private static $dbUsername = 'sschuelersql4';
-		private static $dbUserPassword = 'lycquzesjb';
+		private static $dbUsername = '********';
+		private static $dbUserPassword = '********';
 		 
 		private static $cont  = null;
 		 
